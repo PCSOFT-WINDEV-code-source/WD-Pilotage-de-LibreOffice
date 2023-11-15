@@ -1,0 +1,406 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cBase
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x18fee68000086853
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      
+      //
+      // Classe permettant d'accéder à une base ODB LibreOffice
+      //
+      cBase est une classe
+      	PRIVE
+      	// Objets OLE pour accéder à la base
+      	_oServiceManager est un objet OLE dynamique
+      	_oDBContext      est un objet OLE dynamique
+      	_oDB             est un objet OLE dynamique	
+      	_oBase           est un objet OLE dynamique
+      	_oStatement      est un objet OLE dynamique
+      	
+      	// Tableau contenant les résultats de la dernière requête
+      	_tabRésultat     est un tableau dynamique de 0 par 0 chaines
+      	_nIndiceCourant  est un entier
+      	_nIndiceMaximum  est un entier
+      Fin
+      
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1801130338425595987
+     type_code : 27
+     code : |1-
+      Procédure Constructeur()
+      
+      // Initialisation des membres
+      :_nIndiceCourant = 0
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1801130338425661523
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+      
+      // Fermeture des objets OLE
+      SI :_oStatement <> Null ALORS :_oStatement>>Close()
+      SI :_oBase <> Null      ALORS :_oBase>>Close()
+      SI :_oBase <> Null      ALORS :_oBase>>Dispose()
+     type : 655360
+   -
+     name : OuvrirBase
+     internal_properties : CAAAAAgAAACZskVS14uYp9NoFD7cEM56/WmmS5hwSAOP4f57T3Y9SZKfRZD2jDoi2791C6385GPVMaXVjOkVtgygL5gBO1fYz7zx9Z14xjM1m9mk9rS2+bckYGy0gfvNACci/VAk9kPN4FbtE1UNmj9cMjwlSiGcoWvCBt25szgQEy1YfIzB9dTuAVxEYItSqbRJiNPZiizA1AM1fYt90dGqa3QRDQdd3Qcze21xgmDWgApHNWpDK/S/dEM=
+     procedure_id : 1801131244663841220
+     type_code : 12
+     code : |1-
+      // Résumé : Ouvre une base de données LibreOffice
+      // Syntaxe :
+      //[ <Résultat> = ] OuvrirBase (<sChemin> est chaîne [, <sLogin> [, <sMotDePasse>]])//
+      // Paramètres :
+      //	sChemin (chaîne) : Chemin du fichier BDD
+      //	sLogin : Login de la base
+      //	sMotDePasse : Mot de passe
+      // Valeur de retour :
+      // 	booléen : 
+      //
+      Procédure OuvrirBase(sChemin est une chaine,sLogin="",sMotDePasse="")
+      
+      // Formatage du chemin pour LibreOffice
+      sChemin = Remplace(sChemin, "\", "/")
+      sChemin = "file:///" + sChemin
+      
+      // Initialisation
+      :_oServiceManager = allouer un objet OLE ("com.sun.star.ServiceManager")
+      :_oDBContext      = :_oServiceManager>>createInstance("com.sun.star.sdb.DatabaseContext")
+      :_oDB             = :_oDBContext>>getByName(sChemin)
+      :_oBase           = :_oDB>>getConnection(sLogin,sMotDePasse)
+      :_oStatement      = :_oBase>>createStatement()
+      
+      RENVOYER Vrai
+      
+      CAS EXCEPTION:
+      	RENVOYER Faux
+     type : 458752
+   -
+     name : SQLExecute
+     internal_properties : CAAAAAgAAABYA3VRhWOK0aCLH7ZuEG9qWoypHWU2mfWlA/6GyLLFYRnX9bDeNjKBQo05DIirCKt8XVG75zGTP5MbeOVWXpxv1nCWVim200XurUPOfCjDsGNYQPN6ZCgR/sAmMxNhExFBLBD8uSFTS7vTReQXmzzpTZj8aXbTd9Z3y0HXH/1Sb0rI
+     procedure_id : 1801133636960658085
+     type_code : 12
+     code : |1-
+      // Résumé : Exécute la requête SQL passée en paramètre
+      // Syntaxe :
+      //[ <Résultat> = ] SQLExecute (<sSQL> est chaîne)
+      //
+      // Paramètres :
+      //	sSQL (chaîne) : Requête SQL à exécuter
+      // Valeur de retour :
+      // 	booléen : 
+      
+      Procédure SQLExecute(sSQL est une chaine)
+      
+      // Variables
+      oRequete    est un objet OLE dynamique
+      nNbRubrique est un entier
+      nIndice     est un entier
+      sRubrique   est une chaine
+      taRésultat  est un tableau de 0 chaines
+      
+      // Exécution de la requête
+      oRequete = :_oStatement>>ExecuteQuery(sSQL)
+      
+      // Si c'est une requête de type SELECT, récupération du nombre de rubriques concernées et création de la liste de résultat
+      SI sSQL [= "SELECT" ALORS
+      	// Initialisation
+      	sRubrique = ExtraitChaîne(sSQL,1,"FROM")
+      	nNbRubrique = ChaîneOccurrence(sRubrique,",") + 1
+      	TableauSupprimeTout(:_tabRésultat)
+      	Dimension(:_tabRésultat,0,nNbRubrique)
+      	:_nIndiceCourant = 0
+      	
+      	// Tant qu'il y a des résultats
+      	TANTQUE oRequete>>Next()
+      		// Alimentation du tableau temporaire
+      		POUR I=1 _A_ nNbRubrique
+      			TableauAjoute(taRésultat,oRequete>>getString(I))
+      		FIN
+      		
+      		// Ajout d'une ligne vide
+      		nIndice = TableauajouteLigne(:_tabRésultat)
+      		
+      		// Alimentation de la ligne vide
+      		POUR I=1 _A_ taRésultat..Occurrence
+      			:_tabRésultat[nIndice][I] = taRésultat[I]
+      		FIN
+      		
+      		// Suppression du tableau temporaire
+      		TableauSupprimeTout(taRésultat)
+      	FIN
+      	
+      	// Indice maximum pour accéder au tableau
+      	:_nIndiceMaximum = nIndice
+      FIN
+      
+      // Libération
+      oRequete>>Close()
+      
+      RENVOYER Vrai
+      
+      CAS EXCEPTION:
+      	RENVOYER Faux
+     type : 458752
+   -
+     name : SQLLit
+     internal_properties : CAAAAAgAAABYA3VRhWOK0aCLH7ZuEG9qWoypHWU2mfWlA/6GyLLFYRnX9bDeNjKBQo05DIirCKt8XVG75zGTP5MbeOVWXpxv1nCWVim200XurUPOfCjDsGNYQPN6ZCgR/sAmMxNhExFBLBD8uSFTS7vTReQXmzzpTZj8aXbTd9Z3y0HXH/1Sb0rI
+     procedure_id : 1801146358654129116
+     type_code : 12
+     code : |1-
+      // Résumé : Lit la valeur de la ligne courant pour l'indice de colonne passé en paramètre
+      // Syntaxe :
+      //[ <Résultat> = ] SQLLit (<nIndiceColonne> est entier)
+      //
+      // Paramètres :
+      //	nIndiceColonne (entier) : Indice de la colonne voulue
+      // Valeur de retour :
+      // 	chaîne : Valeur de la colonne
+      //
+      Procédure SQLLit(nIndiceColonne est un entier)
+      
+      RENVOYER :_tabRésultat[:_nIndiceCourant][nIndiceColonne]
+      
+      CAS EXCEPTION:
+      	RENVOYER ""
+     type : 458752
+   -
+     name : SQLSuivant
+     internal_properties : CAAAAAgAAADKl2TBcweZmojx/Lu5R2600rjZCZd7Rhf3sM3y05QA1LImJ+/VmIFE0ntq7qIcdSfob4XkbsMgOJsIWvWUcDfKk8IchX+kjIbvsSXFUFi+zMSG/mX1gfIw9YaI9pZ28PgHOHlS3hnry2CEM8fs3QyMJusydCL7oQIuW0yG0qtWXk+hJdVYON3LJu40G4lqY1UYQBk2l0Z/Rqa87xqNxxojB2FDGmErS9ehAh9yCot6uHDp4muRbU6X907mo2mj+XVsasQstbOL2uH3auxEX7ztnCJAEa000Mi1h7QhkA3EnLd/2WvY7N//ZhYBTu5ohs59NvdRTItQY+ZndGOiK+XCFxVMTYx6s1HVVfoWghdpmv4tgX6IXgkYezi8RWOZ0Z+O
+     procedure_id : 1801153372335783010
+     type_code : 12
+     code : |1+
+      // Résumé : Se positionne sur l'enregistrement suivant
+      // Syntaxe :
+      //[ <Résultat> = ] SQLSuivant ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	booléen : Vrai si enregistrement lu OK, sinon Faux
+      
+      Procédure SQLSuivant()
+      
+      // Incrémentation de l'indice courant
+      :_nIndiceCourant++
+      
+      // Si la fin du tableau n'est toujours pas atteinte, le parcours est possible
+      SI :_nIndiceCourant <= :_nIndiceMaximum ALORS
+      	RENVOYER Vrai
+      SINON
+      	RENVOYER Faux
+      FIN
+     type : 458752
+   -
+     name : SQLLitEnreg
+     procedure_id : 1801156430352554652
+     type_code : 12
+     code : |1+
+      // Résumé : Renvoi la valeur d'une ligne pour un indice de ligne et de colonne passés en paramètre
+      // Syntaxe :
+      //[ <Résultat> = ] SQLLitEnreg (<nIndiceLigne> est entier, <nIndiceColonne> est entier)
+      //
+      // Paramètres :
+      //	nIndiceLigne (entier) : indice de la ligne
+      //	nIndiceColonne (entier) : indice de la colonne
+      // Valeur de retour :
+      // 	chaîne : Valeur de l'enregistrement
+      
+      Procédure SQLLitEnreg(nIndiceLigne est un entier, nIndiceColonne est un entier)
+      
+      RENVOYER :_tabRésultat[nIndiceLigne,nIndiceColonne]
+      
+     type : 458752
+   -
+     name : SQLSupprimerEnreg
+     internal_properties : CAAAAAgAAABYA3VRhWOK0aCLH7ZuEG9qWoypHWU2mfWlA/6GyLLFYRnX9bDeNjKBQo05DIirCKt8XVG75zGTP5MbeOVWXpxv1nCWVim200XurUPOfCjDsGNYQPN6ZCgR/sAmMxNhExFBLBD8uSFTS7vTReQXmzzpTZj8aXbTd9Z3y0HXH/1Sb0rI
+     procedure_id : 1801158599311216858
+     type_code : 12
+     code : |1-
+      // Résumé : Supprime des enregistrements d'une table selon les critères passés en paramètre
+      // Syntaxe :
+      //[ <Résultat> = ] SQLSupprimerEnreg (<sNomTable> est chaîne, <sNomRubrique> est chaîne, <Valeur>)
+      //
+      // Paramètres :
+      //	sNomTable (chaîne) : Nom de la table concernée
+      //	sNomRubrique (chaîne) : Nom de la rubrique de condition
+      //	Valeur : Valeur de condition
+      // Valeur de retour :
+      // 	booléen :  
+      
+      Procédure SQLSupprimerEnreg(sNomTable est une chaine, sNomRubrique est une chaine,Valeur)
+      
+      // Variable
+      oRequete est un objet OLE dynamique
+      strSQL   est une chaine
+      
+      // Initialisation
+      strSQL = ChaîneConstruit("DELETE FROM ""%1"" WHERE ""%2""=%3",sNomTable,sNomRubrique,Valeur)
+      
+      // Supprime les enregistrements si sNomRubrique contient la valeur Valeur
+      oRequete = :_oStatement>>ExecuteQuery(strSQL) 
+      
+      // Libération
+      oRequete>>Close()
+      
+      RENVOYER Vrai
+      
+      CAS EXCEPTION:
+      	RENVOYER Faux
+     type : 458752
+   -
+     name : SQLAjouterEnreg
+     internal_properties : CAAAAAgAAABAYqROGDQxnrgVNrqWKvAN7h7njpkbdEQ07L7T0Qldpo6F+1KsJ6uh/b3jmruyoKpXxJLlWc7FXUCgZ0CnrGw21Zk/lVKrNN/LTlHBKTyEdkZ+3b/Uc3G9JKWqtzSflP7d6aE198BFMZIJLkIDIdGBexxZxhFAbcuLNGneMh8bpw9m/flpyLVjBdbW7oRR5mKd4RDNZQ==
+     procedure_id : 1801159784722990358
+     type_code : 12
+     code : |1-
+      // Résumé : Ajouter un enregistrement en base
+      // Syntaxe :
+      //[ <Résultat> = ] SQLAjouterEnreg (<sNomTable> est chaîne [, ...])
+      //
+      // Paramètres :
+      //	sNomTable (chaîne) : Nom de la table concernée
+      // Valeur de retour :
+      // 	booléen :  
+      //// Exemple :
+      // gclBase:SQLAjouterEnreg("Livre","Titre",SAI_Titre,"Edition",SAI_Edition,"ISBN",SAI_ISBN)
+      //
+      Procédure SQLAjouterEnreg(sNomTable est une chaine,*)
+      
+      // Variable
+      sSQL      est une chaine
+      sRubrique est une chaine
+      sValeur   est une chaine
+      oRequete  est un objet OLE dynamique
+      
+      // Initialisation
+      sSQL = "INSERT INTO ""%1"" (%2) VALUES(%3)"
+      
+      // Génération de la requête
+      POUR I=2 _A_ (MesParamètres..NbReçus) PAS 2
+      	sRubrique += ChaîneConstruit("""%1"","	,MesParamètres[I])
+      	sValeur += ChaîneConstruit("'%1',"	,MesParamètres[I+1])
+      FIN
+      
+      // Suppression de la virgule en trop
+      sRubrique = sRubrique[[1 A Taille(sRubrique)-1]]
+      sValeur = sValeur[[1 A Taille(sValeur)-1]]
+      
+      // Création de la requête
+      sSQL = ChaîneConstruit(sSQL,sNomTable,sRubrique,sValeur)
+      
+      // Exécution
+      oRequete = :_oStatement>>ExecuteQuery(sSQL)
+      
+      // Libération
+      oRequete>>Close()
+      
+      RENVOYER Vrai
+      
+      CAS EXCEPTION:
+      	RENVOYER Faux
+     type : 458752
+   -
+     name : SQLModifieEnreg
+     internal_properties : CAAAAAgAAADc7ijKimjqqNot1kR8moD9BPqtigOltGJCuAopU4UNbgzxjWqCJUdPu/mfKKU6uFLppHS921DFM3b8T2rdQGgqpxkVUeQxaN3pEiIqqGcLMeOVzEzvfnZWdaZvaOMqAwn2eMAWFufuZs/mH8vyTOzIEKuYaywjWjQgCbK/2bKGbkSllGqgV0bwLs8TI/8QaNQRXZRJ+Q==
+     procedure_id : 1821179593699082812
+     type_code : 12
+     code : |1-
+      // Résumé : Modifie un enregistrement
+      // Syntaxe :
+      //[ <Résultat> = ] SQLModifieEnreg (<sNomTable> est chaîne, <sColonneCondition>, <nValeurCondition> [, ...])
+      //
+      // Paramètres :
+      //	sNomTable (chaîne) : Nom de la table
+      //	sColonneCondition : Colonne de condition de modification
+      //	nValeurCondition : Valeur de la condition
+      // Valeur de retour :
+      // 	booléen :   
+      
+      Procédure SQLModifieEnreg(sNomTable est une chaine, sColonneCondition, nValeurCondition, *)
+      
+      // VariableS
+      sSQL     est une chaine
+      sValeur  est une chaine
+      oRequete est un objet OLE dynamique
+      sTemp    est une chaine
+      
+      // Initialisation
+      sSQL = "UPDATE ""%1"" SET %2 WHERE ""%3""='%4'"
+      
+      // Génération de la requête
+      POUR I = 4 _A_ (MesParamètres..NbReçus) PAS 2
+      	// Doublement des cotes et guillemets si il y'en a dans la valeur à insérer
+      	sTemp    = Remplace(MesParamètres[I+1],"'","''")
+      	sTemp    = Remplace(sTemp,"""","""""")
+      	sValeur += ChaîneConstruit("""%1""='%2',", MesParamètres[I], sTemp)
+      FIN
+      
+      // Suppression de la virgule en trop
+      sValeur = sValeur[[1 A Taille(sValeur)-1]]
+      
+      // Construction de la requête
+      sSQL = ChaîneConstruit(sSQL,sNomTable, sValeur, sColonneCondition, nValeurCondition)
+      
+      // Exécution
+      oRequete = :_oStatement>>ExecuteQuery(sSQL)
+      
+      // Libération
+      oRequete>>Close()
+      
+      RENVOYER Vrai
+      
+      CAS EXCEPTION:
+      	RENVOYER Faux
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasse1
+resources :
+ string_res :
+  identifier : 0x18fee67400053b77
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : Impossible d'exécuter la requête %1.
+     index : 0
+   -
+     text :
+      fr-FR : Impossible d'ouvrir le fichier %1
+     index : 1
+   -
+     text :
+      fr-FR : Impossible de supprimer les enregistrements.
+     index : 2
+   -
+     text :
+      fr-FR : Vérifiez que LibreOffice est bien installé
+     index : 3
+   -
+     text :
+      fr-FR : Impossible d'ajouter les données.
+     index : 4
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
+associated_test :
+ name : TEST_cBase.wxt

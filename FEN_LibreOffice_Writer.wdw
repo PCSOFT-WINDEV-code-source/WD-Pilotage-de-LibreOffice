@@ -1,0 +1,1712 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_LibreOffice_Writer
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : Piloter LibreOffice Writer
+ subtype : 0
+window :
+ name : FEN_LibreOffice_Writer
+ identifier : 0x2f73117101097053
+ internal_properties : CAAAAAgAAADlaQFp/8BwwiQB4o1EbkRw72vxorrgvBR3HN2tLqlAJcBckH4JxI4ipFGBQSGEARi0w7F6eaeN5OAkGmydSaMwVEA0/qLU5iL6yotmS28j8R3D8WvZhnaoyDT5dn40tzK6BZXfYzcNsIy18JKaH10P54dqtPw5xjoPF5jZS04IXMDV4c6w0Gy6Ixv+EnKUsy2vfyQuBkOr3OmPZ9Agl5UqNUaFbApo9uPX4GE19GQoRrkNDXlrL5tdxw5fpzU/jaXuHJzJF+jB9OoValUBJv8mpxxwykWl80zLUab5APDXR/pPhql2Isp+zxJxVLfezGh/rKlaMyREwuZgFV2zHhCk83ebihEm7TW0uyvNjLsPWP6fW2TImrs2kvqnTtOZktQAEcT/CtF5+aSUP3aCLbIBpifBjyyAK5ZKEkQhPrzva8lyMABYQtW9lE3OQIfHo//rRMivc9B5g1dKr2ot1PsFreTw00uBvubctBQynMVgWolYRFhxUMgkPw4wqdHn7oFOgarepFwQREjKGVz+yy9Lc54pN4XjXYqyJRZaop7I8cbMXutjiJfPmYCl1nQJB9RJyPGekCu74ZKdW1Cbibmi076EckozF/VdluIdoQd1X9wrILskCyAPImJvaKE/gDtvGW2B0+mOh6riE0+Jdc2k5UjGp3vRCrzCEyKW1koWdbFV87ZyEw1/oVl4RMba9Ye6aRGAkK2oU+A/eWBkwNJwQn2SYgaDb6PrbdrU0Vh0Pl0TC8tI0oJ8TI1Km1uMel6RKDf3+pvU6pxyJkK9Y4kKA0ZCHAY04XI1Wdg8gSrCWsyMMjq3IHckEHv+En++HtQ/9H+GzXZD+cnsN6A=
+ properties :
+  width : 543
+  height : 512
+  widthClient : 541
+  heightClient : 480
+ controls :
+  -
+    name : ONG_OngletPrésentation
+    identifier : 0x2f771925031698f7
+    internal_properties : CAAAAAgAAAB0l4Gwj2jpK8UmGdEgvESiMfFEqbX0IG7DAxfW8+HAbbMn7qi4j4JTfAj5UMWxWxhGTJNpVJikmYbC9dCtHq//uzLSGcDj01GmAsoIrQPOR94brPeojhn+Gt2uYwqtdhGYKAHnwjlV0Q8HD+dwm8qVaFKYSa+aXr7RJSuJ6mbpSQKIF8st+KjjkQ6p6JgJtBCCQR7PAxmzIusraKBQwSZyzeiS+445qc89mCoC1VALC2ci7/P1yOmgZ+ezWDpEsLC81fw8g77obK6FQoSTkrY/5fJsaPiNcGHVfUTNJdjX+KGG6tti5D+vYpCqINolWsOItUMQRsKMi9BonUWlj5YAxhUXiPeZJ1zHGm1etl32LPd1Kj+fkXus+ap5SXE/7Vh8JQ+pP8i9kj58XBaa0MqqyrsNpKzNf9+UlqvBBZW+iezwapecrTkrixToY053KCmtTENyxykA/NYFrushOHKKE59IjK99o1PnRtTOal0cwuHPowYjj5F4ClNeLEasdbmTXT6sn/p1Ns/+e/nt0GyYzjoSGrYm9Uflh4YsnX0QwCnwFAWX3lm4d44i6EEB5O6yRsx2+uXh/6fEHodE+/gfLhdsciPnR3Dee2KsIwvf6zil3Qv6/P95IButh5sSNVtuvukVdZ8wYqp4gVca6Ddk3VravIDfiMokmK8xshoTBBs+agVZ9lT8ibkHkN7yIf8pD0C9apnTY4BN10bIf7S2sa4GZepgf8kGtLZO/c5d24See6YrbnsN/3RhH0F/8i3693Dn4OneCLHkaTb7/dmmcvUQEO3kLqu7Xq2Wj7dRv6eiCMw6t67OmrPANyrROQFzmf+vx/YyRuG6XwokEdsIFrxss4ZhymPofgvH0bxAw6LkWObu6ZGYTiNQ/XCeVbtaHwCy9EILKq90W2qB0C9LG/k3Tk+jzspEm47DjNCW+qQZH6Os4TKE525gDFfKHi0VlhdOVYeWvnUgb3UGrwv5pA1oVdVyoGiTkSKp4qefc+7zCnDor9bn+MA5Pdhy9DouNyNSWRcTFYtR1FdBJv/QEiD4h9zrn1kb69kjsFh0rIFIgD1TsTfV2i00R8aH4W0saVIVX0UjgzXmkrNGRwwxvkhkbtIMg0h+Ln8GN/fMa09G1AtfLdg6MD9kPSAhwFsrJpWRlYaY8XHgFLVseJ7SpjKu4lBMLZ/mnAMnGZz6IoM8QtGvGjMPFPwjooAM7pjoJH0C58H5RBXdaKwSkjyKlwEPA//7jQ2Wfg==
+    properties :
+     x : 6
+     y : 6
+     width : 529
+     height : 468
+    tabs :
+     -
+       internal_properties : CAAAAAgAAABjdTXdWQy2d3FBPCeI43Ly6EG8e149KVyKowaMvzsCHl19y2nR+svJ6flmlq0Wt8Svbyp/jr1SAgGSEVjNnPKU2vDO1Vk//2l9acIXIAtAm9teEZ9ECt12dgQkEqRRpKurgCX3a4RH2Wg01iQ1KvmFrKtKEQMEiNfavP1qdOQ0qbQyRFnIIp4N3BnFfPo55E6/nH+NXNJhm2HJ
+       controls :
+        -
+          name : ZM_ManipClasseur
+          identifier : 0x2f771998037758c8
+          internal_properties : CAAAAAgAAABeP1ppLWIblkQvZlbOrhBO/EZXe7/4Giwl8tXCrzXrS+odFQ4YiToZY2kC8iNfjCstR/3WIYpq4J1OwXVElOUjL2Be0MKAcE4u+vbprypJq1xyFIO13C0fCsmsb+pTyU11rOn78Iev/Ph0jOSGV3lSwIobNwjKLOZTO8+IGbTKmx/sZwUbNUEOdfadjxaa7E7+GZ7YOP5lXi0oBrOS7EwsvRkGJDLzhl8cSwBFTXEiNjKuWexDHtLJwYXNGBKfVALNywN9ExroBJ54ObWR2CeYdNcE8tFRqUHy/eyUB1/j8EvbGphwbiQMM/xHJ4carqdBKuVOtj7kJtMkgdsetNTgEixaUKtuCU2M/jjP5JZ6k7W7B8sch+mHCaf98iBjdgPXI8Whzi4fa8/ZoRFX3LK3BKSRJb+grYDctWo8x33aeMzQPbHm5KDo3J0bh1wqvKYkKITmpNdrXnxzEpBzCyV7LAeT7JGCwpmpDLvmd8h0xHvEEiL5emygA+NkIGVybRlez+iSUr6zz488Sq/PxKf32EyKEah35iShKi3SbAdIfERPOg0yJ//una4PyF5tRXqp48Dv03sIqtWBe144zivOWuPdTh/n/vBIydlRMyi9UWQuGWvvibB06uwuTkjXJXQYf0HRv4vu1LmxGP4Ou1iaKjlPZ3vaBHR2ad/ETzS8eq7xDWMTG+NBinm+azN68srbe+aHg2UtKMdMEF5lCMw5QPs+4gdOC+5xeiW1msbcalS6BEkEHpDLS3Vaq9ExFm8Gdg4/ILf3DOGv10FO5fa2ausHsEEa
+          properties :
+           x : 6
+           y : 10
+           width : 518
+           height : 384
+          rows :
+           -
+             internal_properties : CAAAAAgAAADknh+l1/ixH5+v2ojhT/jTaC4eIcxOMPjyjkRSQTy42BBkvH+Z0tbTK7dujqKeDRJAfW1/x7bBauHTpVz65/Ghi2+1c0PAWXko/2/Oerqmk9EOQAp1ZSdtmg4JaThVMQdkSm3PuzljtlAGMSv7HTg93Wk=
+             controls :
+              -
+                name : BTN_NOUVEAU
+                identifier : 0x2f771998037a58c8
+                internal_properties : CAAAAAgAAAD5jQ627yfMTUg61jBeZNqw5gaawLnhS6x2i4/1CFpOS2j1e/0sIkZObG/+2xkU3eJ7PoUkF+VEL/6r2Cn0DuARd8sCBaAmvUHPDJPXd3TWQd0tPzS/diJiNoNyd4M8H+4JB9jProMRA5t8soePlnKQhOQbeBz4DRBNUuRBqh1Riwd59ujwb5GroSaseD1wa1h9Tr+f+7lndSa+KVr6T3eroTkcTl//RgVZDtW5+xewIRS/1Re7B9vWcD+UIh+2wa/XtBdpa1RPK9Cn+h46RTxk0NRDI6vVJSCziNLNVm9dC/557kd7Itze1V4n8TEN8G53+wGdiWfI+thzBThbrDzhVp3kbwOTUAmVxF3oeJ80XY5WyCq3OCg8nCglQFvZBCr1UMt66JRE9v00p8wVjkX/UCeRQRG+1RFN9PstMSoBD2pUffmsm26VIdRN2J7UJ2S3rETBGbTR6gKpuiTdwqJjhE+8fAJfDdunoftFfgVZpTN3u3Rq3SdxLDG23yKdhOUK2acHj+leP+MCNcdzBFsnpMG9AyB1SuT56uWs0sIF29/DyRTXKTc9tYvHGJhcP2UHFgMImYr0iBbNzsUwmD+pzU8Vj1LSFktgcXA9LzWMlX0oMjsCu3PUqxXODbOgcL5AvjV1H+yxTySDoAD4iPl8qljPcpn/WGfHY4EeYMbSd2dsC0Cy+KxguPBfVxMtyWhWyvG4Ovw9nk5ZFOGTEfBcyt5IScjzVhx+oS2QcceMz5NL6GU9N9UtHVV4kN3WSf+26o3JyUPcFpnZ0GdtS2mt4tpB8gK74lA4dv6SDTugiqKI3+S1CeUTbLkc3Ty2mf/xTbELwhlDzaxtK0ZbAyc4S3xfybrdiheIiXR6whBHHJQrkJYETxW7UQ==
+                properties :
+                 x : 368
+                 y : 12
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    code : |1+
+                     // Si un document est déjà ouvert
+                     SI gclDocumentWriter:EstOuvert() ALORS
+                     	SELON Confirmer("Un document LibreOffice Writer est déjà ouvert.","Voulez-vous le fermer ?")
+                     		CAS Oui
+                     			// Fermeture du document
+                     			gclDocumentWriter:FermerDocument()
+                     		CAS Non
+                     		// rien à faire, mais le document ouvert ne sera plus manipulable
+                     		CAS Annuler
+                     			RETOUR
+                     	FIN
+                     FIN
+                     
+                     // Création d'un nouveau document LibreOffice Writer
+                     gclDocumentWriter:NouveauDocument()
+                     
+                     // On rend le focus à l'exemple
+                     Multitâche(-5)
+                     SysFenActive(Handle(MaFenêtre))
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé1
+                identifier : 0x2f771998037958c8
+                internal_properties : CAAAAAgAAABDYf9wufTQdoMwJyjq0trp8OFdcz93DpjjETLEFqzFibpWNiM/cTsd/5l056XGd+bDtI9+NVhxjYk8wYY0mFSyDfGiaK+Ssws2UQl15BPZRm1W8xqcavVQxRFup3B+2NiOoU/EXrF5ID36nVjNY8EI96Qd0zDXYBtla5lefaaNLzAYD/51LbFAt/HM9KG2z9sW5qszvgaeWyCn30JRFbhf+l4xCuZqyg3NgjyRDgiE7lV/OC19D3fRHVG/x0zpUWRNFr2BVMeNZACvAnoRCAsbwEbuwg49U+XUnMFdVnCjIA9cbNc1UPjQBsCEfMM9mmmQF4Ir67YafZaHYcNJ7L+QPMbDaDUFiplgm24nmo1ORZTZWTA3lCYsPEOnAyvVA+aQNlAaZBbI5KCCy0kOgZfv1pU1w6LJwTmboMLpoIYWYM5uKb8RAB0/qexyHu4oZEQT/ZLWuWX01Dx7etnx8GbTylC5+Xc/8JKesOdAzvU=
+                properties :
+                 x : 38
+                 y : 10
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAACm2NlnGfL7WfXZYLL7qTL5otiom95YGtoQ8Ipku4YqTmJeRlE7fKi1WQnsCNygX+A5RxHD8RBnmOXaRutTvqLYWMEHoREy1/eqcdGsGBzErcsAspj7n10jTHDrTyZHx5mWBJcVYVN5TDow63EB5/Z/n6s=
+             controls :
+              -
+                name : BTN_Ouvrir
+                identifier : 0x2f771998037d58c8
+                internal_properties : CAAAAAgAAABGJhylUyMIkyOMvLbus3yy52RI5p4EHduIjNEmsu2MCCTIGFKtGrDh7SkORqvirwg300nfN/groBlU2AducytczDL9605h2dOrjc86cD8+2kBwQ5FVtdunTINuZVEbkDpWDgb22sZQeD/pfs1BxSDw8LSYL8rqxgwAFcVE7/OjursAxZdXovyYbyh+kAJ8aytoRksorIkqca5mE7mWrGZfJcpkNY2qbVq+bI4TOI5zzf0AqGT8TQxkjtGOXjZ/Kmf3lu4b/hwvyx8Bn1e3zzfVjK9OI8CLlzSG0YAexoudydd6rzuBkh/fQgfCTEHag12OQzoqMnhMxCVMKIuqniVxx27CGoqk5eSHYhLXjQwKdjZRoRb3A5k4fh8ZllX1k56LIXMwrlfinLVyjKcgXHDuBQjB5KSZIwUAbRpQpSGbcqIusL3y8ZGP/YD1pTJ7l+yo00farr4OlHsItcY5KcgFeXILBQezDMsURuTvgjRDDR6+TtVvp7yjUfpT1aZOQmkLZtDqPhtV1fbtzOmLkcU7KyAQMluHZ4oy27La0gWpdyB+ML/GiXxBjPgYWErHXUuwfZbvPFpxbp9o/YUO37VphO64REv6IVNVcsWHK6xa/V7xR4wf+3IasgLHCc25BN4vvei8QpxWi60k/Y6MD2/8dx1AcUzlIUXkSJIusm+KS+TXgsPpsh3yr82A5Ud+NbqlKXQZJ/o0+tuoh4WhJt6KrO2AKlDPB272GOt2USmE1zyUmL87g0pIdvFg8n81jdqHOGIXhOziB+q2n9MxmIb0+FQad8ddzlOK27wLmsnDiNtb5tHvtZh/bj9InmdHM+yp4YkLBFR170P/1KgWsj5Eptknhod72zgZtPbpAv/B1Howgg7guj0=
+                properties :
+                 x : 368
+                 y : 60
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    internal_properties : CAAAAAgAAABHMVEpL2FBgmV2A1wo05YvLac2AJ77L1/dPCdqTJGJEdcaCNytVuVt9nVzigi228RN+FiYhr7jN8OSGUobNdGxuAwVQDxt9VdlD3ux+b+LF7b8ZWRFIF9elR1WQaJG9t38JBiGQZ8ZJ7eKu+A=
+                    code : |1+
+                     Sablier(Vrai)
+                     
+                     // Si un document est déjà ouvert
+                     SI gclDocumentWriter:EstOuvert() ALORS
+                     	SELON Confirmer("Un document est déjà ouvert.","Voulez-vous le fermer ?")		
+                     		CAS Oui
+                     			//Fermeture du document
+                     			gclDocumentWriter:FermerDocument()
+                     		CAS Non
+                     			//Le document ouvert ne sera plus manipulable
+                     			Info("Si vous réouvrez un document déjà actif, il sera en lecture seule")			
+                     		CAS Annuler
+                     			Sablier(Faux)
+                     			RETOUR
+                     	FIN
+                     FIN
+                     
+                     sDocument = fSélecteur(fRepEnCours,"","Sélectionnez un document...","Tous les fichiers (*.*)"+TAB+"*.*","", fselOuvre+fselExiste)
+                     
+                     SI sDocument<>"" ALORS
+                     	// Ouvrir un document
+                     	SI gclDocumentWriter:OuvrirDocument(sDocument)=Faux ALORS
+                     		Erreur("L'ouverture du document a échoué.")
+                     	SINON
+                     		FenEtat(FEN_LibreOffice_Writer,ActifDevant)
+                     	FIN
+                     FIN
+                     
+                     Sablier(Faux)
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé36
+                identifier : 0x2f771998037c58c8
+                internal_properties : CAAAAAgAAACk6ZouhpYBsoyuj0ZFc53Ypx3CGsvCsbJcI4FnnBiP+bW3oA1Zy5pgpkR4UKbNlksxGGhPjQK2SIJkw7oS1OLaQz6nectyNAnVlw/bMbtWXd1pXWZOFjAw6d9RDf+rnBy+SUgJWk4TaxYqBI2krGDQ9ROABi/y/rcWVa/RQSeHYa2zpw8BjKX5DM/26uKJM3uTGR+TDVw3vO8N/FkpvWlcSsxLVpoOsbfKidjF3C0IvRhTdmZ7fhwRbFFqLeQQFiLaACONY7hkdJNVVe7DcZhjy/yoqiWcmsfDLpitvPckClT6pm8K36/e1Q4NXPmuDQfPobAr4E370YFRdje/n3rGoxZX5lzkbavBmzM7hID7uzubx6CSVcXY6wBBYBbbIEG/VEIqa02LrtEK/r00bpCorJK+kNeeibdCxfoQ4K1Ssx48DjTFrkl25WL5GOZ7ZZNrhT4KvGMpvXIgXzXw0XtlJu4n6zM+swKIXNVZ8aHL
+                properties :
+                 x : 38
+                 y : 58
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAACcNqedf1AZ99cXcqDJZ+ArcJb2yaS2SCC6Rmz62aQQoKgchJdhan5rA/+mxmpWNcrumf3f03ItIrkla85IyZ8TKRftS3uIIUHgJwd2IuL+awnGiLLd/b+F4saxgRBtGW/MMkXnk2GLXghOiZNjhVDVdYE=
+             controls :
+              -
+                name : BTN_Attacher
+                identifier : 0x2f771998038058c8
+                internal_properties : CAAAAAgAAABFLcMGJGPviHTPLzXFSr540L2jgdPjdiKbN6CrL16rSR/rkccWRXufkLqLwzK3hDU8uP520mtkk0DpiZClsHRt9ROmTjNUzsHKOkvTO/SHsh9vqJ7ygMQ+oytiSem5aKK+qA4oGwx8wOu/zM273abcniJcoShyOugq8+cCofsZEtUzE9UZaOImLaZUHmrD9cjmCuywSq1MxpTLy9R2rpnnrildCocNtOpmvzUU0ITa0lc7hLP8jALcFrD7MRasyydOy3OkJdyo8CDCbQhEh2A1u+MtpdfUeAIuvgMhvuxIUriismD6HRAgv7zxSfLFojgjZqXRdeVt2STWwnYckQ7IM9FTG4GT5uSO2wG0QsFFQzl85nPgHpLf5QbkrQJqYucUkDMaqgAcXtbZs7RVnTrwY4cm9b8rf+4i/zR07+jhtvTGz+AIRcDAODKmHLnl39dgiPcKd/XBCxzNKa0PrICd7ICf56GRQU1r5xmAAxua11etHN57rxRZu5Y3q2gKYF3XQCqKZmu/AaJXbj8px7Gm7BUlH3hY19zQV/cJ0tBuZpMNzRyTBD8+ecHpefckcqJn0n8ugwQ/YvPCEHRz6mvUYQ0HSKuRDCdD5bSyK24K/6ZMHhP2NB8I6iBC7IgIPqff7V8XEP4DKNZEMsXp7PvXW6jPH7NzyGjYIvyFMfe+fkFgbZKplrNBClkiywVIy/S3m4aPRUG/wWI1FGKuw6sX03oFGzHiRhHFVdCZaIwdSHfrRB3Fc6ropquSQFnzTRidYMo9gtYmiBvnIILVpAzLWRVZQFj4Z+ZpFqfgq3j+aXreET5EtO0W8bY/l2RCulg79eWtfjpFZXXTOFyeJGJmSP0TINH5RymZNgBnEts7EC5rVT/puT4=
+                properties :
+                 x : 368
+                 y : 108
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    code : |1+
+                     SI gclDocumentWriter:ObjetLibreOfficeActif()=Vrai ALORS
+                     	Info("Vous pouvez désormais manipuler le document actif.")
+                     SINON
+                     	Erreur("Aucun document n'a été détecté.")
+                     FIN
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé37
+                identifier : 0x2f771998037f58c8
+                internal_properties : CAAAAAgAAAAApsQnEpcDfVYbcOnbnQMquywkeFzoZ2kM2vVjEW1AfA8L43bwVuQSXAbjKkDbqlHYUQx1AQ1it/BLCJlI5ZHSfQDdctDp7ui3GrHKFxK33dZ9jkfJWajv/EjcHUpiFHR6tUs4bLUdPBm25w6XH130H3R5r4JnMIf148dMJ3p1pzhAv0bzwSUQu60GwhNC57s2ls+/TMrqH7hHSTxvXaBXwgZJMjB6chEhvpLvAARw+sHrpCHXZ+Ni4JQIVgs4gpsERdzmi7YkPS+eizEIzySya7FhU3Ho5n7bkzIE4cvAw6r3d9yYC9NtkVuty8LsNwQ//kmodinV7gU2nsag++g/TxFW9UAwjdJ/ikdGsUxLMONwsJ1cpxsbP2RQmp7g3IaOPMgzzYnhxYMJQx3aXDsBViIWEnvmrwfTMdtI/zfnx6e/GlZwiUwkckXDVc1ppfuowj+RBMo3kXk4JwwgtR8Kh5V2oCZU91MDVRwLkTI=
+                properties :
+                 x : 38
+                 y : 106
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAAC2yOnXKYLracXpcKLLmeIpcoj4y66oSupgANrUy7YavnLOloELjFhFqVk8eOzQT9CPq/n7VQzb0I2MrJWRYHgyPjH3sQECp8d6geFcyEwUfTvwoqjr763zHID7fxZ3F2nGNEflkWOJXApA+2Ex14aPj5s=
+             controls :
+              -
+                name : BTN_Enregistrer
+                identifier : 0x2f771998038358c8
+                internal_properties : CAAAAAgAAAAJO1pkOmPUC5MyFQD8k1i0FEZBqw2WCjGvfgebG9vK2XI/vXqlk/hhx5n5SwaFEDzbxQnM+q6u7pDy1c4l/4vQwOAeB7omKpcE8wPipXhMDGie1Jj/PNkjh5keUbrNRcSbw3yY2Nh6CTQibQm7OwQH9pga5sBgTueudmGd6ggWtOqNckA8YAMN5vVk6Fh0SN5QyZDHFCakY4Ifq0nsevg7+almPsVUEVBWIJNMItYN28t0UVkCIzqoEBb0Nf06jmzbt5Ui1ywvHAAnHiNN4HY6/BegbwDKwBVg3fSYPTCi8Ulaw6lujeqqUK46JoQYG6zO3AgKZT1a0c39+kACbdttFwU2uSblRoUV3X5pbYT1wozh2Q3JelRWIYEjMHMrGZ/rAjlq9iALmH9QrwyJkF2Ji7WsnDVMdKMU9ugznlixh2++w3iKQKPH0FZP5twVfwzZL7HLmX0snGKD4tC/S7PJz1c+vFApQow4DlcrFff9t983vvLNitjoLwgQdjwDufk9jkP8BxpB9Eq7VXSJuZLWLsBwWZXVDelY00KoR/1psGFtTJD6b6W7n8HOhiOhJ4zlOpBoqGxejni1+QX5D8kWETc+ybXOvtf02QHHrmZQbjwR+UfjQEptUn09b0+Wd1A/zJA/Lw3AvypCEP/4HxdVan97N7e0sFEnJvT96Djq52aKe+FU9CwGlICDA4OlKEfNFWkiIyCvhHS4T8Dovx473hp4GFkgPSaQ+xDjcr1VE1rOXnf5koWbYW9yAkvDol+xQSa4Iusiz7sVDCv/wZOYAFgjlQeAmcvdASg5o51Hy6YkNnuOpsQEnFadbn6FSMz+HPhF/vvdtXm+2oqFF358yB8OvTAsaxwAS3W/mN41+Dz4
+                properties :
+                 x : 368
+                 y : 156
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    code : |1+
+                     //Enregistrer le document courant...
+                     gclDocumentWriter:Enregistrer()
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé38
+                identifier : 0x2f771998038258c8
+                internal_properties : CAAAAAgAAAD13DA87hl1x2mT+VnB0lxaIHG+ZiLdpL58jyt2hOtW7y+hbYUOtyVfxun/j5mz0gBuzSRQopT5hTbgRhyUpc2uiho6JHDGno58Evvztu3R49/Iod7E1WL5kjV9WOhKZ2fWGbdYIoc6b0bQMiCxWzXldzH9+61VdxTC1G6lmbX9Nf6BWabHGio3tDCdBPU34u0PL7Po9ulPX1lHNW8wgiK+l7JrqRy0X8BYBJ3ffPn0iyZzryDh3Q3cWLMsX144tcXWBnEiUjOSKfV7W9o/J1P+O1SwRUaLhmQDFM6F7O0pl+4YjOb/Wmt7EVAvhEEcAFb5pQxCFR7ZdMvBpruLDefN95wVyRmpOUBvM3szNGZoQJ8/Y1V5BpEft5Z3DlT/r7d41A5ZBeWQLjB8ybZV7mMd+L04m8x14jhX0ZYako6jEqlDEP+WX9X80z0Y0UtLLMiYXrNGac2xxJDUtqUDlz6TqW3EsR/HSq1b
+                properties :
+                 x : 38
+                 y : 154
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAACs5vfNT6BJx2cnQhAZ1xDbAMYGuTTG+LCKVnzqKRRA0PhMFAdxOu77k082dvrGpbpkdcVnT9axcoGvqUieYwXtf4dd2+sYsdFwt5fmUtKO+7l2OAKNDc+V8tZBMcDdqf98YnU3Q7HbLtieWcNTtaClpbE=
+             controls :
+              -
+                name : BTN_EnregistrerSous
+                identifier : 0x2f771998038658c8
+                internal_properties : CAAAAAgAAAAc62Cd1MUpANvgSbySMmDtFpGi/ckVy2GUtGJvv6St3n14VMpXorezWHkq1C5T/8EadHVYpILE/Zr7mvYPwGoFwphhzeCQZPF7IpNS++dkARVpMELhRNitUk77dO36DAAkbaYzmA0tdHBS9PB2HHBwq7H1DW0XenWHFdUWm/pF8ZvHcXlJWeiT/NzLnvVkGt3yL8C1yx7Y1MzOhF7YDYYBBDUJjMFOxOTCuOHhJJlmrFQXPdJx6KXPs/Qzs3kja6zprIEEJ7OFpTijmjKMyk74A85bCr/NxpRZwAD939KLp146+mMJgJS/c93+EuMsgjetdc5SgPhLAVDu+bFJO7O15WADSVi/FCCwh/JzkvHoNVFuLIaO7l6YjkXYbgUnmTuL3cIVrY+QcL/mLfsYNIakhetXwgrt9hzx2pA+WSPAWbq+12krgqwyVBQEhhRFMDs8oqWqlPaw7cLgrVotF1VzJTytrdoGjqlX7K+173ATfRJr5M5KqgffvbdPenjj7x84hFRa51SEd3R4vmYpaEj0/c33E5+fEmJ6dJsiHHeBtL6hx3AEwbQ+aaqz9G2N2/xgkP9KjJHsJpc5sNWJmwbOQPuTJADuUwVdGEgDR1FtJ29CzmtXMfSunNNmQyRdk93yM0+FuyX6joibcGCzIzzDHD7PEdb2RRCgi6SwMbgdltgYB/pK5y5PVM54XItBGASMkxgtzvZW5+SKwg9w0NhbfqiZBU4vgx/HdMaYipnwen49gAUWEAM2YMSs/Sl0oEawdmKnJcFrP2KFPUGKctIF6E02tGl3trB9w7fTfzKzKCBBDRk0o6hynbos81E1P0a1nOtC57909MkwVn1ENOxdGm70lyQkglBMjwGPT9f931PEvvP9ZpyDIh8h1L/HYiDD4A/k
+                properties :
+                 x : 368
+                 y : 204
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    code : |1+
+                     // Enregistrer sous un nom différent
+                     gclDocumentWriter:EnregistrerSous()
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé39
+                identifier : 0x2f771998038558c8
+                internal_properties : CAAAAAgAAAD/BvOeOcAL28FHfgcLgOX9uzzPqiIbHku/IsYMp6HZiXKa/GbvYo9AtZmoNUuOhYWkTiiRrhu6PewYAqjGXxaEPPDoTLwvpbqnVL22dJrCicTB3p3k8MC0S3LatHRrUGHaQGl0ZOMet0HAeaNMFo74Eek8ngsmZEBegaC/A+TZ3jALxokn/E/8h9C3xNbe1y7gusmueX6DjdvvH3OnQ/XqPtdvNP5kTxTTwrPCJi6wXNKtJMaTkXj4c6bNt/UGhpygACrUnQbg5qKlmvO95WkkNiQkwAjf9O/UsBbmigzGhQ926ZuBUh4XZwpF9PHqTO02dmUlsIKXBLaDI5jI35pWcypm0f/Qwx4mLv/PAo+E5ZEATy4OJ3u5QVyYM7Vaa3dOGkdLj+Fs/Llr4H1tk8Z3y1qyv6GAEyiEYeYD4UtSWqg4p7xaH1XchwCmehALVJV1amgQrC/1+fAcWwJwxaeAAPxYVNA=
+                properties :
+                 x : 38
+                 y : 202
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAAD+kAG/wSrDEY2BOOqDYdoxSoBAY3aA8kKYaLKsc06CljoWjqljdHBtMdEEIAQ453jNH+m7GQD3gOX2GmdH+ub0fEmfGala/58CGQl0IOT8ZQM4ekBDVxVbtOhTJ/6fb8G+LE/tmRtBlHL4IznJLy4312M=
+             controls :
+              -
+                name : BTN_Imprimer
+                identifier : 0x2f771a8b03c70c3b
+                internal_properties : CAAAAAgAAADjuB1EIqOJzwXcoWshBrkLurMF5rh2SrXQu5XhP9pfO8A8lTNl9OYo7QxfTF12Xv36WC0Z34Fst1He+tBFh6wObcb+cym0CkbcwsSl3Q6s6xVixYNYvNuHZMygY205ZIbxD+hV8UHlI2w2LYFqpWqr8Pn3MPK+lYlBejK96n5Yk+bXbnfCaYpVVO4Ji6W1CYuLr27xYML8Lc4I6LfXyGQWG/MCKDCa8RxMYCi+1CQacD+lxGVoDowi9Nx3F+7EF2PQ1v7OIlDEV/Pqldh4Cls3aiV1UBHddjy+EUiCX3ua8dXSHpZLYXHDJyQtTS3exPSI+OnI9ewJnrfRBYdbv9UBlBiFHRLYGLBuYOvwkxECAipV2RYUIh/EfYSXulQARy6dyQCJ8IeBMluJbvjcDeIxQkflfPEvJHJ7MIgVzsGafQyXiRa2BeG11rj1ApZxP7h9IsPMUQfHQPMJQ3jNQuzQAJWQidwMxoajcLWTA2u7rg8Bko0SlixlZu14KPcVo84bbkO0UTl9msn4hL9zuHnVBnJ1BJ/R+qIzgkNciLbUAiwN2oX5Rbkdgjti5NR+JDqlpQZ5nYzYULUHhy5aIwi/QbCVgoPIG6p79c+7VoOoDW3nIJ2bC1oTf3cAjWHucjj5cH4YE5EdCmOQgp0/947qyJBJPoTHrc8im97ubWLfNxi2CwzwBTs+4yA2GYP5ZHNiifgVJkafsw1BDrik1vTjR8xGrej9MFwJMZAoaK6huknjbQjaDFrxKawkFm4oPrINKdkZjq4F+kVyc2znfVUa1HcZwDk7lkobEpQhC/E/7Vkkpfx1JezmIb9y/nR77fJon96vXo8Cw5ijMZQVTWmxshYi498xYyPBNKyNHU26R0q57pk=
+                properties :
+                 x : 368
+                 y : 252
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    code : |1+
+                     gclDocumentWriter:Imprimer()
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé40
+                identifier : 0x2f771998038858c8
+                internal_properties : CAAAAAgAAAB8FcwwWygKBgXePDh7f4RBKVUtrXm/9J8cIlKd0KT0Cjz5w4YL0z9kKKYMo4UTL1eVsGW81zywO4pM6sFY3rtKWNkLzZbsMNeVwlD7t9Ko6iNNPEUtg0+0jmEXBu/tFUZk9MJoFcYFylXaKD+awMoika26z0uEnQsmHEVUz96vSChc+O49MHlE8BiUB+F/rW9KBDLAN44fyzz6EaVQKGTkkjZkkvYGQ+MCYQabngys0N0GTkNswUP5t+sV0bxwroA3sJLua7lmCPDvHIhpo5BXVNqFPQnJxjP0vJMTFpm6hvlGFQD2ysGCHngGeqN8Hxf0KwMo/u6nHUydT31xyZwuVB56o4bjSamSrUiNerIhWeh12H+Irg/sFEHzf3EkU3ibAz3ZZZPCV2/lfQOu50jgIy9rZ1898B1YTb1k/2ewZgm4EFh9Z6KXUDYClaup3RRvdgQspxELILQATdmG0y9fg5ooY5iRdfQ=
+                properties :
+                 x : 38
+                 y : 250
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAACNxdDukmuE0EJC+StMKr14PdG38vN9jyndoOR+XyqwyCyidC/TlCwpPxW2whAU/TJhSFlLdYxL8I30ZJ2paPA68/TM/MpxGJ6DYM6vSev1XBjLr4vk7r6K6b24ukkk4LCPfRiU4NwA1bO5ZPiIYH+GhJA=
+             controls :
+              -
+                name : BTN_Exporter_en_PDF
+                identifier : 0x2f771acb03ee0977
+                internal_properties : CAAAAAgAAACMkO/B3s+ZgLZOxhhqcS4jHT9u/2uIHHxzf3u5gF4tOI0VZw7SIzrzAv2j3A5yINzRmRgUEJIaV8Ro8+iGe17iqrmclqM6hgrn25UJQt9MMXMkkSPCQ7cKDYtxrPQIFUPMJ3thr9mA+uNdh7R5hhwNu8iasHUkuanKSdGeYUTXo6vjt0nDEIltmnmRGjEfIUAtTqXooSIfcRuWidqHYlv2wv1lLLBiu99aQ+vu6e733hQfdpKZRyDANUUs1Tc4K4K6jFKZvPmsh4Tnh9aCKR6wR3IKfMd61camhj9CuKkbmgm7jgFbCufA8ihCWIOrAamRYqMcKzk4GyX1wTm/nwBfekhKHOK7SGzIt/YZAlWwKuI4e6v+kZKfkqhTF2ZfEiHyrd3ARC6+7P439VszktstxTEHqLOK9P9z4V0nzXC69DL8YKMSssGHMh4JuEnviVJ4d4nKS2FfHHC4iQRRcvIee06mtYj8FED8E7O5L7sl0GyEXvf4HAZL3TqIylOVYTzKz5n+HQn9LhYD1HM3qE/LsY89KKV/4IQUSemQmiiYWsGkEvO1tcs7GVQi9CziBD6apPRVsxKY7OLCw8Aw4Q5VKoMxYu2C9UDoRNHp5ncCnyoSVI3Xs8A9ED6WYwdkxJpmh/TGWXctzpoNnLvxeVjcJ83NtBTbBUPj+sgsrZbj9z1RT4ywWeV8mKtiFyfB2IOnpFhZAr7ju7Bm8sxQXgiTqv1OtegZLr4qSCIICJqTvA7mLThuJBIVKBVawCgSAMT6AMntBNwBtNT/ETBHQ7NoQPEVxA95KxkLezCXSPS9Aw1UFNNrufyKIDsv2Pq4gW21aj6KnyTFWOQE4n+tZIHQMiQq1x1L6TORxuurKMxmh2pEobP9TCb0OxNwKw==
+                properties :
+                 x : 368
+                 y : 300
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    code : |1+
+                     //Exporter le document courant en PDF
+                     gclDocumentWriter:ExporterPDF()
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé41
+                identifier : 0x2f771acb03ec0948
+                internal_properties : CAAAAAgAAABebPp1rOaioEleB/yuJBQjvi8XxXiQ+7UsClfRm+/C5pmlXfh2qHqUJrBdmCpVdAsiG0YHF1+I2QogqRqEF/+Ir0pXXBhvevgoio5RPs/Twr7ntBU8RxZpAhBAGa4GmBguyW+UmAFJyIUyk0JD27kg24Cl49arVBspVzvISy4Jm6wkP3bzoe1ga3W+CsuiB4sW5gcX5FJ6RzAXWSxfJWiv+k4pIvCaWoFRNop3iIRwejFLbBm/X+Mm1GjE6p90rsfQkSAqv1IQ8ePCF3Uc+1Bet31FFyUEInLPZx4oxdc8Lzaz63CsBx+BlS8Jn+7AO/gDOl3U2o0RapFyWtKklxR7O8Uy2cysAUbTLnv6fcD/9DcMZHl4T89P991bdy+TBixJbmOpI/AajjpQHCQhP0SI3fmoBdkAxR0lw23+tWE9mZmpDGRmk1IqdEfFS/tbq/2qzDGvekCFp39OSxAstx8aiY8IFlYCv+ORo+pFy+g=
+                properties :
+                 x : 38
+                 y : 298
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAAC3z+rQLIXusuCk343mVJ9en7PxNKW3QeuTYqK4GeRSbubcxtGl7s7LbQf8lHpuJ0iMdv1/MxItAvk12174GU/DDp5mUmCbTlR1kvBNLxXDrsoFUWkasHzIK3/6eA9uHnLx3/qyxjZmu1Ubxl420o2Qjpo=
+             controls :
+              -
+                name : BTN_Fermer
+                identifier : 0x2f771acc03fe0a33
+                internal_properties : CAAAAAgAAAC6MZxI9TiXdOIthQ1mNpxsj0GuYn31utlT3UWW9MntEA0xtZNHrVAyZk1V0lQEnGnGx/TeFHnETYeBsGiz19JndT7R7YWUnFUvfdNmKIgF6r5992Fav9RXPY/hC8Zaq87b9ruFNh+PlmML8EytOdB29Y2OL84VVWCCGwtGShPNbctnptzyx884uPp1eU0lrxZuBpZTclGgRfDuHpqBKBITFwM/3vESRxWZz7D+ZfKynXKQmbhmglyJC2sBLEV4k/StgEWSfVUNlQg1HKKcEzJOyEJT440v9SJ10YhkhDLbl9BGzjPcTbyO73IZyP0AQyd/kGth8wznzfXGsQGo8mpnnAp+dpaSeh3RILIlfYmdTqTZiDphPw5U1oJBtacTYAINXZJii5yUikKns8by1UlZDSkUg9wGYHcK8QCnezB5IXalk6O1VohAefJslYvHyRrG4Q3jap1XZhRsHMg3bF5uKEsX+Ez7bzTB/FItfzdG7hVCbrW4C4yGK2PYiCS40CLV1fIR19fZrlIkpwgNBbFffjJ3rulUs3F46IQi6vQI0V+GCYlOPgHpeybSgofcJGd/Gx23EqThwV0VN7MhhNU7V8bzlVINqj6Z5um/T6y2mk7FIuDtFMurvBGHWXBUVChfLGssV7CJu+TxcxKj6OkaQbepjGaV4Mm4sf9UK3kumcu/kfU2MJ2ghDwR8ueQBRs9UOCcSF+1YAAkj6WoOR060zkBEGi0+DZ5PGNE/NoVEZN+Kvjiw5LbhGb5j6N/2RHBU1JenYTOypoToHovAgybVVsW/2GC9e/XOR6TOWCctBbtQxuLIhGxk4OA/DrSLlVvRgGqrTJz9oUQ2am2cvxvLASPdUxLUeqL2W4K+IAiGamib749Vg==
+                properties :
+                 x : 368
+                 y : 348
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    code : |1+
+                     SI gclDocumentWriter:ObjetLibreOfficeActif()=Faux ALORS	
+                     	Erreur("Aucun document n'a été détecté.")
+                     SINON
+                     	SI gclDocumentWriter:Modifié() ALORS
+                     		SI OuiNon("Voulez-vous enregistrer les modifications ?") ALORS
+                     			gclDocumentWriter:EnregistrerSous()
+                     		FIN
+                     	FIN
+                     	gclDocumentWriter:FermerDocument()
+                     FIN
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé42
+                identifier : 0x2f771acc03fc09f4
+                internal_properties : CAAAAAgAAAAdzvMn64ijRwDhI9k4fr4yBuRJFFaJB+1VAYEcczLWRtIOtcUtYTkKjwxmnb8hVQ4FMme7T7fAP9hTAtu5pWqTmAbk7jr4tPBUxVbjNOk8xh8iFNNhbvjmOwsFa2lZpqlvGT6rkBHme3ZdTDoq9DSDPjQTzZAX8oM8jaDlnbQcH+MvL4vI7hk+NTYxAJbxS3oPHAfO2eCRZ5NUpykruG0ZqDKHwpK5pkHMmoQ0tfKJT9towl5euqhnddQd7hrrEpvOcUKKvmP6QRwTrhI6jk/vkptSVIt0tmz0JAQBI4fadGHrN9Mm4QZKx9b7B4YnXLA6tf1XnaPBg6Dxs9srMLBdDaFm0wLfmzWmEhGY6/aKVlFzw3i3ZJWUxx4ACL5XHXfS1m9oKXvz2f/W0+dvF0LfwLDSP5Ekpd8zigFJT8dOTyhrIT+B+XhedkAFY/ZyTiS/wrTmyRbHr8my4klgc583HhlnsYLZ
+                properties :
+                 x : 38
+                 y : 346
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+          type : 97
+          controls : []
+          code_elements :
+           type_code : 126
+           p_codes :
+            -
+              type : 222
+              enabled : false
+            -
+              type : 223
+              enabled : false
+     -
+       internal_properties : CAAAAAgAAAAT+PTPDpPsCiNSqdikv/NkdIXeoEyMocvMxCXeQuZErEkrU0GtUVyZi2mCnq6m3iQujy2rzHJ7/4trAOjGr8RJzfLjqVB7KOJxiWo62qtLhZLbYa64XGmjTTeADlcd639uN4l6g/KJchdjfmxBbZcqAKM7B3gdZ+NsSOJ9qDc4m1D6sZVZ0dvRFsIXP4TEv3Y1fBCzZDeA
+       controls :
+        -
+          name : ZM_ManipClasseur1
+          identifier : 0x2f771b92043b10eb
+          internal_properties : CAAAAAgAAAD1JrPSArlgQyMGDe9BNZfBRyloAFATow1AnaAvqjDmRvXINqONnDMCfjQ9NxaCP/ocVvrvRrEHTTz9UJIXY1Q+mmvz3ZerRXOtWe2WPvn8fpeFAVC+Hw7w7ZxHsBmGgAC47wr4DfL4bXOfTwHdUlQp76EYEIkJpy2C+f9IyX4SVyXq2dP79616Mxyt43KY6Ebsb6hOQKi5irOeYi82QhyYg1/85o45ei/2TQSRcRciMkRATz6nxDqhkyeJsPrhMPo3XUVDw9QsQMgaPQGd1ieADrEi5H1/cb2kN9CMB0Hz7GVVWDIASDTwPf4/ExvQ0murDD8shrhAclWuGXvGfvwcxHY09j/88UWOiKTzSPxO65PR9Z2AZfm/C5HB7sRZMluFeVtTytQvA/XHnUA83fGwEbm4foA1Gv9FVhtLWMJFHbXJIDarbWkjCYpYEqHza9dp5c97wVBESWlo9+M0QERMEVx6nUo/p/zCrYwxOB1PIbDhzc9CH6nfQKgpN8YXLJqrnL+LlzfsdnRRr9KUDXI8kdUFDl1ItweqOz4lmcgvJTlk2c6/GKCRZj9Ap8c6ZFPi9FOkIBzJbf5ibJXdD46rm7wg69h8i2/JckLUMAFYri0H9GDgPk2jywXX1VHeOAHnbrBCCOKnj2Qso8szhjc77SQidGjV2UsZzNIp1N8rq8HscGDQRujECfjddCRJzSeWXkEcOEjqZwYLv+/2Z29eZ6JV2xh9PKEkrejq17njc19NlyY5IZ3WRnBFgO4UNQihiRkkTUJ8k3g2buo3DMmLQcJu2Spx
+          properties :
+           x : 6
+           y : 10
+           width : 518
+           height : 336
+          rows :
+           -
+             internal_properties : CAAAAAgAAACi1MVzBe4HXcndZLb/vTaFVvxM//J8jiZcbGaw98L2Qo464r3XWATZPa1ArICE4yxre4bvp7YxioF7/QQyz8kyknXztQ3+2ztutVVgVNCIsY8MhjRfM6kv2My3u0oj47WyGKMZbU99UD4073UN6+pzk6c=
+             controls :
+              -
+                name : BTN_Couper
+                identifier : 0x2f771b92043e10eb
+                internal_properties : CAAAAAgAAAAEVb4HkxNdKNOf6m7EGUS8b1jmeyHv2YDJMlmkNiVoJ5sjaLLso+J8f+qHBOXe1uUygMVxp/m0z1nW8hi9HzTmNZgEWzGU8n50CsCnMlrQn/XJxzu/nHl10AirDAh+YLI5xrI1zsHl4/iJhrvHq6w1LUpLRrm5bPoX79oKy9U45D85I7RWx4A30ynIybpditLBIZRsoWVOJ/Kk6t1WaJJClz4INnc5lJyDkTwv96HX0UBIEobNO21VRXjyVOIvnS54yuuRI/QmU1eCrt2a+OYBpgUIOpTtZb9i3wNGGeBOys74I5eKqwa/VNhgiG4xQNkHPPBByXWrWXS2C9Dee694VaVWMO7Waymc3axiQAz5bUkMTu2PxmdQZG09pDL3KJkyGVkVG1nei7W/+IzY04nf3yKtEVWkm02RAR2h/U1gp3ETuc1lGDo6zzB1B19+Bvl2LM/7qtgifT2P5VaSadSo86JzRhx8dMARVKH6YBjJ3cjnke71d3DxMdPm7ckygs6xrv4wVOTLm8d/5JqltfWKy9dyiSc5yBhpE+KRQxiQRSsmDOm/DhWpND3M9XRWgAdtpYQhnwZJhYZsQUDSYlmjt2q+R+3pYsrGRm0EQAhIbRfrazFNBNXJK87lwFtbGJXVZJn8HrGikq9r1UoTLeZaF4CHUZI6A5NX6cG0hFY1Z9Bl49ufXINEZNXV5lHAwtZHBND7PB3MdNxhfAHpg81ytaMnMoh05sj8XnNY2cTSJ7ch6u0ZVU4ow5UDXdefdQQB1VxcHy2UDLny04wnPS2SrK0BCMGzDgLjCvyZ40kH1aHM3dSNTRSOOefAvmTTan8XpukIFK80tX7tcaJ9NXdz9sIG8eUTP3/9MIDQMK35yGVcCf4=
+                properties :
+                 x : 385
+                 y : 12
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    internal_properties : CAAAAAgAAABPKakwX0SdVtFqh8hsZwbfsSvubMa3R4sJ8EsmiNVJiZvW2NglwnWhEvlP1oyyS5wBvFjUxhoZ3a10Vwjl66dL4mr7Dm5z+133ybF/gwXJ2eiim7L3dq3Mh19kX2QEtCc24rZsK5F0cM+Ss+g=
+                    code : |1+
+                     SI gclDocumentWriter:ObjetLibreOfficeActif() ALORS
+                     	//Couper la sélection
+                     	gclDocumentWriter:Couper()
+                     	//Réafficher la fenêtre dessus tout
+                     	FenEtat(FEN_LibreOffice_Writer,DessusTout)								
+                     SINON
+                     	Erreur("Aucun document n'a été détecté.")
+                     FIN
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé2
+                identifier : 0x2f771b92043d10eb
+                internal_properties : CAAAAAgAAAC+y1uNS1XN6crxSlp2Ajy4U4bD3ZELRB91sAolo3Y9+RTE7QqXQE48SJokNiBBTJMwaoB8Ex0ktMNBJ7z5ytkXjNIh9KZYcYqNZnkKXFxpRiYL3xd4/sP8eriO0gslUkNcZmgAddZRBDT/VQ+xubgPB07KCQlosZQFVItbZWL7OgA9PUcN3x+dVGsHe17sHLm9sQsDox26y8jjd1JPhF09+p3GxYayVkh1mLimSjbXgmYvrROvGhHcHDbrTe104ipbTsOQwMhjVeO1a01mLeMfG2QNFi464IiC0b6sYR0tmSpxXEjMNPMJX+UcVzfx5GUpt/a7ClGHc9fuKyVzwhZnbY81CKMMiHAng3rkHriF/ujcaIx6jP+bCZkcvgQxIM9Xvt6kJOV0CaMlxS0AoQQoPiLWZkbsidWgE4OmSWEWHFtKaPBtx02McJMrvR86BNaFfOJ2fI91EYvKnZ/Lu0dZxy4w01PPt7Y=
+                properties :
+                 x : 19
+                 y : 10
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAAD4ghMp6/y1K5urNuSNa+Q3ZBpqXRgKbAxmQliWleDsRIQ44LPdpvofZwNKqr6K+daAFbpLOcAH4IUOYt/vMm5dowsZnxf01TUU6xtaTtaCr40CjD5BEYsR/qKdnXQJhdtYRlHrnx1PokwCPSf/GcRJyV0=
+             controls :
+              -
+                name : BTN_Copier
+                identifier : 0x2f771b92044110eb
+                internal_properties : CAAAAAgAAABfjbi2Uj2cGI83NIuXwKJ52Xti/BWWSquH0q5Pa/vKcX5vITjEnL02/QkjKSZQXYipGwL4OXfEcIyMtXLZnqRFX8fE7qoOBUCpvwl23R2tb14ZSewupACY96ZoR9JIpFFXvCQy7LLxJ524oZzojU+OPJgUdcKFHgJp8lLXNpD+11dVZZG0zSe1C5cl+kjVOZz8kYCG3Jvkpl/Qw/Ie49Qy2sEUYuTAflwUYi8hlMkxhC6eiffHWiH4jWP2M8/9utr6bS3nsSe4EeI9qdrc8k+P6FpK0/uLNXnpNQYMhmQuWd9s/42YeSyqMDI6KLkLgD0lWROLXMiksblsUKYE6aCf5AQuZ9SgrNhsgKldcqxB4crqCjx7x5yyJcjxVRlgDwiqVatXAkM6T5N1IC9m5JA+peHfgRf0HCSoXxeVvE/kUXfIc26kMYhkqhSbciqnW9hKnUVUBeE4/XgNx/nlMuv1SxEBe6XXbEa03L9h0ZPQSk60/1FsXPjvhEeygiIdoWPNX2xTY+mDcdI1iqF0ytx3OULoVFI6CFY++XSQMiX17K8xEEZ65x8xEV+Yfqc3mWJhtPK2Kt+Rx4tcc4VVy976nSGmnoy26N5vpAs/VR+peC9oyWTswRsVmopD3yaEAXDbi5frK1Dw+sKZdzlk+HupV7m7IKlHd2EqFYcFw+uoGEB8n/6WeQVALfVz8VLzFS+dqUpSoaQySDcf2gojwl7WWvPhz4K53+NKaQlSdsoLvnmvF6zWThKHeUgRv/F5GLyAy0bTVWud8xE9pm4+pLYdS8iSpgBHQkLGXO08XoLmBG0t6cgz8ckDQekDwhwHRh7kHj6PlHWTK3vEfnY5Q1SG/tvMcHFb7IdRfSPedOQzGmqu
+                properties :
+                 x : 385
+                 y : 60
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    internal_properties : CAAAAAgAAABPKakwX0SdVtFqh8hsZwbfsSvubMa3R4sJ8EsmiNVJiZvW2NglwnWhEvlP1oyyS5wBvFjUxhoZ3a10Vwjl66dL4mr7Dm5z+133ybF/gwXJ2eiim7L3dq3Mh19kX2QEtCc24rZsK5F0cM+Ss+g=
+                    code : |1+
+                     SI gclDocumentWriter:ObjetLibreOfficeActif() ALORS
+                     	//Copier la sélection	
+                     	gclDocumentWriter:Copier()
+                     	//Réafficher la fenêtre dessus tout
+                     	FenEtat(FEN_LibreOffice_Writer,DessusTout)								
+                     SINON
+                     	Erreur("Aucun document n'a été détecté.")
+                     FIN
+                     
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé43
+                identifier : 0x2f771b92044010eb
+                internal_properties : CAAAAAgAAAC/1KSGskzU0p2km2tnFQ2JeK8kvqgy/zB4sw8qmHU+5gFRGl/aE6WBv6GdX3no1Sz5t305zlDz0Z4EZAE2EQIMlf8+EesWgrNsZXzdf2HuKSnOpOQJJ4yB9cup0julwoOMrghQvZbxdMyPredJYRDHL54S4alQmfxVbMtLhUIrmrA1DYfFv58dzMuvo/akxJGVIYMLoxWi4+i7l5KfdG09+oXG1Y5CRmgduBAOsg5fSv5PtQvLfnWwANofSSHonk53WteMzMx3WeeJT1nqgQ/Dt/CBkrou9Pw2FXK4pWG5Hbb9wMTYaBfdIzngk6sFMAmlM3rHdsXLlyuiT7HXdvKbyZvpxO9gzKRrd36gcoBn5g7CpPAYdiFz319Qiig9Mj+NfC3HB/qPIohaimBzXsFr40+LMYmhRA7prCz94Pr/C6gftSM4PLh5bZAouBI3AdGeFQtdm6iMJpzbro76bBSksBcp6krQtrc=
+                properties :
+                 x : 19
+                 y : 58
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAACq3N17Hfb/ZdEVDF7XZe4tTpT0N7q0Vh50VD7ov7q+mnYCmgWPwFwBhWUoFNgsW7Tp3/6f03Ktornlq46IiZ8U8O17PXVWM5O2Tf247Cgw2VdUXuyX+3F3ELSvgxJrG23KMEvhlWeVaAZM920F4/J7m68=
+             controls :
+              -
+                name : BTN_Coller
+                identifier : 0x2f771b92044410eb
+                internal_properties : CAAAAAgAAAA1W+zslDqI+A6u3DtdGPQJMZEyLPuktL8rUHbT2TjxDdax6e/OxsESKjGZw+6oyzoP/yTC7UtcIB5Yo7ThXm60X5YyVMSWazwnNYW8KVIv51SPVw9gOIn3iNvyfl+zVIFBOj9Rt8l0Yx6kEp/dJEwadj7wLNx/OoUnH/lEjOXL7RS0c1U8IZrMHJFydLmYicSANBHlJp3IGpdW0tv60Qy5bIf1YxNSWQUiK40Lva6UpFxRbmRys3Ecu11f5Hu0dgqvBjiPW4OAYwt/SUo6BakLSsVMk2azM8sp8Jf3TuiMPB5Pd/98CrTrOvQl6nXNiRf61p8KmF91Cv/Tr/ulOkKbU/vGC3acM3EsA7hbMtNt9BZg6Bla7JoRIqbq2aPgTnjGMjh+WmQoYM7zKuuiISvTPGljXE35HcQ0dzbi5/G3IUIuPHMFamaP9IO+6K4ldeYuWoYq67mmLynwHtJdhhggZ1nVt6ZWe/OLhVyFaTHh1A5bBymCinkKbtRRXiXjYYy0ytx4d++0iS+rCeMzDCnh4ViWgBXHxW01b5riWKpiYG1r6dm/o1rOhsp7yuCeclgy1YmHzTjv2zVqLpLIiZxnHvRkZLUCclUVMhIt0D12i4gjq4HJiWvseZBJIdNIpqi+wOAj0ICx0GZiVEQc/if9kJtdaSOUviS66M9irUZvK5/uLH6wkbyb81VnkS8pIskPc9MdOo5UrL+S9TRg7kIx5lIxpcIPS+eZoiPaxpzV+v7ZVDSY8iOe31t5rhxuaCT4R+RxLLzkCvxqHXGPXWHa+RalgxdoIVcp8RTNOdcVJcCKrGW6qiA4iEGNeqBDidsr683/O056CG7NN30KkoV1M9L5QaKyFU5nmBxtRCT7cMAE
+                properties :
+                 x : 385
+                 y : 108
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    internal_properties : CAAAAAgAAABPKakwX0SdVtFqh8hsZwbfsSvubMa3R4sJ8EsmiNVJiZvW2NglwnWhEvlP1oyyS5wBvFjUxhoZ3a10Vwjl66dL4mr7Dm5z+133ybF/gwXJ2eiim7L3dq3Mh19kX2QEtCc24rZsK5F0cM+Ss+g=
+                    code : |1+
+                     SI gclDocumentWriter:ObjetLibreOfficeActif() ALORS
+                     	//Coller la sélection
+                     	gclDocumentWriter:Coller()
+                     	//Réafficher la fenêtre dessus tout
+                     	FenEtat(FEN_LibreOffice_Writer,DessusTout)								
+                     SINON
+                     	Erreur("Aucun document n'a été détecté.")
+                     FIN
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé44
+                identifier : 0x2f771b92044310eb
+                internal_properties : CAAAAAgAAABxCmp8AJ6KKIuyiRmtQ3/nkkUCHNbEheZO+cVwVsPY9BvP4A2IvXs/RYcz/WfG9wpTjRsnLDLRt3yiWmdMd7SCF32Mz6tEKCnqq+67HS+4I2+MGkpHQRKvi6mbIvsVYsPcrmiwXRaxtPyPTSc5QSC3z+6iUVmASQz13Ns7ZRKL+iCVradFX59dHGsPI+ZEdIG1MXMbs2USc6jrZ8K/BK3dCsWmlW5ixqht+NBugg6vmv4/xbvTJi0YWHKXkXmwVqYPMk8UNLQPQf8BJ4HCqWf7T0hZesLWTISujYqg3UnRNY4V+CzgMO/FGzHYm+MNyKE9izKPPm2jH6O6Z1mP3gqzgdNhrHeoZAzD79ZIiiwTDpoOLEi4Tu27a6sgughR/hcpSPmhOYgRpA7QcHpVfCPJQS3pU2uHLngHigrfglgZIV5VY/VqwkKDe252asxtS5/MOyG3Pc620EoJXNgMegaahm33nISeePk=
+                properties :
+                 x : 19
+                 y : 106
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAACAKquRY0Qt8yPjHkwlk9wf3HIydWDiFOQeKjDuvbi0/EwAmBt1zlIHbxuysraS8T6eAfqD/TzLyK1gyKm9dLQfkQMBpx/szS0c4wOy5i4q11VKRPaZ+XN5For1RdyxXTMwnjnzh3WnehRahZ93kUzRcYU=
+             controls :
+              -
+                name : BTN_Rechercher
+                identifier : 0x2f771b92044710eb
+                internal_properties : CAAAAAgAAAA2Zu3tqw2rzaUhtxZFjAEMlBbt/ga9VZgZTQ7Ojlzm9O/5l96DC+qoQ3i2oidDB20oTIHBhlo0TptJjjYXpFmzUQolJ4oesNfO/nM/5CWITCmSWIjj4ywod96tHRF1eD11zEcJGasSHZYaHofbqtjuythcyEr1dJOnnSVIhudfKZTq91ky34TecKu2kOOqURxYYg1BVCui3JMgOi9suzzBoGGFI9UsD+N2hdFzOwwosIB7msiQCTP2L88PGF2eHnpvFPBHfUXeOZvVQWZsl8Hbcgtw93RJbY1lGtd3XK5Q0GYVj88SIO75dj5NOkvzEZ+mYJP2hpXP2FN92z/PTI6Hu/nW4wAmoQsQLYz/hMXtpGamfAVkZrAD0tRG/QXS7thCvKhm7Fa26nJ9DiPANyNj6Mv7lPfLW3Y0pc66fbfjJa4gpLvboFjpKHJPH68k9rVvDc9B3IgH/h7HV5nWDRVT5DjasrOBEBKwZH0cUkhOb0MShKwPxf7Vu2OiVX6qknvNnW1XkF71gCzCQnIMIx6UetM376Z+3rwiZvtJQdHHiyZeuhhg+kMth+2wJTUJl+uTYELeZufQeu7V0y1dBC0+Dx/V8yZJ+whWHW+IHRAnyn3KALyOBJBDAgv+PJDbn5+jv8VelfO+N6NJBcNlpXx4xaK6jAA368Mbiww1StlYOojhPe1JAJ0S8CxAwIDYf+RskrAwF6mpx5yxXsNB7c9s56VidONufMq2sfQRv3NyPbsoyT+d9ZA1PsLoBzU1q+E/fpNSfVuVvJDIoTW+Da+c/GBVB9rG6N5wrBwAgpasxFVxd/uO4ICMFpGGBasYsolSuobqWbhMP0vp0130iibAxGOKugS5Cr3uB/OORSP6ccMH
+                properties :
+                 x : 385
+                 y : 156
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    internal_properties : CAAAAAgAAACth7jzm4g/QlVWE7zwW67/Nac2QD4rr9c1FO9S3MHp6TdCcIT1bn3ddjWz+gAuU4TlKFh4Jl7/09ee3f73yUXdFCjBLIghMRO5u6+l1dPvw4KYAcABZPvqaXkalb4qmgnoEOSy3TF0GN7wEUo=
+                    code : |1+
+                     SI gclDocumentWriter:ObjetLibreOfficeActif() = Vrai ALORS
+                     	
+                     	//Ouvrir la fenêtre de sélection
+                     	sTexte est une chaine = ouvre(FEN_RechercherRemplacer)
+                     	
+                     	//Tester la validité de la valeur retournée
+                     	SI sTexte = TAB ALORS
+                     		RETOUR
+                     	FIN	
+                     	
+                     	//Lancer le rechercher/Remplacer
+                     	gclDocumentWriter:RechercherRemplacer(ExtraitChaîne(sTexte,1,TAB,DepuisDébut),ExtraitChaîne(sTexte,2,TAB,DepuisDébut))
+                     	
+                     	//Réafficher la fenêtre dessus tout
+                     	FenEtat(FEN_LibreOffice_Writer,DessusTout)
+                     SINON
+                     	
+                     	//Envoyer le message d'erreurs
+                     	Erreur("Aucun document n'a été détecté.")
+                     FIN
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé45
+                identifier : 0x2f771b92044610eb
+                internal_properties : CAAAAAgAAAASTS/h7pISafcQmzvXZvxuQaaqEXiE4R70WzUXRZUFtnRh+1dAfSYQ24sgI/xxMI6gqSatJ/Q+m/Xm7pm8PMlz5VAY5Xo0cIeNGJb0UbGBkOmXYWxsfb8OckJBbCmJHMxL5ZryJ3DeRXxc6TNgrrXbqGbtY6nTUBPWogShBGKZMaV7Hex3yy9P+fpG9qiz/7JvEM6XSESEK5NqFpnvZ9co9XbTF7pbaNEw/1hAvFbw8cNIO+7TDrcMrzuUSYHZdu/vC8LMZQThs3g84pm6rovYsyMSmMHK/rTjIMn2q5IB0gaGm1oXjvvrJq5V1VWwdEpzsClt++VtQ4p7+Jl/s1SE97iwDA7m5MqO2D1KpEfn3Q6r+bZlFjM1vFqpmiiyyXOJZHpC7R/AEgsT9fKSEp2992XAwm8+JZuKQxM4xXfkgEgWpJL8w12WuctkcAOWsly+D8HCD+LOS5Ab3XINIhkyE/ZE05xpgMEiO/M=
+                properties :
+                 x : 19
+                 y : 154
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAABQ2vvBM5TdQ/Pzbrz1g8yPrOJCZXDyBLSuekCejejkLJywaMvFXgLXP6tCooaC4S40vYLjkfCnOKUKFttjrvKZp3Pxtw/83T1ss1NiVt76JwX69EZJCYMJ5tpFNcyhbcOgDqkDd0V3SiQq1U8nwZyhobU=
+             controls :
+              -
+                name : SAI_NbreCaract
+                identifier : 0x2f771cff04a4a207
+                internal_properties : CAAAAAgAAACQ2QkDjOAZHpSv6dzFzgAreEzzIeengHPIqhQRqdqky6CliakqJt4G8KQvVjNAAH6Rw4iPDhSvLn6TaL8uhrpGiPvei3dxxq9AnJZEHidkI/fy0UH2+AhjolUYmjx8r5X4+5JqjyA13obA4ElGqAMB2nGKiU08aG7tZTuKMl68EVcGqTxyGF/mkS72DECb1vAnNH2cqqY12rYSmDn2M6zplfu8Ybet2L/nyU+nx16lGWCy/ZWEZ6E5k2jfdQtOrkWv4vNe3e3HrREsZl4AqWgjyk72i/9AlefIj2UcNIXWOSk7l5BHuRu4/l2UdIhb+Vj25TUR571RvhKNMMH5AkyuFbG6F5SB1QuaCokFVrCrkNBU7Z6SVkTO33t5x+qWNIu+p2e4X7eDk7iBWu1YpGQ/PBLf8ufVexy5WHO9TBAjX8WXNhSDcy9lgYONz3def5AYlW3niiHkZupr2Yfh2uPysXXngnfsIz9rtj1gOejF5huiiWfjGNU3urPASM4p9JNmSVcqvuEe46Bkn0ti5ddTmvKUS7O0og7Y6itiseuKG/NMAogpOLaWxwR9D469R0y+2uzcawQW8dlaXYAZHfJ+Q+uFTKCHLmb/QjQ2c2owONobYReWj7y8rJOVpUKZKDHUWDF4Q8sqlmWgW244hOpapO8ovVCqVBkEfKQ65+TUmOJJn9lLjGGuSL/vM8Wzy6amVFR8/sLwDTXF/j2pQkvEddm2ku366YaH3fUTbQzqEfCNlMdt3/OsKWLI1sTFlh5aZySTrsXyVwOGY60wsuaetVGT7QZAIEz8lZm9FECNj3dztCgyoLbBHSWsRcZYoGWRH9h9bH+lj5K6k/54/3bOJJ6+C+I5yxnjYunkX3FWb6hogXP+hHcmcDr72u0hq7EaAiI9iO3J5bIhLBG/XMFQ0/30fyfWRTTnzUUBd7R0sdjUQfQF4vh72kq30BdS3IG5EoDFKXFVDUQEyUPcG9mgh9fgUib9jrq9UONleyNlcCxvZrTWbayeEBkH0TZTENgsQUjWFe6OGLWGuqOv02JbIDgeWLDuxsN8VSWL0uM4izR2S0p3A/hIVlCF7da/OA0RMMIMcG5mPvJYOwq6G1mNMhWNyiGfss4hwbWvW+4ZlV5NckchIwkxYC/3sE7uNDFagnrkBrA6TLY8HniJUz2LS1PIt1Gyj4A0NP+1goDfUcer7Me7Lt0sN+4Bh9bQlQQNsXqiwoFB6WQAqiJo0JDdDZCUwAHeiSSgQX/yNJJubHkZ+kZ2Fm+wQO8nATiPAYpUTqhHI7QD
+                properties :
+                 x : 299
+                 y : 202
+                 width : 45
+                 height : 28
+                type : 2
+                code_elements :
+                 type_code : 3
+                 p_codes :
+                  -
+                    type : 276
+                    enabled : false
+                  -
+                    type : 277
+                    enabled : false
+                  -
+                    type : 278
+                    enabled : false
+              -
+                name : BTN_Sélectionner
+                identifier : 0x2f771b92044d10eb
+                internal_properties : CAAAAAgAAABF73k61bJxTgoQ/HL7nk0kDCv7F3NEivetGdN3ltz+c+NklqxGyGarQXnYT0sQ2JTUzCquOFMiVhIiH2WjRQqvlLBHVzQtZ8TF9nh1HRw67HHJ+08Zz6CH0Yvkb84xZW7ulsgyhvkLqIEOiPfYbzsxWUzyx5yA9AQChd5om0RWYd1JNPvyX4f2R9p1Y8RGKgdb9rZAxFf55dioCGY3/FoVQjRUi63FA5mj86WJgTPIXdqD+RBqX5SYRzu8M6RbBT3bXDkCEhKpTyVvgQS/3QWXqEWIxiEezlNDTZhOnymb3eGUGACl10EutXxtIkzFImWbYX6JA9NFkT4UckIc3e9Gy/lluRMmaLPHq+PzPv/Mz2h22inVSwL0k3cjUCxlXLZa2Ooy62444f1NHI7PGHD72cL4rZHISto+eEraEIN9qLj5hjPHOvHsWQX9BacpSKdJBzFuSjNsfGux/aTOpKV/7CLSjzdEfd4v7J/JpGNM7T3Q5Mtb/DfXAAMUTsb1diMZ9dcoMu+0MM9CsFWIKmiGLPePSMpzOQKnxo1sIXK9ufwOLMVUXVCbKHWgWnFuC0M7mg5XjIhf/rvh44j1HSPUpRUjvvYi4lrnWfW1fQFd0EfqynFsaxlx5UXSKQTa98NPTw/nixpHjfr3kbYTaIpmF9g8OfRm3N2o5RJQUjLgFlC3U6znD86yi6Q+FyqLYzyQ2GpjnUwm0YPPSA4V2Ht046m6jTnTh0yN/by+HYLMZ1HiaxhbYCVji7483qF6zeNhLjkJP+7Sq2QcR3y1tL3S+DGlUoZ/PEyJ2Buy/2gQDn1J1fA/jxX2xYFDyAOSEKY4zmC/xWkTY91w7t2lB4jqmk2eAIx1rqKPMgDSH4vTql0ZU5pp0+f5LKS8
+                properties :
+                 x : 385
+                 y : 204
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    internal_properties : CAAAAAgAAADpy/w3L+1SVpFqZ+hMR6Y/UYsOzEY3p4uJMCtG6PUpKXv2uLhlAtVhkrlvNuzSqzxhnHi0xtrJbT3kx/j1+5e7Uvorvh6DK23HuaGv01V5CZjyy+KnRt3cl8/Uj7TUZJfmsqZcGz4IrKI01Y4=
+                    code : |1+
+                     SI gclDocumentWriter:ObjetLibreOfficeActif() = Vrai ALORS
+                     	
+                     	//Sélectionner n caractéres à droite
+                     	gclDocumentWriter:Sélectionner(SAI_NbreCaract)	
+                     	
+                     	//Réafficher la fenêtre dessus tout
+                     	FenEtat(FEN_LibreOffice_Writer,DessusTout)
+                     SINON
+                     	
+                     	//Envoyer le message d'erreurs
+                     	Erreur("Aucun document n'a été détecté.")
+                     FIN
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé47
+                identifier : 0x2f771b92044c10eb
+                internal_properties : CAAAAAgAAADQh8RAo+aASXdY+7erPjnhssbbwwY6MKxM/Kdn4hbuxtaCvZTU3jBEaT5Vb+mzSiUrYyUA3FPf52EzJzctuFuRaPTua2DRsFoRP8SVQgAgTUOkJ6XRbZ2RsPXqEYI+B5bksXOqQKcjkAvoedUGs0PmdB3JTYLjyj68hHdG4eq3m2mk44plhd0JFhP1WBxMCXgSnGF6mtHwb6P1NVsjhg0K6N3AO8Mwe+MEBWWSwL4/Ve/7NsSkaFCGkarrPE9cLGG0/9cpcYMPPmN3DVACy1l6eJGDD7U/5n8C8wSzxxm3RO0k3pdl36v65QEIGocPmhwKaFAExyAx5C+4NUBxPij4EoSLEUBb4mHdzxK96GDth7+jihdzpz+g5/UUGYItq+FBBqHqiusJpBT+MS7MK9vYAQgav6z0h1JbIIaCq/PoeOJS66IiTZDXFuenEP8xaMRJTkHOTlqNp670+Y6q2rhk9OgLZNjQkubQ89H8ygVvY0IyxaI=
+                properties :
+                 x : 19
+                 y : 202
+                 width : 162
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAAByBJWj1f63LZmtNOaPbeY1ZiwcL8JMPvbsvPYgR7Kmcl7q8i1nKHSpzb1Q3BB0k9xNZ4Yn26K9eomxr0r85bMAxCUjhT2Oa0t+haXQxEAYwb88tgSPwzm/qBwHazpTMwViSFPpnR9NoE4EPyX9GzrDQ9c=
+             controls :
+              -
+                name : BTN_SélectionnerTout
+                identifier : 0x2f771b92045010eb
+                internal_properties : CAAAAAgAAAA2Kp80K/JfqNP1C9Or4GjYCrIXp3KV4gv1esSf63CCcMZ6VcYZfHwSxZcNyu00UWFTSiX34w9F2iiElUbdLSImXD8njQ9zB1CMKLSRlDBXcYJ9+Ca5RATQx5EkPb1dAVScEgG4hq3aekJYyuLu0zF+wf+yvHb82zHogZDdyPeXQHaqcSxgtKm7rIsmGNtfEFckaAqvwCLLK1pvCjCkWaWLdm2JfCNcr9zInNZtDE2nXD1XZytcUd+FK0Cv0Ly3Uab6vixnwoWGT2gZlkkCBn84TUVthkwcRWNSr/Z1jimaMxZy9DD1heNfaSPbLDBZpkFw13ZCkmttEA475Uj0DkSZfNej9yckWf6M/w4D2x5yxhX3Ui5Xq0kKPx7QXcYCpz1PeHMSNvStTxsxw6X1FKCWzgIcxPqsW8N2M5JIpNeVL7J1CzL7r35Ix46+Yg22X6LY0PuVj1YO+nUqiUaEMWPivyewXO7fi2Z3ScvtdGTwytZPIs4IdfkhHsz8HPiCOIim0Gs53bLu+g1TciOqx0jvNToHX4vYE2hpzdMSE7VhNv27yihtRMy/fCaiDBeFK3jkARAgD225wJkSNaJzSLETiLDXgW+/JirnOqm1sdqDjRhpNHjheNNX38qoacDJW776yk+ETjGzKYYoxfQtZxittreWQHmPeLEkcOC62NUMJWscc/dQapoCszU+2Uhy7UfbZXJO3ovsievwivDrrWkdBAZOKEJQcbChaqaAkxVyVvgzk5UCt/+LM7F8FGtplbI4IUOCUjhowxjAccTZ+f5Urr5J5ymVy+qPggNSdhAirrOHRjxxKC/OLRGf4C8V33E/s2AIPxZ/NS7IuP3JqJJwIs1oCQQD0zV8gKcTNEET9OlLuVOehXZIef43YpjBPw==
+                properties :
+                 x : 385
+                 y : 252
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    internal_properties : CAAAAAgAAADpy/w3L+1SVpFqZ+hMR6Y/UYsOzEY3p4uJMCtG6PUpKXv2uLhlAtVhkrlvNuzSqzxhnHi0xtrJbT3kx/j1+5e7Uvorvh6DK23HuaGv01V5CZjyy+KnRt3cl8/Uj7TUZJfmsqZcGz4IrKI01Y4=
+                    code : |1+
+                     SI gclDocumentWriter:ObjetLibreOfficeActif() = Vrai ALORS
+                     	
+                     	//Sélectionner tout le texte
+                     	gclDocumentWriter:SélectionnerTout()
+                     	
+                     	//Réafficher la fenêtre dessus tout
+                     	FenEtat(FEN_LibreOffice_Writer,DessusTout)
+                     SINON
+                     	
+                     	//Envoyer le message d'erreurs
+                     	Erreur("Aucun document n'a été détecté.")
+                     FIN
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé48
+                identifier : 0x2f771b92044f10eb
+                internal_properties : CAAAAAgAAACKPhxI8XKc6PRlm3ODUMERAt8A9Lni0cImGNmCd6VEvMs2sdLzgUKoy3Y60CixQjnecW+H+tiUJ6KjpZ+1lYUm4aQSUV6KjDmyA+d4q83kXaS9Eqpugt5p5fUIi8+QJnTVz1fXjiTrhkhaNHIoDRiInGOZ5nkyL/ST7ZY8b7pQHXKbyb8XBm1cqt3BklnmAuIOSJeNlgefIH5cfN1BKVyXMXGjoaulFTT+zieC4SBYAjK1FJk2U914SAonshbwvbsBZpvDEPEI3WQp3+IvB8QkpbCha8CbyVS14VZ7pPvajiQpKsNM4RxhiqVQnrIdhSwbJ2quAFjWD0i0XXgCbj82U6PloxnzI3x6ySZjmZJ2wxocHvt25chXmG1G2RO35kneYUMAaw/QEYe+WQZtmcYFgXr+v43QsBWxKbmGkfBc/cQKIAnkyllB1poeuf0kPaBiyKCZE9ZQMF2GJnid3rlwhonu4x0iUw+b8qvU05Z6uSCHhw==
+                properties :
+                 x : 19
+                 y : 250
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAAB6uPQjY7eHdrwVm3lO/OxSHxqPVuLrd6m1jEZ1uO0gCP7rWnsk8V3tB+PuQcIXbE/3xX/E2auy9ZGIpQY6H5qeY7pojCWpVyASlS6rAZjpnn89KRAHJHCK72qbug+Txp4DqLbwZHDRyetjebQFOzselvsIyT0=
+             controls :
+              -
+                name : BTN_GRAS
+                identifier : 0x2f771eca0617a3ba
+                internal_properties : CAAAAAgAAACvQNNX0tnb1EfKK6giD1hqFL2TwzOVM3ONmkUwGzN64+WcYzZ9XVktkHWGgFxonouZP6Oo3dYaW/9/Su85chzE2Iml5YJvWHYgaYELOCsj0hMHwXsA5ELyHN8cAm39aVOGLMD+rRhomPZ7rtlrgp6waAMPvVOz5cTMFBpX9vRaTE19n7wLAzzVwYpd2xE33LtjrLzPtLAt/dMQwB9OOqnJZs0BJKFa12Uy9X5HP0h5rl0EBGqjwWIRXKkz5BpXaVY9sIM8rV+MXEDxHPuhcA4YL3kEHFpz3Z6jaGjRN6p4/OYvFelB97Z20BN4AwlqXmHjR4hjAhv4WXQ256W3MvAbEORZOoA2K/83WfQraxew56w5OxV+5fDzfm/z9Wa87W0+T8zb3kCkbbcbKqKRo4EyrZUjgYqi0QVpsgQnZLcSu1NKZZXeZm1SSLqxISK7dN1JBGiL3qr10bu73cNqWEdHxgVQB0YfNWdEAESXnmX2J/2PO0d1YdMEGIDyWj7PrzzdX93Cw7nOr3Q2LZMZS/ASVHTcp0NIHOr9Uj2YyBLSATKFzG413lybOLHg5auRuHl45wfiEt8s0/ISCJXwMbcpKQMS/vXcYs4LWSEcS3gOfBlXfB2twEzDVfk8Z46hicoQseY4OPHOpowET7GvBu9+5uLRX6ASM7VTzcxREMynimiNe96BoinbIDR/E+V2TQ18xckqKFzxGeoKFvVAXoijdnQcxy47QebaOBnPWphcexT2gA/e1e0AM6dNtVn5sC6PLrkp8V4ixUpHs/w1ZRdML73w5Af4aVZ+S4cZdc+6JtLEK8nzrvT8Z8CLqBKyoof2THi2L3OUTWc=
+                properties :
+                 x : 211
+                 y : 334
+                 width : 24
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    code : |1-
+                     
+                    type : 14
+                  -
+                    internal_properties : CAAAAAgAAADpy/w3L+1SVpFqZ+hMR6Y/UYsOzEY3p4uJMCtG6PUpKXv2uLhlAtVhkrlvNuzSqzxhnHi0xtrJbT3kx/j1+5e7Uvorvh6DK23HuaGv01V5CZjyy+KnRt3cl8/Uj7TUZJfmsqZcGz4IrKI01Y4=
+                    code : |1-
+                     
+                     si gclDocumentWriter:ObjetLibreOfficeActif() ALORS
+                     	//Régler le caractére italique de la police.	
+                     	
+                     	gclDocumentWriter:ReglerPolice("",-1,vrai,-1,-1,-1)
+                     	//Réafficher la fenêtre dessus tout
+                     	fenetat(FEN_LibreOffice_Writer,DessusTout)								
+                     sinon
+                     	erreur("Aucun document n'a été détecté.")
+                     FIN
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : COMBO_POLICE
+                identifier : 0x2f771eca0611a35d
+                internal_properties : CAAAAAgAAACSH8llV7usyZcjRl6TI+rP0XkmXoqP2Q3oMSSqpxN8q8SGNlIApB6MA8I4IqwleVhLbn0yqjlx1nfQIhVy3FT3WvCyOkA3a+dVi6Sy9fHIIgT8DKO7IhP8klyOPFXYJYdaIgSRtBaNhCxWdEYf9dJT7TAk52iVu7pDG2kQ6J7iMogOymLTL1qpcmdWXHo7OesWxuECSQyJTJ8nnnSJwBVVLRomJGk2y3wYAiXjdm/uyEzinTEgceGJItiwBbhD3zWheQY6bnT7gA5s72s9XjzRDNiXI0nAppSlaHejBg84qqaq4tr3ZKlMs0uS72kP955/QgMtClnX+GgqPBnbQxAVgPBzm9TYP7qS7nuUgreObDKCLQci1W6qg1Bp3P2cboNqwV3CuglRtA2gIV/0bu8HhChpfmVCW8kDASrkQR0Q7nai4ik8ZLOnPhDuDXnHUQlJSDoD8ownLfkn8r6ysZT87aNQMlLv9NsSTOxxXtBDWAc0ABlUxui0Dj4ZP2x7M5edzH9l0YX9SDvV79tkgwbe1hr/LpWurnAnnfNoS4/HaKw+ChHNZmZIGq1eWquEqXzWOiyzZrPHm9XBZU3XkdaKUIwy3KTbliJeMbQbNLv7H8ndE6s4H8WTVZFmDJRfPAIDDc70+5QTZYsobNBzxpRpisZ3FB4S77wzDqBkeDOrGhjYPLhHL9ou2Bb6oZ9N0s1U1rqEweARQSau+ZFFJ9eISmi3zQtGn8lra03GyXpjzgrO3oxpuovOaWuIgR4ghUxHdA2erQlFe2v9EStGsXutfja611Oxcez8D7G9r5qEUujoFj2vfKmU6ZADHhtarFbd9Mx5UfBv7ZHNHAGROwyk6ZJnQ+MBn7YOlOj+8NWc73P+KUvCM4eMWXubDAdLYgpvzbk6PKdsZ6phjOtVK9pYQ3AIUqk1pvx5ZaJwV2zUtLD9kIVuTx08sPb4iVzY+B9C+BiulJixODsSN87d7y0PUameUHFvmdU2gOBBHOEEPSS/wquu/h6BiWATxU8ia2kBVmyd83KpEq0N3ZkHdLrYTjzSaHiv/tqkzMHZcx3byNRjdjlj2LtXSVUDWk3IevO0BbQcbRz8kspl233WHz+hHekOwrd2HYGCrf2NZ0xDufCNSr9ynZaNQI6PhkyqkS9rooKysAOLSex5fZvRQLRp0cZUTGSO4bToTYYvfUougA9bfA2es55VBBjKrw/3Yr2JYKCMQvRLZzgHSKEDAi2j/aCl+gNLJVc3du2h3cz+kfJuHRVdGDO1Ft0NeVfQXwl4u24hib4LeS0gKddtTLdIHPmsEeomv3Xzaoqekb2y8n5mIEJYuQCrlRe3RZYcaoBY8Wmt2vITtRDbDjpyq9QriprREXFFHf+J9dRDCZYiDQtbTkutkb8ZjJTHLi/RgDyvHfPnEKmXwa7Qu9bNMG/3VCuIGF8eEKWNfKVVlw9sHTh+4ZUMEs2ysh6xhYnCzK+CqmKs4X7ZctZ4U5xWbIr4b4F/xxJ8JqAnVEOtUZ3Kiezi9EchJPnDqp3zXbZmkCV28pArSkukuuyc1p1gdItPpDHInEYcNFbrA5M83j3dcwiYwQ7/yWYmuqPQPWRkGM6hamjIl7DiC5ioMo/6TGxwEA4ZS3bZVWJ6Rp9KvC3hZTo64zTu/gI6HDTTIoZhCilCx734AXmzo0Qp9nHbig4KPUsw2Wc69gF8XjLY9cJa6fZBoDDWp9uiV+jRNEkGl88gGdlnQK4S/2x0fiXeYIMjpYu5QMrVd1xxG/F9KP9KDW7bQPz7aWY13QHKDI7QmXeG
+                properties :
+                 x : 19
+                 y : 332
+                 width : 141
+                 height : 30
+                dropdown :
+                 internal_properties : CAAAAAgAAACyzwm3UFhow3uW97ff++YHxdDETwH/XzD7tCX8/zRB9WW+fVHWO6Ja7sdG4a8yPOQKDzQ761YOLEGBDzuuJ3NIvXFEgYtNI460zfybZ0HZOE7vn/YL4vx8kXY1tyrfkq7bdKg2igK0q6GpnkhdM5Ycf0480fJFH7PBH+bCyR8+s4DRx+/axSCr9KMZ6NXWTB7b/3qfRWqqM8TMs1xR8ey2jQFkLq1yBRFihVCYEcsZ5+jpmeqlEslJuO7z3HL31kqkgiRPRSk8KpxFJKa/Hr/aqUkVdnLIKFXpbE4LVEA6a5vVper84Lidt5YroLXconifL7dxb3vaC7Iyoc5qGkfatPBI7a9l/bg3WR92jO2+grkPqJSn/ZPZbI9RjYNReDr5ZqnrW2Gdv4O2yaXiDNdDsGgTPvw8gILS4KJqh7SadylMX073P6aZ0ZgVV/xNiT7NJYjUq1tAY+fQ8P0XdJsx0dRQkHN0GCkr3xkproLKswVHqxeuJrQph8C9RyE8ZZdRuMHqCcxTLN5oI1sceDYNJWyOPVbSvAXYcRENYyp1xkErx5v+RmCVxXhZMX8XAjeHQraWziUSr0kZuLMgdHSNWm87DMjO66a5LgNBLxTyH5ymqsy9Ur2YfQIhzxy05TEIqK8j2W3DPvSENsEQYS300tRRhsRqY+qDhFLXm8d/mp7MqgXHjTMwY6a9D8Xa2fusUSJEe+FEkJZJlJCpnURYwyIyJ1zYhPODaV4jDdc8RsrPvMHlAnl7n8jYr7/g9s47FFHY5hFkjKGqu6jQQKW2
+                 type : 7
+                type : 14
+                code_elements :
+                 type_code : 23
+                 p_codes :
+                  -
+                    internal_properties : CAAAAAgAAAAMSwgWxWnGyBc2u0a+UwSr7/gtQYCRbL4luwdbCQsOwwv40B1BmXfXwoKzacG+d1gTyINLv9erqqm+3PfRojmtvoncaZR4KUaH/xyCV5IXH7TTho9/T9OhIUtpWAaxtKvwt8VpqHcmL7xV/Q==
+                    code : |1-
+                     ListeAjoute(COMBO_POLICE,PoliceListe())
+                     n est un entier = listecherche(COMBO_POLICE,"Times New Roman")
+                     si n=-1 n=1 
+                     ListeSelectPlus(COMBO_POLICE,n)
+                    type : 14
+                  -
+                    type : 35
+                    enabled : false
+                  -
+                    code : |1-
+                     
+                    type : 15
+                  -
+                    code : |1-
+                     
+                    type : 16
+                  -
+                    internal_properties : CAAAAAgAAADj1fohzV5m1t/sDyp8B2h5G22crCgNwxP3qrs4+FVPZwFkFmBrCNm9+MODxNDetW5/yrqw0DS+cDI5fBHM5JKwWY2wx+GAFHTYmrZgQlZstve1hK/2b4JzZEQRqOOVK9CxkXMtbl+myowu34Q=
+                    code : |1-
+                     
+                     si gclDocumentWriter:ObjetLibreOfficeActif() ALORS
+                     	//Régler la nom de police de la sélection.
+                     	gclDocumentWriter:ReglerPolice(moimeme[moimeme])
+                     	//Réafficher la fenêtre dessus tout
+                     	fenetat(FEN_LibreOffice_Writer,DessusTout)								
+                     sinon
+                     	erreur("Aucun document n'a été détecté.")
+                     FIN
+                    type : 33
+                  -
+                    type : 17
+                    enabled : false
+              -
+                name : COMBO_TAILLE
+                identifier : 0x2f771eca060da32e
+                internal_properties : CAAAAAgAAACp8AyXTBR5c4SRk8S3KVyqX9rxiDR3yiPgNuugTIcbP4UDbbYDE7/WEkasQdWZVwqgzddExwpQKDT0Md1DDGXXMt6/2bJ7cjAMOFpHOMbdID0TvcQpCOEEt/xumbhsoxQnx0lZv4JfIiYPWSpfdysnDvq/LXL4Ea5eVLr/bGLGmn6G/DoTrc5XY6oKL8YlNEvzDTmqDTCbAgsPUS+i6dT0LL9SeXHRkNWCOsekCThFtVBNnV5Doh7Ix8dPy1DoehvUddkd+ZrWjtQVuLDy4a5a9LFBbuVOu0CtKzsYQNc9ZDz3Hcg/RaZBWLWpw2crnke8qqRhPgejl7KP1wcLB3J9XeSL1Jx0/iqnpM4w6IjeWDa6rDhyPD6VOpPl4L7+rIIjToqCyEFc1EYxoZYpiu8JrLtgkCm21bwbTVqDxAXgR4ra/9uVnagkKPlJUh/PAv5TKQdTMC+VPusHVWLp+sfUluYOldzo15xJmYTjSEapoLCUKr8ohENYzJfphrr9KaywERXjnd7gqg8+cJuQ0Z7I4jx90+hWkgQHlVLax+HX2cDIO46DVNVD8f60QyceEMfO1/z99RDa5tpsk1OGWaTs8H70rrRpZSc/gAGbwY37FK1d2bxHdaJpqFRhe4+slChRv2jPcxjdhsdIRMHGEi9eiRojsdyIM0XooQQggCZnzzMzHAaA1+mdWTAkVgdHgJ54eq16gdA0ra3Ffjedb0CN4udBoClNRBGNhqIyeVgDRo5I/9LkTUv198xPTN5DvrUmx3qPSCLRp8roRqAqLOGdVFaeWIdckuHWZelJXW/ea6vfHnpc+rE7qaCgHMifFUeujz6QPwGyUDXPxD2kl1g8PM08o/NtA4tFt9j6UGxziYnT0CkYQUorGrQZx6AlNhJas+7YO5rAWnUSrf78AwBpT7+/KwfGDsD4FUp/iLgHR9NJPOmDOb/tP+EOzjQ4O8zbrko+3hVIA0b4K+f7kJyCWjqjrPSchdLP7jLcuGb9xzTZRNWScTpBPqHJnZqU0obQ6PKQoaTtRnwrqnN+FqLGY1mP9N+aeNkR9b8FDtLGi+LK+1EBaw/dXR/M8MJpUA0+EeSnBd99H+r4EQlRp1R+aaESQB1ggofv9JhazV3oLJiNXr/C7aDVbGnyF0H2vzw+s1d572vfCxyOskETSfk7dFfqcKCyLa8c+YlIzq0Xn2PD5dwLTTPJO3C0ig8Zag8YPxodiSxUv0pEgZxr+gB+GOAIlrggMrth9WBr9fyTnuPk8N2PSXvGfbz43bgFdSGPxR22G3Jygc394LzMYkYS+QIVh0K+rp34zqBzTT4wf0OkVd18V1xBbKVxlBhIGZkgoIP7Al0pLiv2KXGVZIrhnk42Un9jz0qomTxQJnyPoF+RRs8Wg3pfiyIdVVyzHzceNYBODvD0ldwLolyqX9C5tDwSy+T6VWllcYLwHLWBuZOFqxZI+19Z0+3xsXYflAShS81UsEcuYgr1/xXYVWMxF7xXlZ4m/QLyPUgk9FokwzOElu5VmsBDf1qx2YdrXTp8b6CaXj8QDsILZ62Nc5OBWXb33Y5S0H3HPomXdQERY+U4vROEdVvLIpVC+jH1EbFjRDDl9vKPtQcLeuBflJbSnclt5C0lYh+T0P6ITxZ/jo9ZTZ8EERzm/V9SKpIfzSBJ/wcg0brhwtC3apJp5yGgxg17JT6tKCubbmDPWVnEk169P6/0FkoOnBHxT3yTjxHVzdP9qOUGagh9yjFfnJizzz6FC9jCfR15c+IWSmtGStADu3CpkpADENsmt2Q04RGDo4nvQr51BZQiDxyj6CaW9pAE0UxL
+                properties :
+                 x : 163
+                 y : 332
+                 width : 46
+                 height : 30
+                dropdown :
+                 internal_properties : CAAAAAgAAAB8mliecpZZpzy1VHeH6gf1ic/gckgomTl59uhkRibneXWDMsRd5DV5NFbHAU4lxwu0y0ck+euNayve95MBdCzgb5ajNBHekV9XF4pVAcAKSsFHLsCRmKbaPdPkPAfCSwdcbcrnZmtyCNTbTrYZ7IpjpVDRgCY+bNnWZ4I4QfKnS5T74iTdNPCgRc/iLhIlIHGTnRovhOZ3xXhb6ZsPNk90bwtrJMJ0Hop3bJ/1OE0939YZuvUlaMzFMf/0Yddy9sdlg/yZBJ07YVD6XLkNplhDq/4aJntlX5CqEsupcKbW1PVqQZVWnPRVDAMNbIN6bq+fpMDyXf6XsvJvEH3TnVI7/3gc/rNy9PsmisjILeILj60jW2gwivXvUbcavLFQHEZhf668YegfqpIWz6kTZUAEQ55JGXuPLA1lgEqI5M0cxK3XhnubGQfDaZE0fCUYpSeZSJ37AYc5R/t3P7pKxRmO6+m7WXXQF31h8lzqZ0WiUIXCYpymGHWbNZUu+oBRc4yj2dbpSyTorpBr4ojTPYgWK9lFWtoQ8S1+JAQ+NB3niY3KvrA21Bfrz80Qfp6UaujZr9mfpCELT4kgj+gN46YEdmzUn5iYloKHCcj4cHcsIJQJAzfnjuZM+TtaqglT2fx0wayaMwlKSJh9GxjLYnuNViEcZ5DIKGpLMYG0JPoZFdA9YaKnC3DGlf/cZIiT15j6QM+7V4sVNvCkzZPQ6mYRE0MnhhK4ievXjs9WXiLC7Ro4A+ZxRDJLT2lX9NBztHiVOYGVOSCRuIK8/QHxZjhX/5HYWNHL3sLdTolQihOuL9LM/zK7XzOSKUcI+bxrak/j77kvQf5sbZdC69eOsUetUeU=
+                 type : 7
+                type : 14
+                code_elements :
+                 type_code : 23
+                 p_codes :
+                  -
+                    code : |1-
+                     
+                    type : 14
+                  -
+                    type : 35
+                    enabled : false
+                  -
+                    code : |1-
+                     
+                    type : 15
+                  -
+                    code : |1-
+                     
+                    type : 16
+                  -
+                    internal_properties : CAAAAAgAAADj1fohzV5m1t/sDyp8B2h5G22crCgNwxP3qrs4+FVPZwFkFmBrCNm9+MODxNDetW5/yrqw0DS+cDI5fBHM5JKwWY2wx+GAFHTYmrZgQlZstve1hK/2b4JzZEQRqOOVK9CxkXMtbl+myowu34Q=
+                    code : |1-
+                     
+                     si gclDocumentWriter:ObjetLibreOfficeActif() ALORS
+                     	//Régler la nom de police de la sélection.
+                     	gclDocumentWriter:reglerPolice("",val(moimeme[MoiMême]))	
+                     	//Réafficher la fenêtre dessus tout
+                     	fenetat(FEN_LibreOffice_Writer,DessusTout)								
+                     sinon
+                     	erreur("Aucun document n'a été détecté.")
+                     FIN
+                    type : 33
+                  -
+                    type : 17
+                    enabled : false
+              -
+                name : BTN_SOULIGNE
+                identifier : 0x2f771eca0609a2ff
+                internal_properties : CAAAAAgAAADc80lKOEiyco0OkxC4c4NA7uc5ScAFvSwQ1vr5ydtiTc5os3sr3acmbA3PLCA8umU7O0jMYGPYE+FJRCx7auwE6yjotM2Qp2/gnD45XC1P6RPZIlFmtr5+4Wrsn0Nxw0IOaE2683fDPUKLoLO2GpLjjyY4w/kU8eUsNCzupWOE2GbIx233zmWRfitmkvSUEb8mowLWTDdBOe6Ds0NruPuhPdE5kpusiZQt534bxioGoFMynjhtJ1LPF+sGzSw60ki7RTSmrGFJ2UzRu5ZLgkVvRdvrqonlgOBurHerJZB4I7CrHfAk200+gSmw3TXInimNzX/tmNoYbL3LDUH97d/PLBLz6tRVKq+JIAp1jpEdWqFat0zWEAMSK+5XRuAjiyga5TC+/s8OfebJrG/c2iaQYkCTAAwxR65QZVNNI+dPaGuXp2EQ/aeV/ilQ06kc8YHv3Sm5ME20LmLqYdNWsBy5dBu9Qg4ZXVRvglmpidYulWKfkkk3LSBsLTrFqRtQTLdxydIL2yK1+h9Ot8nyIqCr9B+BE3aA40YPFXNxQGisKXahBi6lYtbyPFfCJZ3auabjMRD4dO5c9V7aZgLEsMq/blfLXEGUZd67b+qQAF6I/7DTyOCKrFffY9f7wuZSG1aL5hF1Vx7/iGTumNXuh/YXUI5dSGGvFOVEw19L21xz6P5uEZ6Rz0y/+U8/0k1MEolc9geV1Bo44iKdxTVnYoOB8i1T04YodeEoZwUngQgV0Y/G2E+4V1ZFBcneYyT193tymmwwBqEY/0/tDXdPIMuSgDrNNE9kuFP1weB7VBNSDXe3Tf9FE3iD9Z+76IkMJeEMj19GNA8G2LQzYj+C2NNQ
+                properties :
+                 x : 267
+                 y : 334
+                 width : 24
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    code : |1-
+                     
+                    type : 14
+                  -
+                    internal_properties : CAAAAAgAAADj1fohzV5m1t/sDyp8B2h5G22crCgNwxP3qrs4+FVPZwFkFmBrCNm9+MODxNDetW5/yrqw0DS+cDI5fBHM5JKwWY2wx+GAFHTYmrZgQlZstve1hK/2b4JzZEQRqOOVK9CxkXMtbl+myowu34Q=
+                    code : |1-
+                     
+                     si gclDocumentWriter:ObjetLibreOfficeActif() ALORS
+                     	//Souligner la sélection.	
+                     	gclDocumentWriter:ReglerPolice ("",-1,-1,-1,vrai,-1)
+                     	//Réafficher la fenêtre dessus tout
+                     	fenetat(FEN_LibreOffice_Writer,DessusTout)								
+                     sinon
+                     	erreur("Aucun document n'a été détecté.")
+                     FIN
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : BTN_ITALIQUE
+                identifier : 0x2f771eca0607a2d0
+                internal_properties : CAAAAAgAAADt5E/T2c2+bjBx3xlc8kXtJl34ISYR2HW8gW48HXAgmWHkEhmGj1SQnxlF4U5bTzWeumP55Zb1eHb+bTkW5YMlBnMSpWHTMyM7rFOYh0RkxoBZWDuxhfPmdLln/gajPC8afgdjgvHmv5r8gDM3WSOUjWzTSkL/i+F1ZiHlQ0gXV07IkI2vdmXkPMQNoCwjbsDK9WZCTE3UzWh6rmuYVb5soWocvmLSrmZ7qTi7pMNQapCEOfoBgU+rPa119dggyknQ/U1caii05VEDzywN8vF5cYXWPyqa8zsKo/A7AJ2f9UT7p5RaoW80W/c1Hj9ZzkAcH5VtK/syk4UYrKLRN3e1HZtEnFi63wCjHAyjR8vHWHDMikkOyAkaGhuiv90Ej12iDNNeKwe45cRBpMHOopjqTUDMu0RcTVDegam5OCbpolzgYhUer9XjGZK4q400uRwOwh3ZbIF3TBphUvGH/86Ky12VK1KIuzZpnlUxkbbHfIjDSuEfSB3Va8whiBUsNPEQ19CCo2z0cknAKB9Oiuep60C5Z0PvdlmuCNC8FSEp/s8XMW7VU0jyQRlZ4VAoy4Zns/TcdDjSMms2L9mL6mwWHKPTOlkJZhNqkXxUdBt586Qn443tVehYcD/fNavQ+C05nUm8ZJ5i7Xlinpe09YrTYaCw+5TV54IE61dzC/XkCaGL1oLNAbEmZ35Wxzh3SghbmbA8Ku03/KneZ9dDn5EwyTilMXCm1WOPHERAkx9PgS00uG8iMfMcecJ9s36EWtzRaa9laxgpkt7U0CSUKRihUA7LFfDsM6BVl8fW9intBvn0vInRNvO73wlYOsiP3U7x3085lRssHHENwkcyx+Jh
+                properties :
+                 x : 239
+                 y : 334
+                 width : 24
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    code : |1-
+                     
+                    type : 14
+                  -
+                    internal_properties : CAAAAAgAAADpy/w3L+1SVpFqZ+hMR6Y/UYsOzEY3p4uJMCtG6PUpKXv2uLhlAtVhkrlvNuzSqzxhnHi0xtrJbT3kx/j1+5e7Uvorvh6DK23HuaGv01V5CZjyy+KnRt3cl8/Uj7TUZJfmsqZcGz4IrKI01Y4=
+                    code : |1-
+                     
+                     si gclDocumentWriter:ObjetLibreOfficeActif() ALORS
+                     	//Régler le caractére italique de la police.	
+                     	
+                     	gclDocumentWriter:ReglerPolice("",-1,-1,vrai,-1,-1)
+                     	//Réafficher la fenêtre dessus tout
+                     	fenetat(FEN_LibreOffice_Writer,DessusTout)								
+                     sinon
+                     	erreur("Aucun document n'a été détecté.")
+                     FIN
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : LIB_Couleur1
+                identifier : 0x2f771e5005c7c650
+                internal_properties : CAAAAAgAAACgFiCbdls5tKb9H9N6Wa2HqlPVI3t4UxqqLqbzzx2Q4dHIFUD2HfGk/nvMw3I9QNSl5p1lU3fbxQUJAc+3j4bs0UhI/xnKTK1Z7FxTzbtEKXJOPHhNOXi0vAq7ij5jo8leFNdbDKEuoFXbxG5E9ASzgw5Ubxee1RbQbnqSZqikn4B05m9rBydDP9SZeAjbUCJ7PH4cuCsd+yeMEpGRFxORW+mrSqfwxO50dkW0OOFQZ/e2i91OQ/xPEM6XTYwVJzhbDWq0pjA/mjf6x82jj82Zn/4OixlT2Rgi//8Wqfspl6Ki/oPU5iSZCnaE1MFmLwuzL1gjUmDh8D2iK6JlwqzTlVs25zPtbXnUNMvs1nDw+TD1AnhED1ZBGZ3EHUq+ILz9eInRDQ4EEKy20kcuzVrwPVOnxr6csvFzfQja8+gz/4LkIz7vNyZOgNLFy5asqH2c
+                properties :
+                 x : 299
+                 y : 332
+                 width : 43
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+              -
+                name : Couleur_police
+                identifier : 0x2f771e5005bdc5c3
+                internal_properties : CAAAAAgAAADs0F2Q4yywJ8/6maVXK8j+WZ/Vc0/bxsz7ngTIewo+lSW3cHyWnScquTLl6FOQG1uPu0Bno0IgHtjqxUNbvmo1YqH/2SU1EZNqFUjbvaN94K7hgHW2mQBJ+R9ERFdTrIVKjKjgfhOWaeOnXfgKCk4Ll5/kpDarqhUTEhlr8DMJTlTCnqJGxzysgB9RGR8JNyd0IiAMQ5c84n7hbsNTtSN9u4Hz4Y7VDoSnc5xsuqS5V6ySk7ze/Bs4sp6n/N/Qi/4tCbdl9BraS18yZZ/EZcFQkGxvRn+gfoZyHe4i2VfvV39YSGNfFMZDIMHtNP5alltFy/dLjgouzip8DRqCqzY6ZvCUyT9PwEixVqX0+uorTQl4QSSTQxApPA0AL07XumPSbRVL0xJEiStTksjUXQ2qsnYfZ3WFC0lqQ6rz05meRP0OFr9Yy5JROMTyLF9WdHFqIMpva4wTqLs7NHTQ2/rxpcmR3+zFq5ndBrGEZ4CmITOazxHiC8wOoPAGcBkMrKCuHVevS/9OxMsnwyOUcCe5sOKCjFEVJSsU6nWV+BJLl2WdUW/siUa31Gq/2Q+/vNUh6oB4Ha9nuhcCpWDG39nPp0ZyrNoGATCbDXAJ+Ldx+HoqqKER9D/OGny8gn9J5wXVU/A+wF5KimXU89Mgw/lqe9oGexEMzwQ++n4+WxJs61vKWSONvzfw0a/vMmuGs5fB+O2Le6oOdnzMY3YzgU0a8F+txILMVt/J0E20yGsw21Ow80XFeHHwb70215W9BMKbQyULvancB7Ia7vVpOwC4DqIcWtbGzxEQuoGtMRbLz5lZ2Q4880hKur+0j8uAw4Aqgf8JysPVSOqzYPlS4uLKWHWnpXRVPxc6CiSfHdNuj8OyYXVB9M0wKAQ=
+                properties :
+                 x : 342
+                 y : 337
+                 width : 18
+                 height : 18
+                type : 8
+                code_elements :
+                 type_code : 8
+                 p_codes :
+                  -
+                    code : |1-
+                     
+                     moimeme..couleurfond = inoir
+                    type : 14
+                  -
+                    code : |1+
+                     
+                     SI gclDocumentWriter:ObjetLibreOfficeActif() ALORS
+                     	
+                     	//Convertir au format RVB		
+                     	Valeur est un entier = MoiMême..CouleurFond
+                     	
+                     	SelectCouleur(Valeur, scInit)
+                     	
+                     	//Régler l'image
+                     	MoiMême..CouleurFond = Valeur
+                     
+                     	//Régler la couleur de police de la sélection.
+                     	gclDocumentWriter:reglerPolice("", -1, -1,-1,-1, Valeur)
+                     	
+                     	//Ré-afficher la fenêtre dessus tout
+                     	FenEtat(FEN_LibreOffice_Writer,DessusTout)								
+                     	
+                     SINON
+                     	Erreur("Aucun document n'a été détecté.")
+                     FIN
+                     
+                     
+                     
+                    type : 18
+              -
+                name : Libellé65
+                identifier : 0x2f771e4f05b3c536
+                internal_properties : CAAAAAgAAADSaEW/tyhMU3DcZXGYR6WNFd1qX/VOLZNIhe1npi+kgy9O0S2T3OaommHWvwX2gWYWCX8HhwUzxxhQSyrRfCgfyLDUEyyUcT1ZATnOtqefchd76CJzTyDPWwOx24BIxMWmJIAFfwEQfTBGc5Ohcbaj5wHIMc8kLJ27JfZCBNHchBxecIoFR6wK9NfKo2iT2uUMkbIXqNDvh1/AFRTtIpnlcIg4b6B1QJMhuyQ+fnKhjy/PxzpT5a3yi4KoK6JXGjikq+/aCjNqT5Reg/xZ/MrhdSkua8xVBCCaf/pfhkLsYjj3II53EpN5HmVjdDFLPQENVjLkN0ZBZpTYfJmhiJBkXWWXX0c5YbJ2LiNlXptzXZkcJdklkrUhcuEV5Bp6IZN00lv0p/mMnRwg+4TYA2RzE8EBAbqpZFoJxncW5XqxIWkLA/ttTuU+H7VriqkgjQ15xFD7S7lpZQ0xbGYlamw+sN1R
+                properties :
+                 x : 19
+                 y : 299
+                 width : 116
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+          type : 97
+          controls : []
+          code_elements :
+           type_code : 126
+           p_codes :
+            -
+              type : 222
+              enabled : false
+            -
+              type : 223
+              enabled : false
+     -
+       internal_properties : CAAAAAgAAAAzf6m2N6qIAG1p7ml4aG7PXj8WKH6JES3016U7BHOc/eCTTqgHU8qKusvL//JwOYZIXvtj1OWk7e1G+YGRYZZQzNOMWEuBG3lh61aBlrKhvx1sts37aED1wmQpwFs+D/tzkE4xnoYG7EJUi2jmjdoDhtunnRJg1bD+mK76V3W7HHOZpBDQ9RSwE/3KYkbDBBqb6RydA/Zf0fs=
+       controls :
+        -
+          name : ZM_ManipClasseur2
+          identifier : 0x2f771dae050a4dce
+          internal_properties : CAAAAAgAAADYueT/V+yVEN5xEOhMMK74TiBxGXk61NZ/hAdUPcexvbyP//Ry26ST7ZtUXEmJ0h3HGV80O4Q0Emeg8xeb1TTqAInpf/M90Zd75+2WPsfwcuF/e0aK2Q4kw/KnNL3wrKC+rfjyHZAUCW2p70E9MGDRlQeWkon3QsFIa4+4adSa29+sp3VblXGeRRZtD5aqzF7uaa74yE5F/m3YJoOCzJwM3bmGtBLz9q9Ma7ClraFixuK+aWxzDvKpwZWtKEIfxGJNi2PNE7r4dM44aZXxCIdohAeUcoFBKQHSzYwkl99TcCv7OoiQLlQcY7y3R+dKjjdx+pXORs6ERnNUgctOFKQgkuya4Avu2f3cXgjP5CaaIwVrt+vMN6nHKVc9ovBjxkOXI+VxTg6P+585cUmvdLq/fMxJjTfY5UjkjaJ0PxXiAMTYtbk+nHiwhDVzPxRihO6ckPxO/G8jpqTrigiL4y1D5E/rdCk6mmFxBPP+z4D8jNOM6irxsoSoa5tcmB2qlQG294B6anZr9/eUIucHnI/fUDTiGUBPnuxJQmXKZB+w5HwX8jUKH/f2hcanwDaFrSJhC/g3a5MAkt2ZM9YwptN2cot1Vlf/9tgQQVEpy4CFWZzWMZOnweg8UoQmRkDJaThaKXEJX30S6L//FoB2fRDSCA8bE7fgJJSgQym2czqwZrjbZWMLZffVGPfcdd+APs491ULDnzO9SDn+4oxLMhqLMvUggGUo4cQb1I8DKEhS3CaUbt9y6GYhnQfs2Qfr3LHIsDAdRkmFmnMxafcEX3w47HWZLsec
+          properties :
+           x : 6
+           y : 10
+           width : 518
+           height : 192
+          rows :
+           -
+             internal_properties : CAAAAAgAAACjy8Z8GPH6VvTIUwFqOEMK03fV6BkLdcf/DAQeK/78hBRmbD/fkBgx18E2GkwwaYhX9m7/x7ZB6uGT5Rw6p7FixaBqTmDjBpgp8lQhx21jxs4NZUU6WPRcN2vWpHMK+k4tkyaG8sLqPykv6nIC5vF0kqY=
+             controls :
+              -
+                name : BTN_DéplacerDébut
+                identifier : 0x2f771dae050d4dce
+                internal_properties : CAAAAAgAAAAP7TJzirmkE/bARI2MRhSJB9igF/BRNACDj8UCJ1W5otglvyzIKHrygT4gDoR9k1+hoWlMFCsHMTeJLw7ugFPsoEeW/XfniuKe8gSNEBrtPpn0zYKrcS+o2wjiBQG9wlJq/giz1zYQiNrYmMqvYtjGqyD/znxWcHG6Y/1rWSHcEAeY1R8xVHxATtoAKnejcvgOd+dpmO+r3HtvEVhtYG5+a2sWT4pXhhzJTOLknjkYQmSzjw50xjugpd5bI6DLcaZz4Gmr3UjUeaUwJgw/o20j//h9bopMNemfmofdskhTdT8W07WCgVn7k4uH8BWfhCvm5xefyKndiVEBf1WHJa/puwlsVXz1jpKhugQeCf08+S6cvfHxgFOCDltvdgU7ddZKmV1sRRwh/MLMEMNhzO3Z2zGDYS8hRi+toIrl4En45zZDnc9ElRxlA7ujFcBGIwLLIJ1JdQUKfKf0gc6B8QPLdARnRE0D9lXBqd/2n/I6EoklZbxu7gQSnwZgs9Kac4umWEK8o4WJhnmuIkLwYzrTKGnOLdYqjldxytIbTqtYy38Ja85dSG5RTRV9TjrPaKWHUCGqt9lTEKR/XDFIY9QZqW3fVczLq00gs549CxyVEUguOtnzUPTkgw6Twu8W1XPm4ZDzxAxCfMl/fk6+hYHR+YYfzltoq9UdV0kLE1b1gdSkFAvvCB0lJcRehE73S6CjDrZZmRBQrGKqNwN8JM2tVD0ivwO8wuGKSxAOm/jNViDi6xkYYGqciJs1qjdPRVZddEEnfpY056Nk0r9eRPFPGOhdUKboPS4qVvl7ypGYLzpM1+zwPubrpubfDeySrGi9o0szkohmFNMlXTJicNkbxHUS6zVgAV2Krgl6kxelAgM=
+                properties :
+                 x : 368
+                 y : 12
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    internal_properties : CAAAAAgAAABPKakwX0SdVtFqh8hsZwbfsSvubMa3R4sJ8EsmiNVJiZvW2NglwnWhEvlP1oyyS5wBvFjUxhoZ3a10Vwjl66dL4mr7Dm5z+133ybF/gwXJ2eiim7L3dq3Mh19kX2QEtCc24rZsK5F0cM+Ss+g=
+                    code : |1+
+                     SI gclDocumentWriter:ObjetLibreOfficeActif() ALORS	
+                     	//Se déplacer au début du document LibreOffice Writer
+                     	gclDocumentWriter:DéplacerDébut()
+                     	//Réafficher la fenêtre dessus tout
+                     	FenEtat(FEN_LibreOffice_Writer,DessusTout)								
+                     SINON
+                     	Erreur("Aucun document n'a été détecté.")
+                     FIN
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé3
+                identifier : 0x2f771dae050c4dce
+                internal_properties : CAAAAAgAAAAvTu4KErCsSsRV7aNjh+ZJMqJKLRot+mCGOf1lKVa5oe4lJXV1Ayzr4OReBay6sIuE85iM5ujSlawRqI0V16QqyetzVgiPfobWlONkBs9wcSBhczPekUVHqL+zfCHFoWxCpp9saqPOkzfNq0RzuKiDTXf3o2yUjQW/it21QnOIMnnkgTARjhhE0oHGVUR0kWqSKdwIZ0QNmQNmcmf3kiAbrJKahfrufWVR51Nlks0R2EPj0D9spybFkdnceqDAVbNlIXdcH0jSMhOSy077vD7WQ+v76BPkgWXY9PBZ8hR2fCbciFyP+uRga8TupupeZfwXDnCRjY2y0OfBge4QHRlic3xFeCSCBZfLGnLDqXW4V+q9Wlp3PtCCsfJkF4FoNcathfqoPQMtWAXJ6In43Qdkfi7CTL7dZJijU8jhSdm3HmQB10G0UYP8vyEdlj8HJbaOHciQXTwHzcl5WIsUSYCkGsQ6sBdV2vlQdCOEB50aRz+tIt11zQapFHTK6fyCOA==
+                properties :
+                 x : 38
+                 y : 10
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAACt5fDOMovksOKi2YvsSp1YnbGXktNdL8nt/jqwnYhmAv5IJuEpYkpLrUtMnNay02Y8wCpD8RDnGOWahquTfmKhmgLE5N5tjB6jfO5PNR8xELh339uQApqCaV3YWilEwJDv3fi0wDxgtVMZxFgowJ+mpLA=
+             controls :
+              -
+                name : BTN_DéplacerGauche
+                identifier : 0x2f771dae05104dce
+                internal_properties : CAAAAAgAAAB9au5ecwA6juIoXLmESsO90pnHZal2rdaqWGOcAt4leMEWmfN5cVm1HhLqDbDZSZkBgbNvh3yMPJGHIzBf28Cd2ZeGJoBCv9jquoIgjbePaS1E0imguiTreU80HEQC7J3o19QPJCaBXabXOuRkh8ElnxF8U/crcprpMpE6aAz+7ZSY+KGhqCHwawk8OW8twJSFYGLhzmus4rrfuALu8fkjw93GVFxM3ebfBqIaxQNHALIV94Eb+PHYW2HUzPxbQ5btCJ+aCcA+LPqVf+6LuNtAYIN3IgpkqkwMNZeQPEbsijj8KPmX6b61pBmMtC/tKsgDH6l1InfdKMoCBUeFS47cTuvISMtmcolYHIvUKD5JflbRT6twppcIEEwsjisIiSsqgntys5VRiid1oI0uXTWyT912c+DuYWfMkA9Tb3qUfZ+hVtQhVwcSUtULaYe6hi0H0zMZSObmnXD4NzCWwRJmzLkxCOTYnCy49W0QfmZJoVliFwzpF8q/Jt7amRXaqtLQsyBEpKgzT2zeQF4De+nC5D4IVVd95OAyHiwBzTf38lm6P4j4ab7sdB9B5B/ln5xfg+Fmbl4Lf2HxhCkpD50ik4qPx5vgP4RRQe7jfgbwsMiJAvVki5CVJGQjErLOusBCFGijhd/+9Yi7qMiJRaCkPUc1xMxbTTjMO+c1sqQshDZxDgGCScv+kHBMYoUrnPWnYybtxi8uQY3CBj9wmEVS0UUdDsKOyp2Bn/5Sio0Xb0VGqEOY3OPJIO3gNFbgFVYKGS080HKdJVCfva6rEFqWZ/v3th4jP4GZglGra10MX3vSUg27furk3z3qEbWy4YxjTBqpklZp/AbKwUSptPFUpng5rZv9TKipcZky
+                properties :
+                 x : 368
+                 y : 60
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    internal_properties : CAAAAAgAAADj1fohzV5m1t/sDyp8B2h5G22crCgNwxP3qrs4+FVPZwFkFmBrCNm9+MODxNDetW5/yrqw0DS+cDI5fBHM5JKwWY2wx+GAFHTYmrZgQlZstve1hK/2b4JzZEQRqOOVK9CxkXMtbl+myowu34Q=
+                    code : |1+
+                     
+                     SI gclDocumentWriter:ObjetLibreOfficeActif() ALORS	
+                     	//Se déplacer à gauche d'un caractére sur le document LibreOffice Writer
+                     	gclDocumentWriter:DéplacerGauche(1)
+                     	//Réafficher la fenêtre dessus tout
+                     	FenEtat(FEN_LibreOffice_Writer,DessusTout)								
+                     SINON
+                     	Erreur("Aucun document n'a été détecté.")
+                     FIN
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé46
+                identifier : 0x2f771dae050f4dce
+                internal_properties : CAAAAAgAAAACEnuWRJ4iEaSxI17xmBa8+8G1L/iamSGxYma0RQ14TlH2uvMhtqBNQSkSa4AkLzxFIOnThyV8ssrz0o2NmTUScRGKg91GY+sevSqqpuAuoao0Prpqe6/cRSqzCp2Sy9owOzcY3+uq6Hn4LXZxDBVXs+33AmfD46tLtvQ2EgrScvZ5Chr87k4rE1uqezCXs3FMer0wIWly7SQHTAF0z0s0vmFvkoIJUl9QlPtpRZR2r4EiymKlTqU1NSBaE5sN1/q663iaGEgcwYtRvJmxCEhPyhUkjKqmHwpUp+HWTg5qPfnCfT5oaHInAwUNb/JQRY3mZk9TsFOstfkkPhFom4WfjjZYOGvUQ8wXf118jy1iVuuZrUhmEMYFlQHpErsAnWNoA8f44i9HOQN6TyRg411NeS6ZoK0fajF3i7SJgUv/SeG6YBQsj/yG4AEfBRIKlM1V0sFZZ4mozv08m8QyShTMuwlHYTnvsO4oKPHVB3msyIkSltQ3QQbbDH3exQ==
+                properties :
+                 x : 38
+                 y : 58
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAADrkx6k0PmyHpyg24niQPvSay8dIMFDPf9XtPz2U1YkvLyO5KdXGFC5X3l+IoS44XDVysYvExLdIvmdk6aQYQfEoxjS1ugbPlCRatxZP+XrTna1nZ3SwFzErxMObDtSMgZlS27Oujpit1EHMir6Hjk82m4=
+             controls :
+              -
+                name : BTN_DéplacerDroite
+                identifier : 0x2f771dae05134dce
+                internal_properties : CAAAAAgAAACZT1hwGM78VEoaCHc58vTJPZkOyNs0/JHX1AXGpmSqSqsUDjxJuapXwWBYBs3/uBNgnsUjED5HQfHjGsNU2dsI4s1J675IqG/6Cud77Ow0xM+asKeuj9NV+nDtqOj3JxgRDadlAFc8zzNtcCY4py5sgd903JjcptjfkWFGJoYItzSanRrHR7wopVEyAtOCHKx7umWgkUaHx4TjE/unhFP4d9d6zRH4YLewgzi1e6kblBqZNHlhfyUh8GsvCKAOCX0vTKdggSk/1MOsfM6QQ1TbDvAhdEpNXi076hEOoOtgEPM2cwuAcaS1OjjY7/ppJUOmEhE2UfU4NEHcU88/fAZ3M3EOG3iWETMwNYz3jJ2tDDZ2vDWkbkhjKnTePaUydljKJJB+ZGa2giIFrqtI/+OLWOvLxEezU8YctbbKvdfL1SZIjOMj0MixyGb786so4ml7YVu1WBxTksorA20SEREHYGyGdv8FjKZ8iMnQLky64y8WgKArmWqp53eeCZqOPt+54cmLbPLR9LhGvjaoZ8popodjs+IyitDdV0Z5G3j09GHHRW3bKDbZDS8+ERRCZmzpdxdJZCmvPxEyLkkDxoSopqZIja5n2znQ+wYeFwZA8j8i65SORxNGhxn3BQmj5szgyhR81KjlKT3HzbjoXpMg/a1gdzB41glAVTVPw8nNr48h5ehESwzXg7IsxBzZN8qyXBSBMZuZlzw9rTz39duYCrl8bBp2161U4iW26s/ajbQV77SsoVBF2A8gYKJlLk5Ui0LnR1kPYp6K0/tejbd80+ZSZkY5MCDmOpGQYNAK4AmHDYR19xOJOR5+D5VOBMA+liC8ZxrO2LZ9fTfohJN/8RwXo16+SVJ7bEAhoMhf3Kxo
+                properties :
+                 x : 368
+                 y : 108
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    internal_properties : CAAAAAgAAADj1fohzV5m1t/sDyp8B2h5G22crCgNwxP3qrs4+FVPZwFkFmBrCNm9+MODxNDetW5/yrqw0DS+cDI5fBHM5JKwWY2wx+GAFHTYmrZgQlZstve1hK/2b4JzZEQRqOOVK9CxkXMtbl+myowu34Q=
+                    code : |1+
+                     
+                     SI gclDocumentWriter:ObjetLibreOfficeActif() ALORS	
+                     	//Se déplacer à droite d'un caractére sur le document LibreOffice Writer
+                     	gclDocumentWriter:DéplacerDroite(1)
+                     	//Réafficher la fenêtre dessus tout
+                     	FenEtat(FEN_LibreOffice_Writer,DessusTout)								
+                     SINON
+                     	Erreur("Aucun document n'a été détecté.")
+                     FIN
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé49
+                identifier : 0x2f771dae05124dce
+                internal_properties : CAAAAAgAAACbqnGbolFg+7F72jbCgPy8p0lUDG2bOiDeSd9NNoz0LGCSypuMSEeW7TRdN11Q8Mt9i0cyFPM6+OnLCo0NfXGQcpuWf8Cfre9GgdsVVdShuVaYG3pTZ1HSuNwWBX7Cpt6eGctz8Bl25Gcce3fXRjP9DvUL/Cz7al8HQ58lhEG1n6QTmRcy58NbLRlhJZzjedm0OmKz4oOaQ2RO2UBijTZ4FY6QU0BcUPLb3yVZbRNIaac2WsbyAMmfep8u0JWleV1wm1WoEPlH9vR25Kyv+1c0cCkl4EAT3nd1FLMnVglZCpfmfjBGm2UsbhSJqsQLLtCKWIZFZC5x5CJ5ZhIuNnjopIbzpH2vcvmqZhNrH7wlb0G9/rykrSWGfNyZsaU5+BzUCareKnCGola5q5fo/J5wq2pCCt26/0AmZogYUa4WwM2p3u07Qkz05WBTXOHgouVqNHVV8dFQIk0kvbZBbiCgsA1WIzRXPJawV1CLgqnXWXucbIRWEw5vgVo2efCn
+                properties :
+                 x : 38
+                 y : 106
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAAB1DaiWanN82Epa4TNEMrUA1Wnf6hsVd8HlBtJIxWBueuZQXklBCqKzVUO05M666w56LDo7FQyb0I3sTPUxwJiTWBrszOZlhBardNanTffZuMB/19OoKsKqQWXQonEM+EgnlSCc6NT4zbuxbPCAmEfOTNg=
+             controls :
+              -
+                name : BTN_DéplacerFin
+                identifier : 0x2f771dae05164dce
+                internal_properties : CAAAAAgAAAAXbhGfxfBIucdzHyxiJ2vKi0tyfPWarGYNB70cghPVGe9Ogm9WtCPhZafT/NP2Dg5ruPMKWEtJzPaK8bIJrKjwNk+50YTcA8Nz4TsS0ZlpgBiklFCKDzPn1SFN9HjFOiHF1QXIaQOaLQgEAtg+7WHUcisHpjPSEvHsvgNQzR0EQnBliUe58t40gwwR0zeVgDyraqgNRl3eQwXYt3d1NCAKGvgmOAIEXTq7mehTunJcFAHPBzXEbXIRZu/uOAlePJJiAPXJBiFu2r58txBMAfZx9Pkyxmhw1QxiSRrzKhde3LvbS4eiWMsIRH0VbgA0mfdmHMi0qNPAqNHRtLKkCSO3WwYjFQKWjXOZ52gJC7POOTL+p4N2w/8Ib8TCFbqvGY0ZivA0BF4JvHFZC2fnf70jzqPF0683XeI+teQKvLUQSn7Hlr6y4PdmAF4SRRQl0UFpcdQM3l8p9bh7WjVbVupptB6ntcOIPpN4KMrot5UBuTcoyyXbIq5YQd//EcUZ5x9ffZh8ZMsjDRAmVTj/yl1mulf86u7nCIFT8T8v0l9nBs2P7oTp6XaQJ8XBN4e1bXhn+SDQ1sgD9HXAf2f6JW+GGtBNmLB04cwebR8mSrk76knOMn3qFDl352MGldZQv1qEVjnXpCmX6KWzXsiN8z6OZV8hZnzblpYi7c6dTM6U+d+dHIHcOqIMDWop6D8gtkQ65t14KRyf0Go1bF5C9E5anuVnUVivE1yM7kwoJ1zzbXabMEM0SmgmUNnv8JkIA8hc//mqz8Apfxbyfi9tz+WtDLto4BNusfBRK1KoqUkrEmth8OKXTicsHk5bEyYHvM9q9rJK5p2yOCRm62zqLlWSQPmCrQhN3kW5Vvg9LBpg
+                properties :
+                 x : 368
+                 y : 156
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    internal_properties : CAAAAAgAAABPKakwX0SdVtFqh8hsZwbfsSvubMa3R4sJ8EsmiNVJiZvW2NglwnWhEvlP1oyyS5wBvFjUxhoZ3a10Vwjl66dL4mr7Dm5z+133ybF/gwXJ2eiim7L3dq3Mh19kX2QEtCc24rZsK5F0cM+Ss+g=
+                    code : |1+
+                     SI gclDocumentWriter:ObjetLibreOfficeActif() ALORS	
+                     	//Se déplacer à la fin du document LibreOffice Writer
+                     	gclDocumentWriter:DéplacerFin()
+                     	//Réafficher la fenêtre dessus tout
+                     	FenEtat(FEN_LibreOffice_Writer,DessusTout)								
+                     SINON
+                     	Erreur("Aucun document n'a été détecté.")
+                     FIN
+                     
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé50
+                identifier : 0x2f771dae05154dce
+                internal_properties : CAAAAAgAAABghNoqcs96uUJ3lQWjVt98yOjWRPEeDQ+kwOcbcntUX5oslcguW2Qf90uHS/3J/gRBcXyzWp5/Zrv3hQl0+EW5PObLHprmLGx8e78N2THc6vDQsC0Fg5gIp5feqp7ee+08G1iQiT6UJ8W7Wp+4/RCgXXCywXMQ3GFQSXL37vX7hAR+IOAP7j4gdZ3GQ+nM4Jirwj9fRBql+BX8yTRJsl2xHnpVsJQvgFtQ7nxnKRP3t1HAoGgHktsPKOlbBC7g4KtsVew+q2SFWCdkhDGGgF1DAj0QmqfOzjtImvXs1RTzLYVKFZT9MmPm18oNa3+yvuVCwh3f4b1xqBXPYh3nmxib7or6WNYIPgmjusGIxkc7BJ2fz0w32MVi48YpYFJmsFeQ+7k+JUMkJGeVW/DHnarx8bKJvKTL3WKVZ5EozHlnjpC67LEIOUu1/p1ThguPfHC1ijJbO0xVC94A33ClK8BQYZTSizqm8HwkV9ms2wavM7KBQXLBSWHkwTfhTAgjPqmsR9s=
+                properties :
+                 x : 38
+                 y : 154
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+          type : 97
+          controls : []
+          code_elements :
+           type_code : 126
+           p_codes :
+            -
+              type : 222
+              enabled : false
+            -
+              type : 223
+              enabled : false
+     -
+       internal_properties : CAAAAAgAAAB/WjjY7US12kQGDBBdhxlY1UpKMLDL/JSknVhX0G3XoCC/rYYXRlo6U9+aGh6570g2bEqPFOrgM/bWYI+zCtmw+VuW2tkxhszfYumUqoIlRlgm8yKA2z0kIeKoSwa3nnQBXQx4KjF02p2jo7Jw1Z0qeTCMSjADCDUVgrbTZNATsmRI3jGnWi69Vw==
+       controls :
+        -
+          name : ZM_ManipClasseur3
+          identifier : 0x2f77234005790f43
+          internal_properties : CAAAAAgAAACQQZwnbyRd6AZpGOBEOIbQdvg5UQFibF73DD+cRR/ZJRR3l/xq86yr1ZNcVEGx6hXPEUcsA+wsut8IC6/c5260qpv/SWH/c/X1Ed88SPFqRFsxcYAIazjyJfRZIrfyRsoQV35sa/KWj99LGR+32vpD99EEDOcR2fLL6w846VQa218sJ/VblXGeRRZtD5aqzN7uaa74SM7Ffu1YpgMCTBwMXTkGNBLz9q9Ma7ClraFiRuK+aWzzjnIpQRUtqMKfRGLNC+NNE7r4dM44aZXxCIfohAeUcgHBqYFSTQykF1/TcKt7ugiQLlQcY7y3R+dKjrdx+pXOxk4ExvPUAUvOlCQgEmwaYAvu2f3cXgjP5CaaowVrt+tMtylHqde9InDjRkMXo2XxTg6P+585cYlvtPp/PAyJzfcYJYgkTWK0/1UiwIQY9fn+3LjwxPUzf9SixK5c0DyOvK9j5uSrSkhLI20DpI8rtOl62qGxxLM+j8A8TJPMKmqx8sToq1sc2N3q1cF2N8C6KrarNzdU4ifH3M+fEHQiWQCP3iyJAiUKJF/wpDxXMnXKXzc2xYZnAPbF7eIhSzh3K9NA0h1Z8xbw5hM2Msu1lhc/NhhQARFpi8DFGVwWcdNnASh8kkTmhgAPtfzqWaFZ++VGHOfXzpzq1USOIMfb08OoyMiQe4HSVwJUijhr/RNnvYvZaN8U0VsgukpVjfJTyzORjHm2CqSjyoJzGt0YmF0w6cwT3IcLMFBK1D6sdseagP65ZV+0EX9jZDlw2OjVnjFtgms5Yf8MJzRwpK1B9g9U
+          properties :
+           x : 6
+           y : 10
+           width : 518
+           height : 96
+          rows :
+           -
+             internal_properties : CAAAAAgAAADmmBmn2TK7GbWZIPK7afI5YhhoWx4YWhrQq1C2dUCE5DyweKvV5uqXp1vqIjYyWdIyweAr2aBHgIV+8g8/ov4jPXuNO4twWaEY9x9WIgJW+0FOYFolbW8NDLCrj2YHh9lWRFfVoRM5jHrwKzHBJzY/32s=
+             controls :
+              -
+                name : BTN_InsérerImage
+                identifier : 0x2f772340057c0f43
+                internal_properties : CAAAAAgAAACr+YTkrzAPefZaQ6pSa2dunhY3yd/o0FXz0IQ/lZUKcQo1fZRy2s8kUZ+3tayOaSxxfQZU0xlCkqTWcYY/jAzWezDMtt0BXvq38yjQCYL3KLIF8sNGZo+9O7xnFVpqfzliAlRpOQ/CipV8w+F70hNB+hoFzWscqlJ54gIHVqAud+d1xYHUTdcVa7clmlhVGQwcwRCmzOtk1u/g0wJeU6RyyoF0cuSgDty04m/B5ImR9K6uuXfXSkGIHRPGg09tSloqba230WeoceIdCdpMks8/yIra0+ubNak5xdbchtTe2a/MPx34+ZzKkPLaKCmrAA1lqWPLDFjk4QkcgNakebA/tCQOV9SAPBhMgIldYoxB0WqaWhwL93xCFTjBJdlQPwh6NSunooOq7/OVwK8WxBBupfHvIWdkPDQ4rwfF3J8UESdIM54EsTgEqlzz2mKPc+AiRf0cXYlQpVBVn2G9moNdI1mZY93fxE6M5HdpKRvIcsZ8F7kExBDXvO8qyppl2SsFB2Rbe9F7Weo9gukMEpSfEapAfCpiIH424WyYau2tNAd5CO6yb/c5SefQBj+/EQq5HEreAsepL4Mkq41N09aCNek+BgT+ACaHrMMH7WfhYAeQoayEKTP9EjJbBz5smZjzE2/zA7goYtpBD+HcIFOxr+ETaEGvD8nCnX9NezNg4Lhkt0ZuYb2o5T2reaq7Tdd1kYK6WSzqUA8nsqaIIL7F8UBbjfudsKyP9J3FdGUbat8+xjKoUoA08i1jTKLouG3N8nr7kg7CYxMfOF1ctye8W/KFI4v8TW8R9TztlXvhKeDuxG2ufkyQ0IbWNz80ETtzk+V4w/5KrPox6cPc0EGJN8hl1yzo34yqOnzF75qH7l6a
+                properties :
+                 x : 368
+                 y : 12
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    internal_properties : CAAAAAgAAABPKakwX0SdVtFqh8hsZwbfsSvubMa3R4sJ8EsmiNVJiZvW2NglwnWhEvlP1oyyS5wBvFjUxhoZ3a10Vwjl66dL4mr7Dm5z+133ybF/gwXJ2eiim7L3dq3Mh19kX2QEtCc24rZsK5F0cM+Ss+g=
+                    code : |1+
+                     SI gclDocumentWriter:ObjetLibreOfficeActif() ALORS
+                     	//Insérer une image	
+                     	gclDocumentWriter:InsérerImage("")
+                     	//Réafficher la fenêtre dessus tout
+                     	FenEtat(FEN_LibreOffice_Writer,DessusTout)								
+                     SINON
+                     	Erreur("Aucun document n'a été détecté.")
+                     FIN
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé4
+                identifier : 0x2f772340057b0f43
+                internal_properties : CAAAAAgAAADmkbN1EhuV4G5JcIK4N2W52LElxsLeV3QKmemxM+vXXMKXYXkm47A6ZX2CXRJ3Cuzmj+RvDaKIcGO+9EoJ0hR9UkpWtRCHWX59+noaGxu/2vPRiwqe1x0kGHVkS1zca+VA3q/l4lvrKtkHUFRTYczEAYP+YugKWcjPYWeKPxWoYoqs6jd20m/vKboGPojjF8L/KIZPIFR8ozvSfum3T1dg/abzd0rTeGEATzg4bObIQcNgM9bregvYc2dQ9UXlqvO7V64Y0eDlr0x4/mXOuk/8T5+exJ2GgrDnLCVyP+6lBsKyR+aDSKETZpZv1dUu9ojpAPPJl7dLF1aDgjFXyXZ6OWzGRIa8vhqGGE8axDXxezTXqRoBpsNNrB5BbsTK8avjMmr7AYI7EarKYTpdd3dUWIh1Jgv+9es6z0sswWcsCAzK1M74mxVWAY8MdI/umpRuR70ib+ba0crZJRRv/j32A9i4VRb1FFW2j0c=
+                properties :
+                 x : 38
+                 y : 10
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+           -
+             internal_properties : CAAAAAgAAADgiguxwyTNE4ODPuyFc/w/fJLS1QACdMSehUa4b0r22g6qws23wAy5FT3IjECky8CLq0Sf03Ktornlq46IiZ9qmu1/yfnCt386qUF0ACS0VTtAUmgrZ2UDNmrVpXwR/VPQPlnTpxVHmnT6JT/XMSwx0WU=
+             controls :
+              -
+                name : BTN_Date
+                identifier : 0x2f772340057f0f43
+                internal_properties : CAAAAAgAAAAOOmJEw0qCgxjjNBMcsMyq1TbASKBBgd1MtUEjRD2ouvdEpmUDONsnZOruWpo1XfNSpJD8ry3CPc2bmq7iGnyIuPh2+xZTuJWrTJ4tmKgM8MY4D0kJmwwP1slcYl6tm1MkJ2QcMZsV2Z55ZL9iN2g9gVkQC4XWcvHP+zVGdjXwc7t4n8sp6U3VCr7jblnpQNzI/Q9o5mI3CiyXc+Xk1925zrcd7YBefbtXcFSN1MqX8HOVQVxH7TOHqfbJl1z92GdspZl4Hw/jaKPIKSY3gteisOdfz5F7TOf82zNQOFF7VTdo5TtoYphsAkLDyElnHiTEk+6Wf2gB+0BaXK7fZpXmgFHAHZtHqAPffYFb7PruvwbFcF/q8xcB12kWcDYNTf6M4dj/OA3Snd+QRtB34fr9wzWd/bgza1SuS5D9vNVmar15nlMYQREWbgFwgamUSyEyhLpzi/3pNUi4GppoK19GJxoy5vtXr27CX8gs6ODmuZizxq4cXplhloYtA68Mn7hRuv/sp2P+G8yGX8jZGZr+ySE71ZKsA2ykIPst48gtRwHwuZk0vwotU0Yh0UYMJ+m9KVF7VCemNSdX7BBUkOihI0q3+SBgowY/RVaQYNjXCWU1xtOCrSInoj8AVqWh1bVH+ghGj0bvkgqYBIDZ/+foFUqIDz97YPdelvbCnoywQVwVzC1w8ciclxIWIh9y/TAt3h1jM7gRaKteEz3qbwKxsogq2mrTUq9utsxbexEjRQl8vpnE9n1xs8EWfj5I7ofaAgVMj4fMTrCzYlH0cQ9f2cmPZS6Yo9z81Uv6tPjNhITFMwOGZkv63x54Yf0KktkHNueBs8V4/kxFaTPwQpIFhCwbOqGHYVw5UFeTUHf/AA==
+                properties :
+                 x : 368
+                 y : 60
+                 width : 112
+                 height : 24
+                type : 4
+                code_elements :
+                 type_code : 4
+                 p_codes :
+                  -
+                    internal_properties : CAAAAAgAAABPKakwX0SdVtFqh8hsZwbfsSvubMa3R4sJ8EsmiNVJiZvW2NglwnWhEvlP1oyyS5wBvFjUxhoZ3a10Vwjl66dL4mr7Dm5z+133ybF/gwXJ2eiim7L3dq3Mh19kX2QEtCc24rZsK5F0cM+Ss+g=
+                    code : |1+
+                     SI gclDocumentWriter:ObjetLibreOfficeActif() ALORS
+                     	//Insérer la date
+                     	gclDocumentWriter:InsérerTexte(DateVersChaîne(DateSys()))
+                     	//Réafficher la fenêtre dessus tout
+                     	FenEtat(FEN_LibreOffice_Writer,DessusTout)								
+                     SINON
+                     	Erreur("Aucun document n'a été détecté.")
+                     FIN
+                    type : 18
+                  -
+                    type : 161
+                    enabled : false
+              -
+                name : Libellé51
+                identifier : 0x2f772340057e0f43
+                internal_properties : CAAAAAgAAAB2yYRFg/wW2WHuj2XeSw7D0q5xKviMThDGFm1791Q1wJKs2I+yJJ4z/75rH15CwasTL82/4lGhL+SbWNOM5+KTUZNdCe8SeQyOLot5cfOWaIiEdNDfk1T6LQzA3Nz7AO8LTuXi9/+qbYCwStJvfzUsQ/WzZbOesNS5uJFrxeocUZXfH4drknJCqJ+q6xXDhcqxXtcAxCZQL85O4QQ3kIMT370k1Y2vYI9Xggxx8IqlgTTPSSlBkOgG6wgHhYYVVp3orEMc3k6CWz5DozEj4jPi0m4zbEzgPWypmdo8tgKtFMtjPERYDCAhbsNUs9jemuJg35rDYo1qL4xG4XtYb9z6ZksrRnkifdKM94ro+4XlueFIGBhYSgx/CNXQ9pHWUCo9MkAsXakp1FOWp3nDojcEnZkAhmdBfeiv3/3aBivKNLeVEVN8AEtktZMJF3g2KUw41DQ4yIzCI+DgAGgZ0Z9RPti+KR0l3mOslA==
+                properties :
+                 x : 38
+                 y : 58
+                 width : 324
+                 height : 28
+                type : 3
+                code_elements :
+                 type_code : 2
+                 p_codes : []
+          type : 97
+          controls : []
+          code_elements :
+           type_code : 126
+           p_codes :
+            -
+              type : 222
+              enabled : false
+            -
+              type : 223
+              enabled : false
+     -
+       internal_properties : CAAAAAgAAAAVkYsq8rhYZWyuWMH+H4ZBNItc9IqQMksj+ayX+Kx9A/ckXaI7UyC486hPcHdl9EEvvoF50v+5m3jlmSIrrEOTARWAh8HniYFyigSMeD8fNpp2hFavdov0HarSWLkdyyIW5P7wmtgnAeMMyLblG0ZiATcX8VsSjXqgb8izQKxbhUihorSnsy5dSlIA9q4Z
+       controls :
+        -
+          name : Libellé5
+          identifier : 0x2f77248c05fe22b3
+          internal_properties : CAAAAAgAAACnOQsskjW3pLIcSZ0rNbuzDdN0udiS8cUjhrcjL6PEV50yqbOX91t1QtPYL0x+NV4MMWu1v3xogPJL0Iv1E+I4F7G9MLbX0uvdtGIFrwuiqPutVk92xiIdO+7CU9gNLX3zbe9rwmxHYASCY5IN9fDxgTTzGSJ2T+cCtlVdxwvEA07fb78XfBk0ttB9+tmtoKMwRQLpH24yGX13P8fmFXa+c93uTzsA7cs3belOKmc+8qpwVGZvKagaCQoXiRkIm4OBXkt4jazhc6baRmxqYc8cbni6NcVG6zSgZRNRNUknaalytFzkmdxhRCtmbLgw9gSWmRbo6rGuwvrAEXkUSxe9bCrZ+WLwGt4IoOSb21QIQgRd19VwHTrFWJhFY5z8F0Kdvw9oSFQZaSiil+v5YTApS8YkdsWW0fjZdVRpzXn847TPuDbXMuJXzp/2w/d/t5h9c5bhJdbev/wVKMQIw82X3UDGHVyuFq+B5ObYPA==
+          properties :
+           x : 44
+           y : 20
+           width : 324
+           height : 28
+          type : 3
+          code_elements :
+           type_code : 2
+           p_codes : []
+        -
+          name : BTN_Publipostage
+          identifier : 0x2f77249906225358
+          internal_properties : CAAAAAgAAACnh3Q0N5u32nkrdxJBBwHt+I24MuyYXJANyaN9io1M9u/m6SigRezOeWw1yWewBoYPrwC+kdCtmEw3ZWlLoVHJ0z8Sib5+fyoqWMQcPGxPzrOS7Dc3gUH7FddK50MfLSECfIzeyLxEgQka1QSjVtHis2WHsNDVd/V70S/23HYFfzC81oRMr77k7LBtx6xc63E1lFpc5d8gi+95vvRAQDC4WNIV3CbEvjZKgOJbVTzs4l5VAeUoQxLLyrfGv+SStnwaMQc8wkO2IWU5S6lAAJwlGsrpUc01AKNHYuNCPw6Tfn4Pyx7vzOld4nUKYYCUZbvaVHOGACJZ8edPvB17b+E+qZSsbKT7FE+vkzWWdtzb4mWkvGC/+h87vM4gDaOCk7eT93gwKbGuvkfqxr1Jc85wH1xbQZtx1lWtt14ZgjFZlL3Aqa1usQJeUwlqNoGJUsdcV7HMUZGVnlBn4bMN7ji6HWOJ36MVS9l8EGFr51mZ+xTsjxXaOoduwMtsPCYVEswh08CrR8nuzEaTVLOS2HvmVXC+aui4BwkMd1zclLdWbUsdAAr0YZCyx0HkRq0VVoN5ttSwUOV+ODvWn8V7gc+7P4lahtpklW9VGpGdOQfUdxmwi94Woxx2ltA5fVBeODNl7W8vI3QvUQxfQYNqxliuewEvkPvx8D5czc+ZaTEHJ4LkWZhIW9ZJMx8tm9aLOIpr4RBIeYhr3delUq6pMA1tEA+HtdwL+ARUX3263l5i0RE3k7SOihP0/whX3RENkeXUWdQNa4E2P6CK/WyOLl8G/RiSQj2+Qr0jeAlmRCjnl2oIxsjic5aoNTcgRiR6QyFe4skvVawdrFgW+T+CPq5S9SSEmv5GWGxsLJBfsru8CN76wQ8uxKqjX8s=
+          properties :
+           x : 374
+           y : 180
+           width : 112
+           height : 24
+          type : 4
+          code_elements :
+           type_code : 4
+           p_codes :
+            -
+              internal_properties : CAAAAAgAAAAXztX2MB1lOhtfm9GIe8Ds2SGkgfUf+xhLFC5PJ2Eeeo/RoSa/lqTwomCiTrm3fRffAHDp1ulKbw2YuLyr9JgAHujOEqEIjQaNdrDx4RdKINqHLvI9W6znuZ6KMs8RyPDMVncoRxkIUSEDrcTmByUTCCaMjCcyW9/mA9lM4sE6WM9H2yYHt1i59mX8Hv6ROPs=
+              code : |1+
+               
+               // Si un document est déjà ouvert
+               SI gclDocumentWriter:EstOuvert() ALORS
+               	
+               	SELON Confirmer("Un document est déjà ouvert.","Voulez-vous le fermer pour lancer le publipostage ?")		
+               		CAS Oui
+               			//Fermeture du document
+               			gclDocumentWriter:FermerDocument()
+               		CAS Non
+               			//Le document ouvert ne sera plus manipulable
+               			Info("Si vous réouvrez un document déjà actif, il sera en lecture seule")			
+               		CAS Annuler
+               			Sablier(Faux)
+               			RETOUR
+               	FIN
+               FIN
+               
+               sDocument = sai_doctype
+               
+               SI sDocument <> "" ALORS
+               	
+               	// Ouvrir un document
+               	SI gclDocumentWriter:OuvrirDocument(sDocument)=Faux ALORS
+               		Erreur("L'ouverture du document a échoué.")
+               	SINON
+               		FenEtat(FEN_LibreOffice_Writer,ActifDevant)
+               		
+               		//Récupérer l'adresse du répertoire où seront stockés les fichiers
+               		sAdresseSauvegarde sont des chaines	= completerep(frepexe) + "Publipostage_"+DateHeureSys()	
+               		
+               		//Enregistrer et récupérer le chemin du document actif 
+               		SI sDocument = "" ALORS
+               			sDocument = gclDocumentWriter:EnregistrerSous()
+               		FIN
+               		
+               		//Lancer le publipostage
+               		gclDocumentWriter:Publipostage(COMBO_Fichier[COMBO_Fichier], SAI_CheminAnalyse ,sDocument,sAdresseSauvegarde)
+               		
+               		//Réafficher la fenêtre dessus tout
+               		FenEtat(FEN_LibreOffice_Writer,DessusTout)		
+               		
+               		//Ouvre l'explorateur Windows sur le résultat
+               		lanceappli("explorer.exe " + sAdresseSauvegarde)
+               		
+               		
+               
+               	FIN
+               FIN
+               
+               
+               
+              type : 18
+            -
+              type : 161
+              enabled : false
+        -
+          name : SAI_CheminAnalyse
+          identifier : 0x2f772acd09338f43
+          internal_properties : CAAAAAgAAAAjxtrO3wePCdOM1VzpE98AjYKDyWgUqrbeLRdR+wIhZSvLEetedt3pVbooqiRQ+l2bTveNUcEh509nU3RhDjcr2xHJrRPDv2lRrmV2dVvEcbaGAnimltdeGT4oiSsE4a1c+M2juRP8fMDDkPRb5/DrtWOdXZoIGnS40KFo43DR9YX+aEz5iiuXYeYKppu+J9fw6bbvM2pLBwDZdUErjmQNxzDM9hYudu7jdF/80yrQXATdzFJfMgBSU+AfEEV/kqnQggv0ikDJQPzACmddv4irKvtQ+3bpNxZAAlD950YeYGAzGO9uLRzd0S1QCE1Q6ys1TzGS+Bj3ZTrlptlIT2PWOzSjjr6LJs9ahMRfgRE0WPChyFfy3eUr/aMxxivtyuriUrlVSGRwjmXBtwSi8gu6yUhHiBjTkLhBpS/68En/cWXLPyhrcq8P5dC0KZPJq9lm9meuh2SJt8RdT+As4NcDUsItOqplDpVMZWOPsnmmrw7Sgerjm852ERmlz399wWPcaoabNCV2+cGyASH0WlffVDS1o2+zTlkORr4C+eQr7b2VfKmBYRjAypDBK8Vt+lGkrNQ3rXoJKLZQOgx5fvYU9bmT3T8iORgNwMcbCPJ08XsIE3Vr0qJrcKO3jpV3q+HJObMkvNk6gz2FC/XoKgXkgr0xZRt++4Gq5edKBomSqbrjT7COdqS5krOJhyuYVRYNTRHuGt5agpccz3vqQjKMW/7Y0oAG18x7u1JaZ2TiXX68hMrHL2dUpkIiLWLYGsQKt3I8TFm+nZ9hRXOqOOx8X/FTwBTRbdSmvl8kkcjYJEdsz7iIYLk+osoXZumoAdsAlBI9C2gYirQDQmWDo2OVsO0GlLcGy806QktdIXSoO0CPt6q0V5PEevtxdMC3vmdNhyI1nK51XNkIhS0jCijy/O/EiwyhVfWI/w7ubu0tyCpU7+80GLG/U6mE4NNPwg5Jx8rTj3eiNb26IZryjtYTr3etjQ7stMtNLoMOYGfdPDTmKZnEixePXVNu70ozAejh2ALQbG7LSRLsuqQUHzeGd3IK5mcLsgftTHmfBlvnpbPXs1l3UrgtMIxKcETeykNKiWNRkuX7aXRQqOsZx+aUOn7KrozKfMi3hq9maZbT4FmMoA6/nhQL+Fx2qAPSr+3WvbZTjxEGHHWwhdaga3vhaCteXLDFTdguua4GLnX2W5D73jQSoFzvdGM9hH7Ooq6BwPwXrV62Qbj3hoM1y70mH2Q41wpW6y14BwfoJWUjcCstttddd46fzWgsCozj5RBpRIPYI8/hguukRHyQ2/U5kbGesoI=
+          properties :
+           x : 44
+           y : 93
+           width : 416
+           height : 25
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              internal_properties : CAAAAAgAAAAmIdJMK0I1aCNOc7bSB0Tvy9gJ9Yy1TNZBO/+DfZe2F+8o/Lm9padPbhqL8cXit2RHeAfnW6lZ0LNMrhmzzNefdF8mU6aaV2zpxZ4MqTztYZqx0KlR2Sn3q9mrGlBrsnVOFUc7ywVM1Rb/Fw==
+              code : |1+
+               sAnalyseFournie est une chaine = ComplèteRep(fRepExe()) + "Piloter LibreOffice Writer.wdd"
+               
+               SI fFichierExiste( sAnalyseFournie ) ALORS
+               	MoiMême = sAnalyseFournie
+               	
+               	//Afficher la liste des fichiers et récupérer l'adresse du fichier sélectionné
+               	ListeAjoute(COMBO_Fichier,HListeFichier(sAnalyseFournie))
+               	ListeSelectPlus(COMBO_Fichier,1)
+               	COMBO_Fichier..Grisé = Faux		
+               FIN
+              type : 14
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+        -
+          name : BTN_SelectAnalyse
+          identifier : 0x2f772afa097a4073
+          internal_properties : CAAAAAgAAABcdw3pbr7dCDS9i0AgEtxgAXGOHoP0g0z5IdgSoFdoO41kPhkfmUf7l5/mhQ6BiKcWO/pBd8xeMu5giCKP30+eL3AeEKXypEPT5cbHAiuNXNDWsWLgDU/q1BrWZwnxCee9jK2/yAFe001dmmpl3a65sAc7n80iGZKxrElzkhNerPRz2SsEyV8yZvKoV/YXARI2iCceLtsW8Db1jS+qHXj/hj4V7ViFaATQ/dCCJGgwg/VhTbrrGoh2OSnW5Xr8MPVoyGy6x+z6GwAliitvnR1aKCyatgJRNHh14AA5elgY33FZJJPtOVuy9WAWGWnupnGEXWW+JWBCmfLdU6lxWFemxzvW8V1+W/GE0bBx/wY1RftBEJP7KEHLadjcsisiwRs95M2EC2+D7tVyFRK3z1MB8mUXSHJOsFFVOujNp31ZSEWhzhpazYD8qHEUFEwYSQlTkAoGuaO2E4BUVj33V52s0k/9k80l+2gS1UiLAVNbTBm4POrmr31jpKVffyyothVHJNIMJXFq4mqwhxub984hxXItLk8lcw9MJ/cxO5FybTKss8WrTf8B+oFPJbK1IhdzSpnxNpnnHnoS7BSyCV5ez5lVEUKLagm9d/kTACFqu2u18WbCv2WtJ/CSGT1EvVzhllNYtkBPRJqtxviDNh3ON+lG3Yk/OqTzgJH/YftQWhC5JTGG9/0z/DLuH0ysxvP6OUZBdLKbltjC8OhOI/wwS8Yhx5qYNfsNRG0k2KWI2W2MW8UXBX0CECwVPCBWTacazKr63Znenu0kqzSGg2wnV7Yf26UWuciBDk8o+lV8m9B7bsdyvSwxU7ZWGwkd0bEwuKbCh/jA9WBw61khALOb5HNLz3s=
+          properties :
+           x : 460
+           y : 93
+           width : 26
+           height : 24
+          type : 4
+          code_elements :
+           type_code : 4
+           p_codes :
+            -
+              internal_properties : CAAAAAgAAAArDTJIjQciNg8MPzqkbxDpo/3s/GjNg1uPMtMAqDVvL3E8jlgz0PHN2MMj9GhGPd632tqwIFTCFG7NOG1AkH7U3SGk66XMuKg0PtIMNnJYqnuZ6MMaC6YXUDgdtPdh1wRFJZcBgpeFc2R2l8w=
+              code : |1+
+               COMBO_Fichier..Grisé = vrai		
+               ListeSupprimeTout(COMBO_Fichier)
+               
+               
+               //Récupérer l'adresse de l'analyse
+               sAnalyse est une chaine = fSélecteur(fRepEnCours, "Sélectionner une analyse", "Analyse (*.wdd)"+TAB+"*.wdd", "*", fselOuvre)
+               SI sAnalyse <> "" ALORS						
+               	SAI_CheminAnalyse = sAnalyse
+               	
+               	//Afficher la liste des fichiers et récupérer l'adresse du fichier sélectionné
+               	ListeAjoute(COMBO_Fichier,HListeFichier(sAnalyse))
+               	ListeSelectPlus(COMBO_Fichier,1)
+               	combo_fichier..Grisé = faux		
+               FIN	
+              type : 18
+            -
+              type : 161
+              enabled : false
+        -
+          name : COMBO_Fichier
+          identifier : 0x2f772bb50a4e1a7d
+          internal_properties : CAAAAAgAAAA4vPPzcNLralwFkyenh1qOsV/Yn9ktvcT8Eft87jultCadteNurADgfkyntvUmHiQBG9o9OX5dKxQ/R1LpyOB0i5/OWl6Zix46Ccs7g4PG73PZsLaMzrbTpaFQrM2pFpXFOb9JWS2STqH156szeDo0sh933itEQ6ngeoYUeza30QXXgUCiNtRwXoyGRx4W0RMR3p6yz5jxTPvDmYbsitLS65KKVr+XBg1BJB4mx3yzBbU/TVscVOgCSuV9sepuRmmhqB+cUiFsz2BSnefUdWPcknPJf82Lunaua7Oy7EoEnRESGQrTZDPHJi113mK5Y6vePWqD3Hgu03viDFkePxSrLTG8UCmYVG4IOmAXUNKKSKMrHmDRUpHXYrBvIsXcMrT6ouemPwL9oUOFVTLJzJkN5oCNn8+WB+ptG+wOwhNSSa45nl2vyheCd4R76xXnTIu4chN0s788f9tVO816JetnFM58hSc4MMhvflip4jCUHVEomXZwg+X9oBe7L+NLNDlGIO/3iF24FoYZGT57jpSb74/JF1S+UZ6nWL0IkiA8U+POk4QVqlTKhrONVER+mjt4Loq0os+Ccs+oCn/B8HPdnWoUnaCmhTYytLQu83nCr/zk7UjydG9s0v6lOFFjzWsOupp5ekn3YapeIQjeV4guoYK0byV1ehObog/muhxSWjiXaQvkNaUF360n/xq2SEWDEyToF6xO95rXwF5Z2VmC2S4oMlhznE36wbmvsE0M6deNSh0YdjgGIBw3wCri7qFi6/a5TTLKvC2ExTajnkHZyCNHqjKPoysfAtB4+j8mA+08XQACgjOXN8ZCyPqneCqTtq1B756/9q6C0tPKig258E2Qa/AUBA2p/c+WEHJ51kPkzMxEjQt1c3jt2di08VFQRdKs09Px49BgAys9kxplyLjUzcK3XVsJw/BgX+bx2+t5Pgtd/U9d+giMMuJ2jEizEV72NZxMc6TSsfWlK1f5+SmikVuK4ymi8xQNyoCcftnt0EdwQJRB/RPUoTMBtbwH6ntxeUPeTl0tlFCHYSDC94qE5UlFOa/J/CbgenMHEdsl7Aex7HtGoSeKs+s03fhgAEWvtJHvteeX0giCtXnq/Yt57xlxi1El7P5GYX6QQYQVDrPy1RjD74+bXzmAemYd40U2VBR3xn3eN9Qri6P3YuDH84hWl1ZoJ2rWEmJ9cNVyPbkmoxm/ZeJk+tOJxK6xeFDWWtRmUnKYA8dMTH+idoP8lcty0y2GTlAqToBY9ez/li0RMWuNoU2jrHXWmLNx4BS5Hgt+sWfv3sl/gVsWtdN4tp5hcfmvmwkZS0n0pB4LhZWpSEtJ0hl4XAfjwXr5DBkI2v0KQaWkRfAlQRlKKm+9QxjQ6prIIM1amfv/HbbkaNIMMy1RpvT42m6S1x07gd293B6L+5Zz4dDnfk9SmMgDIm2OClw3Ys58wvilkcXm7WNzR+qS6Uzb/kBRXMYWddAJXOAky6Y/toloTN47oQP9/WivP4NxiJW0FGDxNr+tGFLvUDTWApgEMHCpBPFVMSX6mGJh0OnpuM9vkwidMxqYgrYB8RUyvWfAK/+oVWxqXS50+a5pZhQXXdm7S67z48YUblH8zQoBRPnjn+8Mj95JPjRZi/XcGfVQLpWXYJTUWCmgewqs5HOWduSZXaoCEV/KMNhaOuTg+PovzT4W4hKI1yWNtPFqNluGzIH+xzW0jmeT1/rhJskByNmGkSLcU1qKmz5GYOJ4gbYEpUS9TJA7RJNQTbtQnBf/Le6LGYmBqq93+gxWorlOOoB17PMH7dCLfw==
+          properties :
+           x : 44
+           y : 128
+           width : 243
+           height : 24
+          dropdown :
+           internal_properties : CAAAAAgAAAB7jnLPWMcFk4+4cT+FYwjQP5fjpCGEOhfgTC5sPhVwg7sME6Mvtzl3pq62oP3SKp/S/Oyant3aH78zkWJZ0LP1M6/RbMjnVT4R/6eiTr6472YbumacOgemy4TYcO2EYyUnaVjhvwSbxdeUttq9+elWa9ph7bd9dhjUgsImF/1orIU3eZj+ksIRRUgkmU7U0PbZt56liruwVTCn7uRZX5uFuLx4EhtsTIg7mXnf12L0SOeiJSOHiztzs8MuWlWCNEbMmOgqy/jwqNVqg0lKca5cML8KVJWMvgjirPv8rgVlw3D/jk8mAjbFEO1KpQeHWcx1JgSvrfyS2twg8G8mEXbneSkIfeUQS7JeUr7RDwKWuNO21ZHHgz4JLoxHBUdPS4gQVphrHuHuGIQ2QJ1OIDLrsFw4rrvjSXwp3YXU3d6fj5lYBEzMlMsx9uvSMWaTtrrduXl8yJTddYjP4U3TcAwXx855mAKviysMZiJbjCzdkZWzNCvtRZvjkB84Xw+mAKOLxs6eeIO4aB0dskUiCsVdHxrR4X8XN1F/VqgH0TRS4jNhkD3R3c+JXFEMz3u7YQVjoiuccfApC7AW2/WIhH8/mAlSgJNBCiyIAz73oxifeT7cDcpGu2iwZpnujYb6qofWgoJnYk5yholXBZ0cJcjs2tCi5DfVeFgQl/GDOfEQisB6iUnmKCL2mNkYUQv8Xv1g6ZGqnjDj+uOrHVoCN1h/axBh2ATqEy6P+19bN96IQCyVrTTUqaAkZTOTD7M/S8bdLpK9T0vjem0mtFFrYSDrveUE/w==
+           type : 7
+          type : 14
+          code_elements :
+           type_code : 23
+           p_codes :
+            -
+              type : 35
+              enabled : false
+            -
+              type : 17
+              enabled : false
+        -
+          name : SAI_DocType
+          identifier : 0x2f772ea20baf86bf
+          internal_properties : CAAAAAgAAACnvDKYhOxdkulsh6CMCFOP/0vRs90NnUx2iuGH4Qt/yamiQCbSqnzicblPtwA4yt0Zx8Q/M4tUeuRdjgmE4A8RNv+NHntaREPgspaHFF47adAxAON9PZB464vFmFtu1UfoKyAI1PdXj6GdX28n0bfLUzZ3LQS0q+BZwGArVb0MPpKwWLd0WVtBuSxcyvJnDzuZMrr6kJ7Rzr7MTnpjQueDS4uJvrBB+gufzfKp/oJegs7nTTw7PS4BhXjxej467ID1rZoY/l/WWRdljzwBvSIcLp1SxDpB/v6vD6pd97P9loXKD5dCtXLroBQOgpvIIDoV1MWEJh7Nn9M9udQgrAgYgMM/lkhGTA2a9KrjTzRwSwuqTn2QskYj05OgWTXYJHRF0HlcdCT2tdajCkVDauWANtamAfirjRzjDScexUaWFWUl/NPH4Zawm7SQX9ujBD/8JYgXAq3gnkptFLDeJj/2jntlwOaAo2AWX8qzL5IvSuav5GOzslhERFV4AHuy6Q9lFQmeUgo0H/JNhB1JDhwlrcosp9oSFD742wtnS1f0EjyNI2XLxNyloJsrHDXYwcRvQHdklo5JYGs8AKkD+8SLcM4lY01SN69fRlh8KTSyDAAjdsKv1MXtwdTBQQ4b9BHt8lvq4evvhPCnNQKUjioOOxX1GT/WHMt3cgstAEHzG48ZaYoYiGsp6doBYIvMSp4Qp1cgjKoJVtRJcXq+oOO+/jAuHHoCjN4WNmZlOUrT4WPyHtjf2apC8S0MmsQWlUIZ3wbQxCMTz8jK2eDWIFX0SPmfYADjgEhPNyNX4bQfUpIYt7BIQiIQ6cELeYPoNI/TTpgfVQxHJie2in6VwwrTw19kLleGLg3nD2/6xcgJmVGHs+4OMVrwVba9p/C/g6u8l5a1Qtj4eji3HUwZ6hNa+c02YSJ1PLVHfr7PMFN2Fg2Ix5/eqmAPRgyulY/ZaSDI5zaXbUs99/YjS1eSOhm3UjuNefbi03/aq2dZ4NOyhn2AR8O+v3yLsqjWXuZL/upyCMZcuCbEE33Hrudqq9i6uFzgUMf3eTVkc5mwFi88iRaTS9FjoJvpOUWw4fpaG32HbTt9Zi+6DyH9zi5Bt81YwW4+2sKwO5iSES0RLeyIFJgkbCZLNr/Lj0N4LUNc9ruFhcIHqXNjaFgDycFasSiTKdUEFyFe90XxlK5dWsl3LcOcZQ3d2X9MJ//x9bwsS3gNbIEIZiDZmk8RauuVuye3geVwJqufENJztLbTSsj1MOWHOGkKXFQAke2Vudbh4Rvu/HN5kRmMWSNyMdMQhw==
+          properties :
+           x : 44
+           y : 58
+           width : 416
+           height : 25
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              internal_properties : CAAAAAgAAABSHQ74kRadiAfGC67+o0wrD6DFuSixBCZNE687oSM+y/N4sG3BAQfnEnJT8QGen6jzYBsjh5tnXmXygAut9jW5og1QvUg8FaqT8wAmg1aTW7h3CsNzwx/lrR+dDHIlMLfU+5lNpf94gcIrww==
+              code : |1+
+               sDocTypeFourni est une chaine = ComplèteRep(fRepExe()) + "Modele.sxw"
+               
+               si fFichierExiste( sDocTypeFourni ) ALORS
+               	moimeme = sDocTypeFourni
+               FIN
+              type : 14
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+        -
+          name : BTN_SelectAnalyse1
+          identifier : 0x2f772ec00bd3fe41
+          internal_properties : CAAAAAgAAAASp9JP6jxUF1I9mGWzGy3Gah/nQXyhO5b89bzjqT5Kh8d7QsaE6NecCY6hJTJ+6RvoA8wvm1H9MhKq4XQ39iy0Qud9IghLpbJDWAzUdGngO/v9dkKL8LwyrQ5Bc4zLDE8TNL3ccH3uVP8Ws1iYSmexjhRRpqZvLElm7XD8s4DbJnQPd3QKECsr7B/CtI5NJP/XNltr58JzCHPHydvBGqjmeccPx1JFcsIQl2MJK+V1/U/2hgxeJiDKezPMAU/OrGoqg4ld/2ghe5LOzUVTFeLpXHNnOsQ2yZhFBMmt9o5pvTNvzcRfN0JeZd1uZ3AZSgJUB81x3ZLx6tXzhboKjvS90xsr1ZpKnrX/rvrf/7TXf16hniYNvfRVAN/NdDOOKE4HzSLygpTT2ZguZ0hWFCsdMiadKbIFoc/AXiwIViYs0MSmelN+JXbD+Vyrmx5aGGCyELMZn79ibb+UM4fao5vgQR12xM6xVaw0oxbxLoR2+TvM8a9A721oLUmO6N+iiMWOYvaPTKXoTh3kWLFsZ30ObUcvuj0uqNRWQeo/EqnTgvoVbzOZkpBAsPfU6ZuJgap9dZ23YkymQ8iAvfxfY/+/JYqZx0B2xfiyW0HBJ4ujkvX4f3ZuaJa8rpgtxwe1K2gzetIIk4hq2ofw8uXtG50EtpGK8RWlSgQcgT8KAsE7wM71EYdOFDPq0JfCSdvW5+BgBJ2c3WXtVBwuHG07uzeC4YOJ9twDSMW88QG5xJK9ZQyFa174Yo+8SdHVpeWVazi0+LhfcabjT/Ucst0vr0v2xsTaVtqYF1REMtVfmIKuCHqWeHsdv6EGi26JMNtlkYWoS054V2M7rRi3AOSyreyr6FuFsLnDO/o=
+          properties :
+           x : 460
+           y : 59
+           width : 26
+           height : 24
+          type : 4
+          code_elements :
+           type_code : 4
+           p_codes :
+            -
+              internal_properties : CAAAAAgAAAArDTJIjQciNg8MPzqkbxDpo/3s/GjNg1uPMtMAqDVvL3E8jlgz0PHN2MMj9GhGPd632tqwIFTCFG7NOG1AkH7U3SGk66XMuKg0PtIMNnJYqnuZ6MMaC6YXUDgdtPdh1wRFJZcBgpeFc2R2l8w=
+              code : |1+
+               COMBO_Fichier..Grisé = vrai		
+               ListeSupprimeTout(COMBO_Fichier)
+               
+               
+               //Récupérer l'adresse de l'analyse
+               sAnalyse est une chaine = fSélecteur(fRepEnCours, "Sélectionner une analyse", "Analyse (*.wdd)"+TAB+"*.wdd", "*", fselOuvre)
+               SI sAnalyse <> "" ALORS						
+               	SAI_CheminAnalyse = sAnalyse
+               	
+               	//Afficher la liste des fichiers et récupérer l'adresse du fichier sélectionné
+               	ListeAjoute(COMBO_Fichier,HListeFichier(sAnalyse))
+               	ListeSelectPlus(COMBO_Fichier,1)
+               	combo_fichier..Grisé = faux		
+               FIN	
+              type : 18
+            -
+              type : 161
+              enabled : false
+    type : 16
+    controls : []
+    code_elements :
+     type_code : 24
+     p_codes :
+      -
+        type : 292
+        enabled : false
+      -
+        type : 293
+        enabled : false
+  -
+    name : Image1
+    identifier : 0x2f73117101317053
+    internal_properties : CAAAAAgAAABNcf6xzI3TRu4bNACM0LWVUpTqdFDUIbNS130rSK8T4DZEzbkzYurVhK+gi7zxPPr8HPFAXKsD/Ru7AG58Z2Mc+0rYFpIizLap0tvuksByf3uubWZf4nsA15NAqJOfartM2OCsrlvaYakLdewGHvhNPX9w8D6Dji3VGqGrvAcnVHKiBuYuv6jAzntJYfN9/V3ONuD433Ms0nDhgn//ETGr1Q2LldpBtohxq8R4quS33fLq14TC+BMsBAYfXEuMOYwPrX+pmL66o11uuUNE5T++cvD3yu/guraUXaqSJdud9RkUwOefXBKf5iW1yPq+RKl333NP/uoSiqzMzfrmX4wgzGg4xc/HRKhPgs38hk69X9Nc4QCnTyAF7l1cM3q7NG3cebV/4+JQidlvWjjkRY+kLDLLs/1d7wHQJ7Lrs/mkOlOuwh/oy5Yt/mh6BGcHVWB9HdGgnqGYH+4wX7EHlOP4cH74sHdiTMB83/jNumWrHIprYo6BRIGNczXZNSBNvX+Jai6YRpRbM77MBmDLIXQMn9vNeTBG0h5bY7xOqw8E/swGpJwjYpN6n4da1h64tTj4O7P9PFiMIUK/IG3V2PaG2mspbSXz6mPa3i/Kq+Syl5HL46bIzQAJmTUD65ImkKz8BCMDh4f/IdgJvoifRF6xwpOZ4JiFwK9dC01vlpch7jLDJBCUsCCTwJiGW15zbO4UdXQMrl+/AcfJbpMS6rpNg/zsDcWhJ1a8ddix9yQJPopBdgIUKS43ukLpFNwGrVEy/A4SpKLTbIf/w6jUoDUDexcpjTFT0iIxizLsQCcoGmKi0kX7DO+j84jtRpIJiJvnJvQEHeDoLd9oVfxN55chsc4IxGteRhw/DzmCOKgTMmTTAtTgFezRiaU=
+    properties :
+     x : -235
+     y : 94
+     width : 24
+     height : 24
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         moimeme..CouleurFond = inoir
+        type : 14
+      -
+        internal_properties : CAAAAAgAAAC/+a7lkXMl0uswW/4g66ipJ3HUIEgxU19bFrcshMHX/0Uw5nQjrAFxnM/fYHxKTe47TlLM4HhE5qR7aj/W6pjyq6MmVXN+kuLKzKQ+TFxiaHnbKg1wtVBhll5nfuWDMaJT51EjgKx6HtDiA1g=
+        code : |1-
+         
+         si gclDocumentWriter:ObjetLibreOfficeActif() ALORS
+         	
+         	//Convertir au format RVB		
+         	Valeur est un entier = RVB(0, 0, 0)
+         	SelectCouleur(Valeur, scInit)	
+         	//Régler l'image
+         	MoiMême..CouleurFond = Valeur
+         	
+         	//Régler la couleur de police de la sélection.
+         	gclDocumentWriter:reglerPolice("", -1, -1,-1,-1, Valeur)
+         	
+         	//Réafficher la fenêtre dessus tout
+         	fenetat(FEN_LibreOffice_Writer,DessusTout)								
+         sinon
+         	erreur("Aucun document n'a été détecté.")
+         FIN
+        type : 18
+ menu :
+  name : Menu
+  identifier : 0x2f73117101387053
+  internal_properties : CAAAAAgAAADX4GtzL9S/iIQ99sRt3j7llNMjcN27poTqEBqE2+3xcvHUQjTDp+ps1/7pA9cLwwDjzu35CnbuBz0uTik/qlH/Q9goCwMFALP1+LrKP0WO9WOui5uyCMSZazwTzECQMjMe9QNOizQYqIjXHLWMt06v0Qx5VHH+I9IwPa8J8AmaLDa7pcSwOpzhGH9Guo3ZMb90GR5zqRf+1nRUb6rdBYqlzzG0UusgxYot1yjfATULiWFEzUzX9r1shY3IdrXml/8XItyRqbQKiSepiqYwvYtnWKgnNzEN05d/Tb4RJ16IKZdDRbbIcvH233wGvqwLJpzfO2/QZ4vCWg01
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABYq2COcMYef03/Z7jLRPEst+7DkNUiH0UQzfCVtE9IJ0h5JWjizFCQKW0aXmztd/mY7WMpO5sjx1M573YWj2Ksn/I0WIkY5UXKAv56dExWXfQlsOJ2Wv1iVgTd4PtsO8g=
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAADoX9MLfGfWKwayS7h3VU0IxYS1fW9zlSB2kZU1q9ocHwiflE/MXMw7jrvAUMb9rvXxetcSO4tMZt/hlnkyfCGjngzjkA==
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE FEN_LibreOffice_Writer()
+      
+      	Quand exception	
+      		//Gestion des erreurs
+      		erreur("Vous ne pouvez pas réaliser ce traitement.",ExceptionInfo())
+      		ExceptionActive()
+      	FIN
+      	
+      // Dans cet exemple, un seul document est manipulé en même temps
+      // une seule instance de cDocumentWriter est donc suffisante.
+      gclDocumentWriter est un cDocumentWriter()
+   -
+     code : |1-
+      
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     code : |1-
+      
+     type : 12
+   -
+     code : |1-
+      
+     type : 17
+   -
+     code : |1-
+      
+     type : 13
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : FenOpenOfficeWriter
+resources :
+ string_res :
+  identifier : 0x1fd224fa00b437d4
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : ON
+     index : 0
+   -
+     text :
+      fr-FR : OFF
+     index : 1
+   -
+     text :
+      fr-FR : "État du bouton : ON"
+     index : 2
+   -
+     text :
+      fr-FR : "État du bouton : OFF"
+     index : 3
+   -
+     text :
+      fr-FR : OFF
+     index : 4
+   -
+     text :
+      fr-FR : ON
+     index : 5
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+associated_test :
+ name : TEST_Writer.wxt
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

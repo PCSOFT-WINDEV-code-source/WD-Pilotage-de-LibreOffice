@@ -1,0 +1,181 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cLibreOffice
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1f731071007a8555
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      cLibreOffice est une classe
+      	oServiceManager est un objet OLE dynamique
+      	oDesktop est un objet OLE dynamique
+      	oDocument est un objet OLE dynamique	
+      Fin
+     type : 131072
+   -
+     code : |1-
+      
+     type : 131074
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 2266173115022935381
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur( )
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 2266173115023000917
+     type_code : 28
+     code : |1-
+      Procédure Destructeur()
+      
+      FermerDocument ( )
+     type : 655360
+   -
+     name : Enregistrer
+     internal_properties : CAAAAAgAAACpi8+TwfJtUiswe96Ay0hJxxH0QEgxc5+blpfMJKH33yWQhlQjLGGx3A9/AJyq7Q7b7nJsIHiUVlQLug+GWigC+1P2ZQPuYtL6nPQOPExyuEkL+t3ApWBRhi53DhVzwXKjl+GzEATz5XH0FU4=
+     procedure_id : 2266173115023131989
+     type_code : 12
+     code : |1+
+      // Résumé : Enregistre le document actif
+      // Syntaxe :
+      // Enregistrer ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      
+      Procédure Enregistrer ( )
+      
+      // Y a-t-il un document actif ?
+      si estouvert() = faux ALORS
+      	erreur("Aucun document ouvert.","L'enregistrement est impossible.")
+      	retour
+      FIN
+      
+      
+      QUAND EXCEPTION DANS
+      	// Enregistrement du document
+      	oDocument>>Store()
+      FAIRE
+      	Erreur("Impossible d'utiliser cette fonctionnalité dans ce cas","Essayer la fonctionnalité 'Enregistrer sous...'")
+      	RETOUR
+      FIN
+     type : 458752
+   -
+     name : Modifié
+     procedure_id : 2266173115023197525
+     type_code : 12
+     code : |1+
+      // Résumé : Indique si le document a été modifié
+      // Syntaxe :
+      // [ <Résultat> = ] Modifié ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // Booléen : Vrai si le document a été modifié
+      
+      Fonction Modifié( )
+      
+      SI :oDocument<>Null ALORS
+      	RENVOYER :oDocument>>isModified
+      SINON
+      	RENVOYER Faux
+      FIN
+     type : 458752
+   -
+     name : FermerDocument
+     procedure_id : 2266173115023263061
+     type_code : 12
+     code : |1-
+      // Résumé : Ferme le document actif
+      // Syntaxe :
+      // FermerDocument ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      
+      Procédure FermerDocument( )
+      
+      Si oDocument<>Null alors
+      	QUAND Exception dans		
+      		oDocument>>close(vrai)		
+      	FAIRE
+      		// Document certainement fermé
+      	FIN
+      Fin
+     type : 458752
+   -
+     name : DémarrerService
+     internal_properties : CAAAAAgAAABUiIx25MQVIHUJcPysAzeN7ytFXIJqZTTpLSm5pIspHN265QzCBs+7mgdwDGJ8Od0vMOPP3TYQdcdPz0JhUr/sd64S/94+fnp9TAEHk9XjYmM5W8JUKY+cTRM1jBAZzsj7qKVmYVJvWI+xWzW1AYVLKelpEamy4FdDx5/0Wg/0Z9NJ74RfmjfSWrjPN4K1bcq2OcUXzA/oGAmKFFdN9KzcMBsX
+     procedure_id : 2266173115023328597
+     type_code : 12
+     code : |1-
+      // Résumé : Démarre LibreOffice
+      // Syntaxe :
+      // DémarrerService ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      
+      Procédure DémarrerService ( )
+      
+      sablier(vrai)
+      
+      quand exception dans
+      	// Création d'un service LibreOffice si nécessaire
+      	oServiceManager = allouer un objet OLE ("com.sun.star.ServiceManager")
+      	oDesktop = oServiceManager>>createInstance("com.sun.star.frame.Desktop")
+      
+      faire
+      	finprogramme("LibreOffice n'est pas installé sur votre poste.", "LibreOffice est nécessaire pour que cet exemple fonctionne.")
+      fin
+      
+      sablier(faux)
+     type : 458752
+   -
+     name : EstOuvert
+     procedure_id : 2266948210607800879
+     type_code : 12
+     code : |1+
+      // Résumé : Permet de savoir si un document est ouvert
+      // Syntaxe :
+      // [ <Résultat> = ] EstOuvert ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	booléen : Renvoie Vrai si un document est ouvert, Faux sinon
+      
+      Fonction Virtuelle EstOuvert ( )
+      
+      renvoyer vrai
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COpenOffice
+resources :
+ string_res :
+  identifier : 0x1fd224f9009b35b1
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

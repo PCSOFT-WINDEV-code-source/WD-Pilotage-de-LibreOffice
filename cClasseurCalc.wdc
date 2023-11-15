@@ -1,0 +1,904 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cClasseurCalc
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1f732ffd0044c258
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  internal_properties : CAAAAAgAAAA0RDGCI2s8YLMYEOMu93tQvm9pJLxkr3rNfl40/ucnCw/F4Lq6q7L/nqe7nkk+Mf9tub7jFbJtcICinu77iJyvUdLMXOteO4yqozisXxnpg7EuKEKuFlMadPN7/0mRLYwHwUomb0dLVq/zHQiizsjDDRk=
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      
+      cClasseurCalc est une classe
+      	un objet cLibreOffice	// cClasseurCalc reprend les caractéristiques de la classe de base cLibreOffice
+      	
+      	oFeuille est un objet OLE dynamique
+      	oPlageCellules est un objet OLE dynamique
+      	
+      Fin
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 2266207801175294552
+     type_code : 27
+     code : |1-
+      Procédure Constructeur()
+      
+      // Appel du constructeur de la classe de base
+      constructeur cLibreOffice()
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 2266207801175360088
+     type_code : 28
+     code : |1+
+      Procédure Destructeur()
+      
+     type : 655360
+   -
+     name : ClasseurCrée
+     internal_properties : CAAAAAgAAAApCzx2S50VBlGa1xhsZ/Yfkcs+3EaXl4sZUKsmeGVJ2avGuBjV8tUxkkk/BqyS+9zBPKikxjox5aWs7+CdM89zmrJThia7s6WPIck3W62RIYDq0+qPXiW0vzccV7ysHM9u6k4kQ/E7bWJ0lc4=
+     procedure_id : 2266207801175425624
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] ClasseurCrée ()
+      // Création d'un nouveau classeur
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	booléen : Vrai si le classeur a été créé
+      
+      Procédure ClasseurCrée()
+      
+      tabNoArgs est un tableau dynamique de variant
+      
+      // Service manager nécessaire à LibreOffice
+      :DémarrerService()
+      
+      // Création d'un nouveau classeur
+      :oDocument = :oDesktop>>LoadComponentFromURL("private:factory/scalc", "_blank", 0, tabNoArgs)
+      
+      // Récupération de la feuille active
+      :oFeuille = :oDocument>>CurrentController>>ActiveSheet
+      
+      // Sélection par défaut de la cellule A1
+      :CellulesSélectionne("A1")
+      
+      renvoyer vrai
+     type : 458752
+   -
+     name : ClasseurOuvre
+     internal_properties : CAAAAAgAAAAnLuYiw+n6male+0GqkpKzhtBONEHUJKlNLhz+up3jodQBkSHgr43TEj2y35EYbYxne60LaNkmW5gVlWIzi7OMf2PDp6Z9G61bxJydV9FgN5W6711XHYOmD8AZJw1ZcFqDr5A6ZE3tDBxWdR47+nzgWxKSdjAdzqqrXBA1F4Goqw==
+     procedure_id : 2266207801175491160
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] ClasseurOuvre (<sCheminComplet> est chaîne)
+      // Ouvre un classeur existant
+      // Paramètres :
+      //	sCheminComplet (chaîne ANSI) : Chemin complet du classeur (.sxc, .xls...) à ouvrir
+      // Valeur de retour :
+      // 	booléen : Vrai si le classeur a été ouvert
+      
+      Procédure ClasseurOuvre(sCheminComplet est une chaine)
+      
+      tabNoArgs est un tableau dynamique de variant
+      sCheminFormaté est une chaine
+      
+      // Service manager nécessaire à LibreOffice
+      :DémarrerService()
+      
+      si fFichierExiste(sCheminComplet) alors
+      	// Formatage du chemin du fichier
+      	sCheminFormaté = "file:///"+remplace(sCheminComplet,"\","/")
+      	
+      	// Ouverture du fichier dans LibreOffice
+      	:oDocument = :oDesktop>>LoadComponentFromURL(sCheminFormaté, "_blank", 0, tabNoArgs)
+      	
+      	si :oDocument<>Null ALORS
+      		// Feuille active
+      		:oFeuille = :oDocument>>CurrentController>>ActiveSheet
+      		// Cellules sélectionnées
+      		:oPlageCellules = :oDocument>>CurrentSelection
+      		renvoyer vrai
+      	fin
+      fin
+      
+      renvoyer faux
+     type : 458752
+   -
+     name : FeuilleSélectionne
+     procedure_id : 2266207801175556696
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] FeuilleSélectionne (<sNomFeuille> est chaîne)
+      // Sélection d'une feuille par son nom
+      // Paramètres :
+      //	sNomFeuille (chaîne ANSI) : Nom de la feuille à sélectionner
+      // Valeur de retour :
+      // 	booléen : Vrai si la feuille a bien été sélectionnée
+      
+      Procédure FeuilleSélectionne(sNomFeuille est une chaine)
+      
+      // si la feuille existe
+      si sNomFeuille<>"" _et_ :FeuilleExiste(sNomFeuille) alors
+      	// Sélection de la feuille spécifiée
+      	:oFeuille = :oDocument>>Sheets>>getByName(sNomFeuille)
+      	// Affichage
+      	:oDocument>>CurrentController>>ActiveSheet = :oFeuille
+      	renvoyer vrai
+      	
+      sinon
+      	renvoyer faux
+      fin
+     type : 458752
+   -
+     name : CelluleEcrire
+     internal_properties : CAAAAAgAAACd58aB6paMdCFPLX77Z/XN3QM4hld0Etv0ElizlzQsWksqw3c2icZkXg629RXR8VNCFWTrI3DJHzASmbcBJ0XkydZIZgwQH4BAFbAOx9htA5vYMVLMMZkhbPsj3KifQEQ3GGXk59Q1boWvp4PzQzuHNbHtk6uyGL+7oeFuZPWOjU0df+bh/JBNzhJPtNCXB0KHpomz2CWqEJJgcVq2/VqNwjFpiarjlxPLzjjbXmlOXpVijg==
+     procedure_id : 2266207801175622232
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] CelluleEcrire (<sCellule> est chaîne, <sValeur>)
+      // Écrire le contenu spécifié dans la cellule spécifiée
+      // Paramètres :
+      //	sCellule (chaîne ANSI) : Cellule dans laquelle écrire
+      //	sValeur : Valeur à écrire : numérique, chaine ou formule
+      // Valeur de retour :
+      // 	booléen : Vrai si l'écriture dans la cellule a bien été effectuée
+      
+      Procédure CelluleEcrire(sCellule est une chaine, sValeur)
+      
+      // S'il ne s'agit pas d'une adresse de cellule, rien n'est fait
+      si VérifieExpressionRégulière(sCellule, "[a-zA-Z]+[0-9]+")=faux ALORS
+      	renvoyer faux
+      FIN
+      
+      si EstNumérique(sValeur) alors
+      	// Ecrire la valeur spécifiée dans la cellule spécifiée
+      	:ofeuille>>getCellRangeByName(sCellule)>>Value = sValeur
+      sinon
+      	si gauche(sValeur,1)="=" ALORS
+      		// Ecrire la formule spécifiée dans la cellule spécifiée
+      		:ofeuille>>getCellRangeByName(sCellule)>>Formula = sValeur+" "
+      		:oDocument>>calculateAll()
+      	sinon
+      		// Ecrire le texte spécifié dans la cellule spécifiée
+      		:ofeuille>>getCellRangeByName(sCellule)>>String = sValeur
+      	FIN
+      fin
+      
+      renvoyer vrai
+     type : 458752
+   -
+     name : CelluleLire
+     procedure_id : 2266207801175687768
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] CelluleLire (<sCellule> est chaîne)
+      // Interroge le contenu d'une cellule
+      // Paramètres :
+      //	sCellule (chaîne ANSI) : Cellule à interroger
+      // Valeur de retour :
+      // 	Type indéterminé : Valeur lue
+      
+      Procédure CelluleLire(sCellule est une chaine)
+      
+      // S'il ne s'agit pas d'une adresse de cellule, rien n'est fait
+      si VérifieExpressionRégulière(sCellule, "[a-zA-Z]+[0-9]+")=faux ALORS
+      	renvoyer ""
+      FIN
+      
+      // Selon le type de la cellule
+      selon :CelluleType(sCellule)
+      	cas 1	// VALEUR
+      		renvoyer :ofeuille>>getCellRangeByName(sCellule)>>Value
+      	cas 2	// TEXTE
+      		renvoyer :ofeuille>>getCellRangeByName(sCellule)>>String
+      	cas 3	// FORMULE
+      		renvoyer :ofeuille>>getCellRangeByName(sCellule)>>FormulaLocal
+      	autres cas
+      		renvoyer ""
+      FIN
+     type : 458752
+   -
+     name : CellulesPolice
+     procedure_id : 2266207801175753304
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //CellulesPolice ( [<sPolice> [, <nTaille> [, <bGras> [, <bSouligné> [, <nCouleurTexte> [, <nCouleurFond>]]]]]])
+      // Modification de police des cellules de la plage sélectionnée
+      // Paramètres :
+      //	sPolice (valeur par défaut="") : Police à appliquer
+      //	nTaille (valeur par défaut=-1) : Taille de la police à appliquer
+      //	bGras (valeur par défaut=-1) : Gras
+      //	bSouligné (valeur par défaut=-1) : Souligné
+      //	nCouleurTexte (valeur par défaut=-1) : Couleur du texte
+      //	nCouleurFond (valeur par défaut=-1) : Couleur de fond
+      // Valeur de retour :
+      // 	Aucune
+      
+      Procédure CellulesPolice(sPolice="", nTaille=-1, bGras=-1, bSouligné=-1, nCouleurTexte=-1, nCouleurFond=-1)
+      
+      // Police
+      si sPolice<>"" ALORS
+      	:oPlageCellules>>CharFontName = sPolice
+      FIN
+      
+      // Taille
+      si nTaille<>-1 ALORS
+      	:oPlageCellules>>CharHeight = max(val(nTaille),2)
+      FIN
+      
+      // Gras
+      si bGras<>-1 ALORS
+      	si bGras alors
+      		:oPlageCellules>>CharWeight = 150
+      	sinon
+      		:oPlageCellules>>CharWeight = 0
+      	fin
+      FIN
+      
+      // Souligné
+      si bSouligné<>-1 ALORS
+      	si bSouligné alors
+      		:oPlageCellules>>CharUnderline = 1
+      	sinon
+      		:oPlageCellules>>CharUnderline = 0
+      	fin
+      FIN
+      
+      // Couleur du texte
+      si nCouleurTexte<>-1 ALORS
+      	:oPlageCellules>>CharColor = RVBversBVR(nCouleurTexte)
+      FIN
+      
+      // Couleur de fond
+      si nCouleurFond<>-1 ALORS	
+      	:oPlageCellules>>CellBackColor = RVBversBVR(nCouleurFond)	
+      FIN
+     type : 458752
+   -
+     name : CellulesAlignementVertical
+     procedure_id : 2266207801175818840
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] CellulesAlignementVertical (<nAlignement> est entier)
+      // Spécifie l'alignement vertical des cellules sélectionnées
+      // Paramètres :
+      //	nAlignement (entier) : 1->en haut, 2->centre, 3->en bas
+      // Valeur de retour :
+      // 	booléen : Vrai si l'alignement a été effectué
+      
+      Procédure CellulesAlignementVertical(nAlignement est un entier)
+      
+      si nAlignement dans (1,2,3) alors
+      	// Spécifie l'alignement vertical des cellules de la plage sélectionnée
+      	:oPlageCellules>>VertJustify = nAlignement
+      	renvoyer Vrai
+      fin
+      
+      renvoyer faux
+     type : 458752
+   -
+     name : CellulesAlignementHorizontal
+     procedure_id : 2266207801175884376
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] CellulesAlignementHorizontal (<nAlignement> est entier)
+      // Spécifie l'alignement horizontal des cellules sélectionnées
+      // Paramètres :
+      //	nAlignement (entier) : 1->à gauche, 2->centre, 3->à droite
+      // Valeur de retour :
+      // 	booléen : Vrai si l'alignement a été effectué
+      
+      Procédure CellulesAlignementHorizontal(nAlignement est un entier)
+      
+      si nAlignement dans (1,2,3) alors
+      	// Spécifie l'alignement horizontal des cellules de la plage sélectionnée
+      	:oPlageCellules>>HoriJustify = nAlignement
+      	renvoyer Vrai
+      fin
+      
+      renvoyer faux
+     type : 458752
+   -
+     name : ColonneLargeur
+     procedure_id : 2266207801175949912
+     type_code : 12
+     code : |1+
+      // Syntaxe :
+      //ColonneLargeur (<sColonne> est chaîne [, <nLargeur> est entier])
+      // Modification de la largeur de la colonne spécifiée
+      // Paramètres :
+      //	sColonne (chaîne ANSI) : Indice de la colonne à redimensionner
+      //	nLargeur (entier - valeur par défaut=-1) : Nouvelle largeur en 1/100 de mm (ne rien préciser pour appliquer une largeur optimale)
+      // Valeur de retour :
+      // 	Aucune
+      
+      Procédure ColonneLargeur(sColonne est une chaine, nLargeur est un entier = -1)
+      
+      nCol est un entier = max(val(sColonne),1)
+      
+      // Largeur de la colonne spécifiée
+      si nLargeur=-1 alors
+      	:oFeuille>>getColumns>>getByIndex(nCol-1)>>OptimalWidth = vrai
+      sinon
+      	nLargeur = max(0,nLargeur)
+      	:oFeuille>>getColumns>>getByIndex(nCol-1)>>Width = nLargeur
+      FIN
+      
+     type : 458752
+   -
+     name : LigneHauteur
+     procedure_id : 2266207801176015448
+     type_code : 12
+     code : |1+
+      // Syntaxe :
+      //LigneHauteur (<pnLigne> [, <nHauteur> est entier])
+      // Modification de la hauteur de la ligne spécifiée
+      // Paramètres :
+      //	pnLigne : Indice de la ligne à redimensionner
+      //	nHauteur (entier - valeur par défaut=-1) : Nouvelle hauteur en 1/100 de mm (ne rien préciser pour appliquer une hauteur optimale)
+      // Valeur de retour :
+      // 	Aucune
+      
+      Procédure LigneHauteur(pnLigne, nHauteur est un entier = -1)
+      
+      nLigne est un entier = max(pnLigne,1)
+      
+      // Hauteur de la colonne spécifiée
+      si nHauteur = -1 alors
+      	:oFeuille>>getRows>>getByIndex(nLigne-1)>>OptimalHeight = vrai
+      sinon
+      	nHauteur = max(0,nHauteur)
+      	:oFeuille>>getRows>>getByIndex(nLigne-1)>>Height = nHauteur
+      FIN
+     type : 458752
+   -
+     name : CellulesSélectionne
+     procedure_id : 2266207801176080984
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] CellulesSélectionne (<sCelluleHautGauche> est chaîne [, <sCelluleBasDroite> est chaîne])
+      //
+      // Paramètres :
+      //	sCelluleHautGauche (chaîne ANSI) : Cellule en haut à gauche de la plage de cellules à sélectionner (ex:B2)
+      //	sCelluleBasDroite (chaîne ANSI - valeur par défaut="") : Cellule en bas à droite de la plage de cellules à sélectionner (ex:F6) [optionnel]
+      // Valeur de retour :
+      // 	booléen : 
+      
+      Procédure CellulesSélectionne(sCelluleHautGauche est une chaine, sCelluleBasDroite est une chaine = "")
+      
+      // S'il ne s'agit pas d'une adresse de cellule, rien n'est fait
+      si VérifieExpressionRégulière(sCelluleHautGauche, "[a-zA-Z]+[0-9]+")=faux ALORS
+      	renvoyer faux
+      FIN
+      
+      // S'il ne s'agit pas d'une adresse de cellule, rien n'est fait
+      si sCelluleBasDroite<>"" _et_ VérifieExpressionRégulière(sCelluleBasDroite, "[a-zA-Z]+[0-9]+")=faux ALORS
+      	renvoyer faux
+      FIN
+      
+      // Construction de la plage de cellule (ex: B2:F6)
+      sPlageCellule est une chaine
+      sPlageCellule = sCelluleHautGauche+":"
+      si sCelluleBasDroite=""ALORS
+      	sPlageCellule += sCelluleHautGauche
+      sinon
+      	sPlageCellule += sCelluleBasDroite
+      FIN
+      
+      // Sélection de la plage de cellules
+      :oPlageCellules = :oFeuille>>getCellRangeByName(sPlageCellule)
+      
+      // Affichage
+      :oDocument>>CurrentController>>Select(:oPlageCellules)
+      
+      renvoyer vrai
+     type : 458752
+   -
+     name : FeuilleAjoute
+     procedure_id : 2266207801176146520
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] FeuilleAjoute (<sNomFeuille> est chaîne [, <nIndice> est entier])
+      // Ajouter une feuille dans un classeur
+      // Paramètres :
+      //	sNomFeuille (chaîne ANSI) : Nom de la feuille
+      //	nIndice (entier - valeur par défaut=0) : Position de la feuille par rapport aux feuilles existantes
+      // Valeur de retour :
+      // 	booléen : 
+      
+      Procédure FeuilleAjoute(sNomFeuille est une chaine, nIndice est un entier = 0)
+      
+      nInd est un entier = max(nIndice,0)
+      
+      // si aucun indice n'est spécifié, l'ajout se fait après la dernière feuille
+      si nInd=0 ALORS
+      	nInd=:FeuilleOccurrence()
+      FIN
+      
+      // si la feuille n'existe pas déjà
+      si :FeuilleExiste(sNomFeuille)=faux _et_ sNomFeuille<>"" alors
+      	// Ajout de la feuille
+      	:oDocument>>Sheets>>insertNewByName(sNomFeuille, nInd-1)
+      	renvoyer Vrai
+      sinon
+      	renvoyer faux
+      fin
+     type : 458752
+   -
+     name : FeuilleSupprime
+     procedure_id : 2266207801176212056
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] FeuilleSupprime (<sNomFeuille> est chaîne)
+      // Supprimer une feuille
+      // Paramètres :
+      //	sNomFeuille (chaîne ANSI) : Nom de la feuille à supprimer
+      // Valeur de retour :
+      // 	booléen : 
+      
+      Procédure FeuilleSupprime(sNomFeuille est une chaine)
+      
+      // si la feuille existe
+      si sNomFeuille<>"" _et_ :FeuilleExiste(sNomFeuille) alors
+      	// Un classeur doit contenir au moins une feuille	
+      	si :FeuilleOccurrence()>1 alors
+      		// Suppression de la feuille
+      		:oDocument>>Sheets>>removeByName(sNomFeuille)
+      		// Feuille active
+      		:oFeuille = :oDocument>>CurrentController>>ActiveSheet
+      		renvoyer vrai
+      	fin
+      fin
+      
+      renvoyer faux
+     type : 458752
+   -
+     name : FeuilleRenomme
+     procedure_id : 2266207801176277592
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] FeuilleRenomme (<sNomFeuille> est chaîne, <sNouveauNom> est chaîne)
+      // Renomme une feuille
+      // Paramètres :
+      //	sNomFeuille (chaîne ANSI) : Nom de la feuille à modifier
+      //	sNouveauNom (chaîne ANSI) : Nouveau nom à donner à la feuille
+      // Valeur de retour :
+      // 	booléen : Vrai si la feuille a bien été renommée
+      
+      Procédure FeuilleRenomme(sNomFeuille est une chaine, sNouveauNom est une chaine)
+      
+      // pas de nom vide pour les feuilles
+      si sNomFeuille="" _ou_ sNouveauNom="" ALORS
+      	renvoyer faux
+      FIN
+      
+      // si la feuille à modifier existe
+      // et que le nouveau nom n'est pas déjà pris
+      si :FeuilleExiste(sNomFeuille)=vrai _et_ :FeuilleExiste(sNouveauNom)=faux alors
+      	// Renommage de la feuille
+      	:oDocument>>Sheets>>getByName(sNomFeuille)>>Name = sNouveauNom
+      	renvoyer Vrai
+      sinon
+      	renvoyer faux
+      fin
+     type : 458752
+   -
+     name : FeuilleExiste
+     procedure_id : 2266207801176343128
+     type_code : 12
+     code : |1+
+      // Syntaxe :
+      //[ <Résultat> = ] FeuilleExiste (<sNomFeuille> est chaîne)
+      // Teste l'existence d'une feuille
+      // Paramètres :
+      //	sNomFeuille (chaîne ANSI) : Nom de la feuille
+      // Valeur de retour :
+      // 	Type indéterminé : Vrai si la feuille existe
+      
+      Procédure FeuilleExiste(sNomFeuille est une chaine)
+      
+      si sNomFeuille<>"" ALORS
+      	renvoyer :oDocument>>Sheets>>hasByName(sNomFeuille)
+      sinon
+      	renvoyer faux	
+      FIN
+     type : 458752
+   -
+     name : CelluleType
+     procedure_id : 2266207801176408664
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] CelluleType (<sCellule> est chaîne)
+      // Renvoie le type d'une cellule (vide, valeur, texte, formule)
+      // Paramètres :
+      //	sCellule (chaîne ANSI) : Cellule à interroger
+      // Valeur de retour :
+      // 	Type indéterminé :  une des valeurs suivantes :
+      // 0 : VIDE
+      // 1 : VALEUR
+      Procédure CelluleType(sCellule est une chaine)
+      
+      // S'il ne s'agit pas d'une adresse de cellule, rien n'est fait
+      si VérifieExpressionRégulière(sCellule, "[a-zA-Z]+[0-9]+")=faux ALORS
+      	renvoyer ""
+      FIN
+      
+      renvoyer :ofeuille>>getCellRangeByName(sCellule)>>Type
+     type : 458752
+   -
+     name : ColonneAjoute
+     procedure_id : 2266207801176474200
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] ColonneAjoute (<sPosition> est chaîne [, <nNombreColonne> est entier])
+      // Ajout d'une colonne à l'endroit spécifié
+      // Paramètres :
+      //	sPosition (chaîne ANSI) : Indice de la colonne à ajouter
+      //	nNombreColonne (entier - valeur par défaut=1) : Nombre de colonnes à ajouter
+      // Valeur de retour :
+      // 	booléen : vrai si l'ajout a été effectué, faux sinon
+      
+      Procédure ColonneAjoute(sPosition est une chaine, nNombreColonne est un entier = 1)
+      
+      nPosition est un entier = sPosition
+      nNbreColonne est un entier = max(val(nNombreColonne), 1)
+      
+      si nPosition >= 0 alors
+      	quand exception dans
+      		:oFeuille>>getCellByPosition(nPosition-1, 1)>>Columns>>insertByIndex(0, nNbreColonne)
+      		renvoyer vrai
+      	faire
+      		// l'insertion peut échouer lorsqu'il y a des cellules fusionnées
+      	fin
+      fin
+      
+      renvoyer faux
+     type : 458752
+   -
+     name : LigneAjoute
+     procedure_id : 2266207801176539736
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] LigneAjoute (<sPosition> est chaîne [, <nNombreLigne> est entier])
+      // Ajout d'une ligne à l'endroit spécifié
+      // Paramètres :
+      //	sPosition (chaîne ANSI) : Indice de la ligne à ajouter
+      //	nNombreLigne (entier - valeur par défaut=1) : Nombre de lignes à ajouter
+      // Valeur de retour :
+      // 	booléen : 
+      
+      Procédure LigneAjoute(sPosition est une chaine, nNombreLigne est un entier = 1)
+      
+      nPosition est un entier = sPosition
+      nNbreLigne est un entier = max(val(nNombreLigne), 1)
+      
+      si nPosition>=0 alors
+      	quand exception dans
+      		:oFeuille>>getCellByPosition(1, nPosition-1)>>Rows>>insertByIndex(0, nNbreLigne)
+      		renvoyer vrai
+      	faire
+      		// l'insertion peut échouer lorsqu'il y a des cellules fusionnées
+      	fin
+      fin
+      
+      renvoyer faux
+     type : 458752
+   -
+     name : ColonneSupprime
+     procedure_id : 2266207801176605272
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //ColonneSupprime (<sPosition> est chaîne [, <nNombreColonne> est entier])
+      // Supprime la colonne spécifiée
+      // Paramètres :
+      //	sPosition (chaîne ANSI) : Indice de la première colonne à supprimer
+      //	nNombreColonne (entier - valeur par défaut=1) : Nombre de colonnes à supprimer
+      // Valeur de retour :
+      // 	Aucune
+      
+      Procédure ColonneSupprime(sPosition est une chaine, nNombreColonne est un entier = 1)
+      
+      nPosition est un entier = sPosition
+      nNbreColonne est un entier = max(nNombreColonne,1)
+      
+      si nPosition >= 0 alors
+      	:oFeuille>>getCellByPosition(nPosition-1, 1)>>Columns>>removeByIndex(0, nNbreColonne)
+      fin
+     type : 458752
+   -
+     name : LigneSupprime
+     procedure_id : 2266207801176670808
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //LigneSupprime (<sPosition> est chaîne [, <nNombreLigne> est entier])
+      // Supprime la ligne spécifiée
+      // Paramètres :
+      //	sPosition (chaîne ANSI) : Indice de la première ligne à supprimer
+      //	nNombreLigne (entier - valeur par défaut=1) : Nombre de lignes à supprimer
+      // Valeur de retour :
+      // 	Aucune
+      
+      Procédure LigneSupprime(sPosition est une chaine, nNombreLigne est un entier = 1)
+      
+      nPosition est un entier = sPosition
+      nNbreLigne est un entier = max(nNombreLigne,1)
+      
+      si nPosition>=0 alors
+      	:oFeuille>>getCellByPosition(1, nPosition-1)>>Rows>>removeByIndex(0, nNbreLigne)
+      fin
+     type : 458752
+   -
+     name : ColonneCache
+     procedure_id : 2266207801176736344
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //ColonneCache (<sColonne> est chaîne [, <bVisible>])
+      // Cache/Affiche une colonne
+      // Paramètres :
+      //	sColonne (chaîne ANSI) : indice de la colonne à cacher
+      //	bVisible (valeur par défaut=0) : Visibilité de la colonne (Vrai ou Faux)
+      // Valeur de retour :
+      // 	Aucune
+      
+      Procédure ColonneCache(sColonne est une chaine, bVisible = faux)
+      
+      nColonne est un entier = sColonne
+      
+      si nColonne>=0 alors
+      	:oFeuille>>getCellByPosition(nColonne-1, 1)>>Columns>>IsVisible = bVisible
+      fin
+     type : 458752
+   -
+     name : LigneCache
+     procedure_id : 2266207801176801880
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //LigneCache (<sLigne> est chaîne [, <bVisible> est booléen])
+      // Cache/Affiche une ligne
+      // Paramètres :
+      //	sLigne (chaîne ANSI) : indice de la ligne à cacher
+      //	bVisible (booléen - valeur par défaut=0) : Visibilité de la ligne (Vrai ou Faux)
+      // Valeur de retour :
+      // 	Aucune
+      
+      Procédure LigneCache(sLigne est une chaine, bVisible est un booleen = faux)
+      
+      nLigne est un entier = sLigne
+      
+      si nLigne >= 0 alors
+      	:oFeuille>>getCellByPosition(1, nLigne-1)>>Rows>>IsVisible = bVisible
+      fin
+     type : 458752
+   -
+     name : ObjetLibreOfficeActif
+     procedure_id : 2266207801176867416
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] ObjetLibreOfficeActif ()
+      // Récupère l'instance active de LibreOffice
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	booléen :  Vrai si une instance active a été trouvée
+      
+      Procédure ObjetLibreOfficeActif()
+      
+      // Service manager nécessaire à LibreOffice
+      :DémarrerService()
+      
+      quand exception dans
+      	// Objet actif
+      	:oDocument = :oDesktop>>getCurrentComponent()
+      	
+      	// Feuille active
+      	:oFeuille = :oDocument>>CurrentController>>ActiveSheet
+      	
+      	// Cellules sélectionnées
+      	:oPlageCellules = :oDocument>>CurrentSelection
+      	
+      	renvoyer vrai
+      	
+      faire
+      	// Aucun objet de type classeur n'a été détecté
+      	renvoyer faux
+      fin
+     type : 458752
+   -
+     name : EstOuvert
+     procedure_id : 2266207801176932952
+     type_code : 12
+     code : |1+
+      // Syntaxe :
+      //[ <Résultat> = ] EstOuvert ()
+      // Permet de vérifier si le classeur est bien toujours ouvert
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	booléen :  Vrai si le classeur est ouvert
+      
+      Procédure virtuelle EstOuvert()
+      
+      quand exception dans
+      	// tentative d'accès à la feuille active du classeur
+      	SI :oDocument <> Null alors
+      		:oDocument>>CurrentController>>ActiveSheet
+      		renvoyer vrai
+      	SINON	
+      		RENVOYER Faux
+      	FIN
+      FAIRE
+      	liberer :oDocument
+      	liberer :oPlageCellules
+      	liberer :ofeuille
+      	renvoyer faux
+      FIN
+     type : 458752
+   -
+     name : FeuilleSélectionneIndice
+     procedure_id : 2266207801176998488
+     type_code : 12
+     code : |1+
+      // Syntaxe :
+      //[ <Résultat> = ] FeuilleSélectionneIndice (<sIndice> est chaîne)
+      // Sélection d'une feuille par son indice
+      // Paramètres :
+      //	sIndice (chaîne ANSI) : indice de la feuille à sélectionner
+      // Valeur de retour :
+      // 	booléen : 
+      
+      Procédure FeuilleSélectionneIndice(sIndice est une chaine)
+      
+      nIndiceFeuille est un entier
+      
+      // Correction préventive sur l'indice maximum de la feuille
+      nIndiceFeuille = min(val(sIndice), :FeuilleOccurrence())
+      
+      // Correction préventive sur l'indice minimum de la feuille
+      nIndiceFeuille = max(nIndiceFeuille, 1)
+      
+      // Sélection de la feuille spécifiée
+      :oFeuille = :oDocument>>Sheets>>getByIndex(nIndiceFeuille-1)
+      	
+      // Affichage
+      :oDocument>>CurrentController>>ActiveSheet = :oFeuille
+      
+      renvoyer vrai
+     type : 458752
+   -
+     name : FeuilleOccurrence
+     procedure_id : 2266207801177064024
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] FeuilleOccurrence ()
+      // Nombre de feuilles du classeur
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Type indéterminé :  Nombre de feuilles du classeur
+      
+      Procédure FeuilleOccurrence()
+      
+      renvoyer :oDocument>>Sheets>>count()
+     type : 458752
+   -
+     name : FeuilleNom
+     procedure_id : 2266207801177129560
+     type_code : 12
+     code : |1-
+      // Syntaxe :
+      //[ <Résultat> = ] FeuilleNom ( [<nIndice>])
+      // Renvoie le nom de la feuille spécifiée
+      // Paramètres :
+      //	nIndice (valeur par défaut=0) : Indice de la feuille à interroger OU vide pour obtenir le nom de la feuille active
+      // Valeur de retour :
+      // 	chaîne ANSI : Nom de la feuille spécifiée
+      
+      Procédure FeuilleNom(nIndice = 0)
+      
+      sNomFeuille est une chaine
+      nIndiceFeuille est  un entier
+      
+      // Correction préventive pour l'indice maximum de la feuille
+      nIndiceFeuille = max(val(nIndice ), :FeuilleOccurrence())
+      
+      // Correction préventive pour l'indice minimum de la feuille
+      nIndiceFeuille = max(val(nIndice ), 1)
+      
+      si nIndice = 0 ALORS
+      	// Nom de la feuille courante
+      	sNomFeuille = :oDocument>>CurrentController>>ActiveSheet>>Name
+      sinon
+      	// Nom de la feuille spécifiée
+      	sNomFeuille = :oDocument>>Sheets>>getByIndex(nIndiceFeuille-1)>>Name
+      FIN
+      
+      renvoyer sNomFeuille
+     type : 458752
+   -
+     name : EnregistrerSous
+     internal_properties : CAAAAAgAAADPRILO97XaxzBUgf8YhJI1SvQWHGtk7vmDMGpE0Kdrn/hNAcF2HQsPjJckLR8igRaXS8G/wsM4Q/qDg4zV0Z/+akYg2qFmGEIC+8W0LOxPJuCNNJiqxqhP+vtG8tZQC80ybtlho/Z2FZf5KKe6a6ntSIcNgyVo7VZlgmpT9aNAww==
+     procedure_id : 2266208239269925564
+     type_code : 12
+     code : |1+
+      // Syntaxe :
+      //EnregistrerSous ([<psCheminComplet>])
+      // Enregistrer un document
+      // Paramètres :
+      //	psCheminComplet : Chemin complet du fichier à enregistrer ou chaîne vide pour ouvrir le sélecteur
+      // Valeur de retour :
+      // 	Aucune
+      
+      Procédure EnregistrerSous(psCheminComplet="")
+      
+      // Y a-t-il bien un document actif ?
+      si :estouvert()=faux ALORS
+      	Erreur("Aucun document LibreOffice Calc n'est ouvert.","L'enregistrement est impossible.")
+      	retour
+      FIN
+      
+      tabNoArgs est un tableau dynamique de variant
+      sNomClasseur1, sNomClasseur2 est une chaine
+      
+      si psCheminComplet<>"" ALORS
+      	sNomClasseur1 = psCheminComplet
+      sinon
+      	sNomClasseur1 = fSélecteur("", "", "Enregistrer sous...", "Classeur ODF (*.ods)"+TAB+"*.ods" + rc +"Excel 2007-365 (*.xlsx)" + TAB + "*.xlsx", "*.ods", fSelCrée)
+      	si sNomClasseur1="" retour
+      fin
+      
+      SI sNomClasseur1<>"" ALORS
+      	
+      	// Formatage du chemin du fichier
+      	sNomClasseur2 = "file:///"+Remplace(sNomClasseur1,"\","/")
+      	
+      	// Enregistrement du document
+      	oDocument>>storeAsURL(sNomClasseur2, tabNoArgs)
+      	
+      FIN	
+      
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CClasseur
+resources :
+ string_res :
+  identifier : 0x1fd224f9007135a1
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

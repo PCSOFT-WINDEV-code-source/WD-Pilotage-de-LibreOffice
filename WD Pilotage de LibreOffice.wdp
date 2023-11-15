@@ -1,0 +1,139 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD Pilotage de LibreOffice
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : ""
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : Exécutable Windows 32 bits
+    internal_properties : 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
+    configuration_id : 2380753896897180085
+    type : 1
+    generation_name : WD Pilotage de LibreOffice.exe
+    version : {}
+    language : 1
+ elements :
+  identifier : 0x4f72f3910016cc9f
+  elements :
+   -
+     name : FEN_LibreOffice_Writer
+     identifier : 0x4f72f4b000612e34
+     internal_properties : CAAAAAgAAADsasTQ75ScT6dUZh4R9WfLCH+Hj0fOrbu21cFjzXKivgbobDIyjkKGdN/ZJ+/hmQ/5eQ==
+     physical_name : .\FEN_LibreOffice_Writer.wdw
+     type : 2
+   -
+     name : cLibreOffice
+     identifier : 0x4f72f7ab0077cfdd
+     internal_properties : CAAAAAgAAACIhvCsG0Do8xsYHTET1RZivO+7kz/GeleqYKd96zTgGCQqkzw6jl2qqIN9ezu1TUONlQ==
+     physical_name : .\cLibreOffice.wdc
+     type : 4
+   -
+     name : cBase
+     identifier : 0x4f758393004b4ef7
+     internal_properties : CAAAAAgAAAAmLA4Skc5mCX0hEeW517FkEDNvZ0z+igJK6PYwKBCMRPB+mbWVaygffqkT7bUr18kzMw==
+     physical_name : .\cBase.wdc
+     type : 4
+   -
+     name : cDocumentWriter
+     identifier : 0x4f72f79c007596ad
+     internal_properties : CAAAAAgAAAB51aHlwr/3+OKfkKGSMvzF31z6csRraL22NeJCPNM7jb9xPmgK/t4tLxqEfAT8hHRc5A==
+     physical_name : .\cDocumentWriter.wdc
+     type : 4
+   -
+     name : FEN_LibreOffice_Calc
+     identifier : 0x4f732f40001cdf64
+     internal_properties : CAAAAAgAAAAUcny4B3w0Ny+tAzQftq6hXiG9bVw5S52ntiM9XNbGYq4cRBvw0KD3/FdBv0e5QbcBAQ==
+     physical_name : .\FEN_LibreOffice_Calc.wdw
+     type : 2
+   -
+     name : cClasseurCalc
+     identifier : 0x4f732c8600203a1d
+     internal_properties : CAAAAAgAAACSaMre7VrSjfGj0lwnYjcYUtdRAbdOXhOO/zQoJOsp9zXpFCbl23tJAi2XYSHfmw33fw==
+     physical_name : .\cClasseurCalc.wdc
+     type : 4
+   -
+     name : FEN_LibreOffice_Base
+     identifier : 0x4f75865f00923995
+     internal_properties : CAAAAAgAAAAbd8PH5KEJEng842zWq+XbFRQ8tJ3/ZFlKhCb8FhJ4SPgoT2o5j3BuiaQemhrWohb+Bg==
+     physical_name : .\FEN_LibreOffice_Base.wdw
+     type : 2
+   -
+     name : FEN_Principale
+     identifier : 0x4f758e18003067e6
+     internal_properties : CAAAAAgAAABu9EZaaRYe0SX5pA6P6kz99FEjuyEgDnd2QbJyfoGLTbN/SywH+T+3xmFbpW1jH5F7+w==
+     physical_name : .\FEN_Principale.wdw
+     type : 2
+   -
+     name : COL_Outils
+     identifier : 0x4f75fb640128574f
+     internal_properties : CAAAAAgAAAAOFGa6iTZ+scXZce4SdE50MGNvB8OCtbByYr9t+wQIGOziDVrNPFiX5kG7BY1DP7EbGw==
+     physical_name : .\COL_Outils.wdg
+     type : 7
+   -
+     name : FEN_RechercherRemplacer
+     identifier : 0x4f72f490004ab069
+     internal_properties : CAAAAAgAAAA0EhwYp5yUl8+MTqYpVgkE1qklhUGA34FWDS03rZJ6bkKYjaO6RppeHDehH+cZ4dchIQ==
+     physical_name : .\FEN_RechercherRemplacer.wdw
+     type : 2
+   -
+     name : TEST_Calc
+     identifier : 0x4f7603050148262b
+     internal_properties : CAAAAAgAAACloY2RLkvj/JaH2C73WTDPM3JKkip5Eg9WnRHLi2S2QroqJw8mm9rVIw6IcDCgWEiwsA==
+     physical_name : .\TEST_Calc.wxt
+     type : 17
+   -
+     name : TEST_Writer
+     identifier : 0x4f772503008af1e5
+     internal_properties : CAAAAAgAAABCOLru3YqivaFXMy1BHuSC6O/n/9dmpEW2da2/AQ6GSopUkVA5xzwdct3HMfHvi31Hzw==
+     physical_name : .\TEST_Writer.wxt
+     type : 17
+  other_elements : []
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ report_and_queries_enabled : false
+ data_directory : <RepExeOuRepDonneesCommun>
+ common_generation_directory : true
+ languages :
+  - fr-FR
+ code_elements :
+  internal_properties : CAAAAAgAAAD12iiasabRuaiGQ+GmR4V/OZdRNRfLLRkE/JzKhVjwEYKZRQ07eZMTi75iaFhra0SZPc/3p73dZF/GAGD3ni9eKtY8nuoC1GMqnQIMwjOwpMHQEEDREV+IF/8=
+  type_code : 0
+  p_codes :
+   -
+     code : |1+
+      //Chaîne de caractères contenant l'adresse du document LibreOffice actif
+      sDocument est une chaine
+     type : 196608
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : Exécutable Windows 32 bits
+     identifier : 0x4f72f3910017cc9f
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==
